@@ -1,0 +1,1454 @@
+# Translation of wm-prototype-nda-gate in tr_TR
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-prototype-nda-gate 1.3.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-prototype-nda-"
+"gate\n"
+"POT-Creation-Date: 2026-11-22T00:26:19+00:00\n"
+"PO-Revision-Date: 2026-11-22 01:31+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-prototype-"
+"nda-gate/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-prototype-nda-"
+"gate/issues>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-prototype-nda-gate\n"
+
+#. Plugin Name of the plugin
+#: wm-prototype-nda-gate.php includes/class-nda-admin.php:1130
+msgid "WM Prototype NDA Gate"
+msgstr "WM Prototype NDA Gate"
+
+#. Plugin URI of the plugin
+#: wm-prototype-nda-gate.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/"
+
+#. Description of the plugin
+#: wm-prototype-nda-gate.php
+msgid ""
+"Verlangt von angemeldeten Benutzern die Bestätigung einer "
+"Vertraulichkeitsvereinbarung vor Login, wp-admin, Frontend und REST und "
+"speichert jede Bestätigung in einem verketteten HMAC-Register mit CSV- und "
+"JSON-Export. Keine rechtliche Bewertung."
+msgstr ""
+"Oturum açmış kullanıcılardan wp-login, wp-admin, ön yüz ve REST öncesinde "
+"gizlilik sözleşmesini onaylamalarını ister ve her onayı CSV/JSON dışa "
+"aktarımlı zincirleme bir HMAC kaydında saklar. Hukuki değerlendirme yapmaz."
+
+#. Author of the plugin
+#: wm-prototype-nda-gate.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-prototype-nda-gate.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-nda-admin.php:51
+msgid "WM Prototype NDA Gate — Signaturen"
+msgstr "WM Prototype NDA Gate — İmzalar"
+
+#: includes/class-nda-admin.php:69
+msgid "NDA-Gate aktiv (Admin- und/oder Frontend-Gate an)"
+msgstr "NDA kapısı etkin (yönetim ve/veya ön yüz kapısı açık)"
+
+#: includes/class-nda-admin.php:69
+msgid "NDA-Schranke deaktiviert (Admin- und Frontend-Gate aus)"
+msgstr "NDA kapısı devre dışı (yönetim ve ön yüz kapıları kapalı)"
+
+#: includes/class-nda-admin.php:71
+msgid "Verkettetes Signatur-Register (HMAC-SHA256)"
+msgstr "Zincirleme imza sicili (HMAC-SHA256)"
+
+#: includes/class-nda-admin.php:78
+msgid "Signiert (aktive Version)"
+msgstr "İmzalandı (etkin sürüm)"
+
+#: includes/class-nda-admin.php:82 includes/class-nda-admin.php:476
+msgid "Ausstehend"
+msgstr "Bekleyen"
+
+#: includes/class-nda-admin.php:86 includes/class-nda-admin.php:484
+msgid "NDA-Version"
+msgstr "NDA sürümü"
+
+#: includes/class-nda-admin.php:92
+msgid "NDA Gate Cockpit"
+msgstr "NDA Gate Kontrol Paneli"
+
+#: includes/class-nda-admin.php:153
+msgid ""
+"Neue Fassung veröffentlichen? Die bisherige wird deaktiviert, und wer die "
+"neue noch nicht bestätigt hat, wird beim nächsten Zugriff darum gebeten."
+msgstr ""
+"Yeni sürüm yayımlansın mı? Önceki sürüm devre dışı bırakılacak ve yeni "
+"sürümü henüz onaylamamış kullanıcılar bir sonraki erişimde onaylamaya davet "
+"edilecektir."
+
+#: includes/class-nda-admin.php:204
+msgid "Part of the WM Suite plugin family"
+msgstr "WM Suite eklenti ailesinin bir parçası"
+
+#: includes/class-nda-admin.php:206
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-nda-admin.php:207
+msgid "Hub"
+msgstr "Hub modu"
+
+#: includes/class-nda-admin.php:207
+msgid "Standalone"
+msgstr "Bağımsız"
+
+#: includes/class-nda-admin.php:224 includes/class-nda-admin.php:225
+msgid "WM NDA Gate"
+msgstr "WM NDA Gate"
+
+#: includes/class-nda-admin.php:235 includes/class-nda-admin.php:376
+msgid "Dashboard & KPIs"
+msgstr "Kontrol Paneli ve Göstergeler"
+
+#: includes/class-nda-admin.php:236
+msgid "Dashboard"
+msgstr "Kontrol Paneli"
+
+#: includes/class-nda-admin.php:244
+msgid "Aktivitäten & Signaturen"
+msgstr "Etkinlikler ve İmzalar"
+
+#: includes/class-nda-admin.php:245 includes/class-nda-admin.php:377
+msgid "Signaturen & Log"
+msgstr "İmzalar ve Günlük"
+
+#: includes/class-nda-admin.php:253 includes/class-nda-admin.php:761
+msgid "NDA-Versionen"
+msgstr "NDA Sürümleri"
+
+#: includes/class-nda-admin.php:254 includes/class-nda-admin.php:378
+#: includes/class-nda-admin.php:760
+msgid "Versionen"
+msgstr "Sürümler"
+
+#: includes/class-nda-admin.php:262 includes/class-nda-admin.php:263
+#: includes/class-nda-admin.php:379 includes/class-nda-admin.php:874
+msgid "Export"
+msgstr "Dışa Aktar"
+
+#: includes/class-nda-admin.php:271 includes/class-nda-admin.php:272
+#: includes/class-nda-admin.php:380 includes/class-nda-admin.php:921
+#: wm-prototype-nda-gate.php:233
+msgid "Einstellungen"
+msgstr "Ayarlar"
+
+#: includes/class-nda-admin.php:280
+msgid "Handbuch & Dokumentation"
+msgstr "El Kitabı ve Belgeler"
+
+#: includes/class-nda-admin.php:281 includes/class-nda-admin.php:1166
+#: wm-prototype-nda-gate.php:239 wm-prototype-nda-gate.php:257
+msgid "Handbuch"
+msgstr "Kılavuz"
+
+#: includes/class-nda-admin.php:381
+msgid "Handbuch & Glossar"
+msgstr "El Kitabı ve Sözlük"
+
+#: includes/class-nda-admin.php:384
+msgid "Plugin-Navigation"
+msgstr "Eklenti gezintisi"
+
+#: includes/class-nda-admin.php:409 includes/class-nda-modal.php:47
+msgid "Vertraulichkeitsvereinbarung"
+msgstr "Gizlilik Sözleşmesi"
+
+#: includes/class-nda-admin.php:410
+msgid "WM Prototype NDA Gate — Cockpit"
+msgstr "WM Prototype NDA Gate — Kontrol Paneli"
+
+#: includes/class-nda-admin.php:411
+msgid "NDA für angemeldete Benutzer, Signatur-Register und Export."
+msgstr "Oturum açmış kullanıcılar için NDA, imza sicili ve dışa aktarım."
+
+#: includes/class-nda-admin.php:419
+msgid "Springen zu:"
+msgstr "Şuraya git:"
+
+#: includes/class-nda-admin.php:420
+msgid "Kurzanleitung"
+msgstr "Hızlı kılavuz"
+
+#: includes/class-nda-admin.php:421
+msgid "Kennzahlen"
+msgstr "Temel göstergeler"
+
+#: includes/class-nda-admin.php:422
+msgid "Vorschau des Modals"
+msgstr "Modal önizlemesi"
+
+#: includes/class-nda-admin.php:423 includes/class-nda-admin.php:540
+msgid "Letzte Signaturen"
+msgstr "Son imzalar"
+
+#: includes/class-nda-admin.php:430
+msgid "Was dieses Plugin tut"
+msgstr "Bu eklenti ne yapar"
+
+#: includes/class-nda-admin.php:433
+msgid ""
+"Für Websites, Prototypen oder Staging-Umgebungen, die angemeldeten Kunden "
+"oder Partnern gezeigt werden: Das Plugin verlangt vor Login, wp-admin, "
+"Frontend und REST die Bestätigung einer Vertraulichkeitsvereinbarung und "
+"speichert jede Bestätigung mit Zeitpunkt, Hash des Vertragstextes und "
+"verketteter Signatur. Nicht angemeldete Besucher sind nicht betroffen. Ob "
+"Vereinbarung und Maßnahmen rechtlich tragen, beurteilt das Plugin nicht."
+msgstr ""
+"Oturum açmış müşterilere veya iş ortaklarına gösterilen web siteleri, "
+"prototipler veya test ortamları için: eklenti giriş, wp-admin, ön yüz ve "
+"REST öncesinde gizlilik sözleşmesi onayı ister; her onayı zaman, metin özeti "
+"ve zincirleme imzayla kaydeder. Anonim ziyaretçiler etkilenmez. Eklenti, "
+"sözleşmenin ve önlemlerin hukuken geçerli olup olmadığını değerlendirmez."
+
+#: includes/class-nda-admin.php:436
+msgid "Schnellzugriff:"
+msgstr "Hızlı erişim:"
+
+#: includes/class-nda-admin.php:439
+msgid "NDA-Text bearbeiten (neue Version)"
+msgstr "NDA metnini düzenle (yeni sürüm)"
+
+#: includes/class-nda-admin.php:443
+msgid "Signaturen exportieren"
+msgstr "İmzaları dışa aktar"
+
+#: includes/class-nda-admin.php:447
+msgid "Handbuch öffnen"
+msgstr "El kitabını aç"
+
+#: includes/class-nda-admin.php:457
+msgid "Bestätigungsquote"
+msgstr "Onay oranı"
+
+#: includes/class-nda-admin.php:468
+msgid "Signiert (aktive Version) / Benutzer"
+msgstr "İmzalayan (etkin sürüm) / Kullanıcılar"
+
+#: includes/class-nda-admin.php:492
+msgid "Vorschau: das Signatur-Modal"
+msgstr "Önizleme: imza penceresi"
+
+#: includes/class-nda-admin.php:494
+msgid ""
+"Vereinfachte Darstellung des Modals, das angemeldete Benutzer ohne Signatur "
+"sehen (Titel und Textanfang der aktiven Version):"
+msgstr ""
+"İmzası olmayan oturum açmış kullanıcıların gördüğü pencerenin "
+"sadeleştirilmiş görünümü (etkin sürümün başlığı ve girişi):"
+
+#: includes/class-nda-admin.php:501 includes/class-nda-interceptor.php:62
+#: includes/class-nda-interceptor.php:337
+#: includes/class-nda-interceptor.php:352
+msgid "Vertraulichkeitsvereinbarung (NDA)"
+msgstr "Gizlilik Sözleşmesi (NDA)"
+
+#: includes/class-nda-admin.php:504
+msgid "Keine aktive Version hinterlegt."
+msgstr "Tanımlı etkin sürüm yok."
+
+#: includes/class-nda-admin.php:518
+msgid "Aktive Vertraulichkeitsvereinbarung"
+msgstr "Etkin gizlilik sözleşmesi"
+
+#: includes/class-nda-admin.php:521
+msgid "Titel:"
+msgstr "Başlık:"
+
+#: includes/class-nda-admin.php:522
+msgid "Version:"
+msgstr "Sürüm:"
+
+#: includes/class-nda-admin.php:522
+msgid "Erstellt am:"
+msgstr "Oluşturulma:"
+
+#: includes/class-nda-admin.php:523
+msgid "Integritäts-Hash (SHA-256):"
+msgstr "Bütünlük özeti (SHA-256):"
+
+#: includes/class-nda-admin.php:527
+msgid "Neue Version veröffentlichen (Version Bump)"
+msgstr "Yeni sürüm yayımla (Version Bump)"
+
+#: includes/class-nda-admin.php:530
+msgid "Register als JSON herunterladen"
+msgstr "Sicili JSON olarak indir"
+
+#: includes/class-nda-admin.php:534
+msgid "Keine aktive NDA-Version hinterlegt."
+msgstr "Kayıtlı etkin NDA sürümü yok."
+
+#: includes/class-nda-admin.php:544 includes/class-nda-admin.php:669
+msgid "Benutzer"
+msgstr "Kullanıcı"
+
+#: includes/class-nda-admin.php:545 includes/class-nda-admin.php:670
+msgid "E-Mail"
+msgstr "E-posta"
+
+#: includes/class-nda-admin.php:546 includes/class-nda-admin.php:671
+#: includes/class-nda-admin.php:796 includes/class-nda-exporter.php:277
+msgid "Version"
+msgstr "Sürüm"
+
+#: includes/class-nda-admin.php:547
+msgid "Signiert am (UTC)"
+msgstr "İmza zamanı (UTC)"
+
+#: includes/class-nda-admin.php:548 includes/class-nda-admin.php:673
+msgid "IP-HMAC"
+msgstr "IP-HMAC"
+
+#: includes/class-nda-admin.php:549
+msgid "Signatur-Hash"
+msgstr "İmza özeti"
+
+#: includes/class-nda-admin.php:566
+msgid "Bisher keine Signaturen erfasst."
+msgstr "Henüz kayıtlı imza yok."
+
+#: includes/class-nda-admin.php:602 includes/class-nda-admin.php:1143
+msgid "Signatur-Register"
+msgstr "İmza sicili"
+
+#: includes/class-nda-admin.php:603
+msgid "Aktivitäten & Signaturprotokoll"
+msgstr "Etkinlikler ve imza protokolü"
+
+#: includes/class-nda-admin.php:604
+msgid ""
+"Alle gespeicherten Bestätigungen mit Signatur und Prüfergebnis des Registers."
+msgstr "Kaydedilen tüm onaylar, imzaları ve sicil doğrulama sonucu."
+
+#. translators: %d: number of chained acceptances recomputed and verified
+#: includes/class-nda-admin.php:621
+#, php-format
+msgid "Register integer — %d Zustimmungen neu berechnet und verkettet geprüft."
+msgstr ""
+"Sicil bütünlüğü sağlam — %d onay yeniden hesaplandı ve zincirleme doğrulandı."
+
+#: includes/class-nda-admin.php:622
+msgid "Register NICHT integer"
+msgstr "Sicil bütünlüğü BOZUK"
+
+#. translators: %d: number of acceptances recorded before the chain existed
+#: includes/class-nda-admin.php:633
+#, php-format
+msgid ""
+"%d Zustimmung(en) stammen aus der Zeit vor der Verkettung und tragen keine "
+"prüfbare Signatur. Sie gelten als ungeprüft, nicht als integer."
+msgstr ""
+"%d onay zincirleme öncesinden kalmadır ve doğrulanabilir imza taşımaz. "
+"Doğrulanmamış sayılır."
+
+#: includes/class-nda-admin.php:639
+msgid ""
+"AUTH_KEY ist nicht definiert: der Signaturschlüssel stammt aus der Datenbank "
+"— also von dort, wo ein Angreifer ohnehin schreiben würde. Der Nachweis hält "
+"hier nur gegen Unfälle. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"AUTH_KEY tanımlı değil: imzalama anahtarı veritabanından geliyor — "
+"saldırganın da yazacağı yerden. wp-config.php içinde AUTH_KEY tanımlayın."
+
+#: includes/class-nda-admin.php:648
+msgid "Alle Versionen anzeigen"
+msgstr "Tüm sürümleri göster"
+
+#: includes/class-nda-admin.php:656
+msgid "Benutzer oder E-Mail suchen..."
+msgstr "Kullanıcı veya e-posta ara..."
+
+#: includes/class-nda-admin.php:657
+msgid "Filtern"
+msgstr "Filtrele"
+
+#: includes/class-nda-admin.php:660
+msgid "Zurücksetzen"
+msgstr "Sıfırla"
+
+#: includes/class-nda-admin.php:668
+msgid "ID"
+msgstr "ID"
+
+#: includes/class-nda-admin.php:672 includes/class-nda-exporter.php:289
+msgid "Signatur-Zeitpunkt (UTC)"
+msgstr "İmza zamanı (UTC)"
+
+#: includes/class-nda-admin.php:674
+msgid "Interaktionsnachweis"
+msgstr "Etkileşim kanıtı"
+
+#: includes/class-nda-admin.php:675
+msgid "Signatur-Hash (HMAC-SHA256)"
+msgstr "İmza özeti (HMAC-SHA256)"
+
+#: includes/class-nda-admin.php:701
+msgid ""
+"Vom Browser gemeldet und mit der Signatur dieser Zeile versiegelt: "
+"nachträglich geändert bricht die Kette. Ob der Browser richtig gemeldet hat, "
+"kann das Plugin nicht prüfen."
+msgstr ""
+"Tarayıcı tarafından bildirildi ve bu satırın imzasıyla mühürlendi: sonradan "
+"değiştirilmesi zinciri bozar. Tarayıcının doğru bildirip bildirmediğini "
+"eklenti doğrulayamaz."
+
+#: includes/class-nda-admin.php:710
+msgid "Keine Einträge gefunden."
+msgstr "Kayıt bulunamadı."
+
+#. translators: %d: total number of acceptance records
+#: includes/class-nda-admin.php:723
+#, php-format
+msgid "%d Einträge"
+msgstr "%d kayıt"
+
+#: includes/class-nda-admin.php:762
+msgid ""
+"Erstellen Sie neue Versionen des Vertragstextes. Das Veröffentlichen einer "
+"neuen Version erzwingt für alle Benutzer eine erneute Zustimmung (Version "
+"Bump Re-acceptance)."
+msgstr ""
+"Sözleşme metninin yeni sürümlerini oluşturun. Yeni sürüm yayımlamak tüm "
+"kullanıcılardan yeniden onay ister."
+
+#: includes/class-nda-admin.php:771
+msgid ""
+"Die Fassung ist gespeichert und aktiv. Wer sie noch nicht bestätigt hat, "
+"wird beim nächsten Zugriff darum gebeten."
+msgstr ""
+"Sürüm kaydedildi ve etkinleştirildi. Henüz onaylamayan kullanıcılardan bir "
+"sonraki erişimde onay istenecektir."
+
+#. translators: 1: maximum characters of the version number, 2: maximum characters of the title
+#: includes/class-nda-admin.php:781
+#, php-format
+msgid ""
+"Die Fassung wurde nicht gespeichert; die bisherige bleibt aktiv. "
+"Versionsnummer höchstens %1$d Zeichen, Titel höchstens %2$d Zeichen, Text "
+"nicht leer."
+msgstr ""
+"Sürüm kaydedilmedi; önceki sürüm etkin kalır. Sürüm numarası en fazla %1$d "
+"karakter, başlık en fazla %2$d karakter olmalı ve metin boş olmamalıdır."
+
+#: includes/class-nda-admin.php:792
+msgid "Bestehende NDA-Versionen"
+msgstr "Mevcut NDA sürümleri"
+
+#: includes/class-nda-admin.php:797
+msgid "Titel"
+msgstr "Başlık"
+
+#: includes/class-nda-admin.php:798
+msgid "Status"
+msgstr "Durum"
+
+#: includes/class-nda-admin.php:799
+msgid "SHA-256 Hash"
+msgstr "SHA-256 özeti"
+
+#: includes/class-nda-admin.php:800
+msgid "Erstellt am (UTC)"
+msgstr "Oluşturulma (UTC)"
+
+#: includes/class-nda-admin.php:810
+msgid "Aktiv"
+msgstr "Etkin"
+
+#: includes/class-nda-admin.php:812
+msgid "Archiviert"
+msgstr "Arşivlendi"
+
+#: includes/class-nda-admin.php:827
+msgid "Neue Version herausgeben"
+msgstr "Yeni sürüm yayımla"
+
+#: includes/class-nda-admin.php:832
+msgid "Versionsnummer:"
+msgstr "Sürüm numarası:"
+
+#: includes/class-nda-admin.php:837
+msgid "Vertragstitel:"
+msgstr "Sözleşme başlığı:"
+
+#: includes/class-nda-admin.php:842
+msgid "Vertragstext (HTML erlaubt):"
+msgstr "Sözleşme metni (HTML serbest):"
+
+#: includes/class-nda-admin.php:847
+msgid ""
+"Achtung: Durch Veröffentlichung wird die bisherige Version sofort "
+"deaktiviert und alle Benutzer werden beim nächsten Zugriff zur erneuten "
+"Bestätigung aufgefordert."
+msgstr ""
+"Dikkat: yayımlandığında önceki sürüm derhal devre dışı kalır ve tüm "
+"kullanıcıların bir sonraki erişimde yeniden onaylaması gerekir."
+
+#: includes/class-nda-admin.php:852
+msgid "Version aktivieren"
+msgstr "Sürümü etkinleştir"
+
+#: includes/class-nda-admin.php:875
+msgid "Export des Signatur-Registers"
+msgstr "İmza sicili dışa aktarımı"
+
+#: includes/class-nda-admin.php:876
+msgid ""
+"Das Zustimmungsregister als CSV oder als JSON mit Signaturkette und "
+"aktuellem Prüfergebnis. Welche Beweiskraft das hat, beurteilt das Plugin "
+"nicht."
+msgstr ""
+"İmza zinciri ve doğrulama sonucuyla birlikte CSV veya JSON olarak onay "
+"sicili. Eklenti ispat gücünü değerlendirmez."
+
+#: includes/class-nda-admin.php:884
+msgid "CSV-Signaturprotokoll (CWE-1236 gehärtet)"
+msgstr "CSV imza protokolü (CWE-1236 korumalı)"
+
+#: includes/class-nda-admin.php:885
+msgid ""
+"Strukturierter tabellarischer Export aller Signaturvorgänge mit "
+"automatischer Bereinigung von potenziellen Formel-Injektionen (Formulas/"
+"Macros)."
+msgstr ""
+"Olası formül/makro enjeksiyonlarına karşı otomatik temizlemeli "
+"yapılandırılmış tablo dışa aktarımı."
+
+#: includes/class-nda-admin.php:887
+msgid "CSV-Datei herunterladen"
+msgstr "CSV dosyasını indir"
+
+#: includes/class-nda-admin.php:892
+msgid "JSON-Export mit Prüfergebnis"
+msgstr "Doğrulama sonuçlu JSON dışa aktarımı"
+
+#: includes/class-nda-admin.php:893
+msgid ""
+"Vollständiger JSON-Export mit Signaturkette, Prüfergebnis des Registers und "
+"einer SHA-256-Prüfsumme; wie sie sich nachrechnen lässt, steht in der Datei. "
+"Die Prüfsumme belegt, dass das Dokument nach dem Export unverändert ist; "
+"über die Datenbank sagt sie nichts — dafür steht das mitexportierte "
+"Prüfergebnis."
+msgstr ""
+"İmza zinciri, sicil doğrulaması ve dosyada hesaplama yöntemi açıklanan "
+"SHA-256 sağlama toplamıyla tam JSON dışa aktarımı."
+
+#: includes/class-nda-admin.php:895
+msgid "JSON herunterladen"
+msgstr "JSON indir"
+
+#: includes/class-nda-admin.php:922
+msgid "Einstellungen — WM Prototype NDA Gate"
+msgstr "Ayarlar — WM Prototype NDA Gate"
+
+#: includes/class-nda-admin.php:923
+msgid ""
+"Login-Checkbox, Admin-, Frontend- und REST-Sperre, Projektname, Demodaten."
+msgstr ""
+"Giriş onay kutusu, wp-admin, ön yüz ve REST kilidi, proje adı ve demo "
+"verileri."
+
+#: includes/class-nda-admin.php:931
+msgid "Einstellungen erfolgreich gespeichert."
+msgstr "Ayarlar başarıyla kaydedildi."
+
+#. translators: %d: number of demo signatures created
+#: includes/class-nda-admin.php:940
+#, php-format
+msgid "%d Demodaten-Signaturen (ohne WordPress-Konto) wurden erzeugt."
+msgstr "%d demo imzası (WordPress hesabı olmadan) oluşturuldu."
+
+#. translators: %d: number of demo signatures deleted
+#: includes/class-nda-admin.php:953
+#, php-format
+msgid "%d Demodaten-Signaturen wurden gelöscht."
+msgstr "%d demo imzası silindi."
+
+#: includes/class-nda-admin.php:964
+msgid ""
+"Nicht ausgeführt: das Register enthält echte Signaturen. Demodaten werden "
+"nicht mit ihnen verkettet und nicht aus einer Kette mit ihnen gelöscht, "
+"sonst verifiziert das Register nicht mehr."
+msgstr ""
+"Uygulanmadı: sicilde gerçek imzalar var. Demo verileri gerçek imzalarla "
+"zincirlenmez ve böyle bir zincirden silinmez."
+
+#: includes/class-nda-admin.php:970
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "Fabrika ayarları geri yüklendi:"
+
+#: includes/class-nda-admin.php:970
+msgid ""
+"Alle Signaturen wurden gelöscht, die Standard-NDA v1.0.0 wurde neu "
+"initialisiert und alle Optionen zurückgesetzt."
+msgstr ""
+"Tüm imzalar silindi, varsayılan NDA v1.0.0 yeniden başlatıldı ve tüm "
+"seçenekler sıfırlandı."
+
+#: includes/class-nda-admin.php:979
+msgid "Projektbezeichnung (Prototyp)"
+msgstr "Proje adı (prototip)"
+
+#: includes/class-nda-admin.php:982
+msgid ""
+"Erscheint im Modal. In den Vertragstext gelangt er nur, wenn die "
+"Standardfassung neu angelegt wird (Aktivierung ohne Fassung, "
+"Werkseinstellungen); die aktive Fassung ändert sich nicht."
+msgstr ""
+"Modal pencerede görünür. Sözleşme metnine yalnızca varsayılan sürüm yeniden "
+"oluşturulduğunda girer; etkin sürüm değişmez."
+
+#: includes/class-nda-admin.php:987
+msgid "Login-Checkbox erzwingen"
+msgstr "Girişte onay kutusunu zorunlu tut"
+
+#: includes/class-nda-admin.php:991
+msgid ""
+"Checkbox auf wp-login.php einblenden; Benutzer ohne Signatur der aktiven "
+"Version werden nach der Passwortprüfung ohne Häkchen abgewiesen."
+msgstr ""
+"wp-login.php üzerinde onay kutusu göster; etkin sürüm imzası olmayan "
+"kullanıcılar parola doğrulamasından sonra kutuyu işaretlemezse reddedilir."
+
+#: includes/class-nda-admin.php:997
+msgid "Admin-Gate (wp-admin)"
+msgstr "Yönetim kapısı (wp-admin)"
+
+#: includes/class-nda-admin.php:1001
+msgid ""
+"Benutzer ohne Signatur der aktuellen NDA-Version werden vor dem Aufbau jeder "
+"wp-admin-Seite auf die Signaturseite umgeleitet; admin-ajax antwortet mit "
+"HTTP 403."
+msgstr ""
+"Etkin NDA sürümü imzası olmayan kullanıcıları herhangi bir wp-admin ekranı "
+"oluşturulmadan imza sayfasına yönlendir; admin-ajax HTTP 403 döner."
+
+#: includes/class-nda-admin.php:1007
+msgid "Frontend-Gate (Prototyp / Staging)"
+msgstr "Ön yüz kapısı (prototip / staging)"
+
+#: includes/class-nda-admin.php:1011
+msgid ""
+"Angemeldete Benutzer ohne Signatur werden von jeder Frontend-Seite auf die "
+"Signaturseite umgeleitet (template_redirect). Nicht angemeldete Besucher "
+"sind davon nicht betroffen."
+msgstr ""
+"İmzası olmayan oturum açmış kullanıcıları tüm ön yüz sayfalarından imza "
+"sayfasına yönlendir (template_redirect). Anonim ziyaretçiler etkilenmez."
+
+#: includes/class-nda-admin.php:1017
+msgid "REST API Schutz"
+msgstr "REST API koruması"
+
+#: includes/class-nda-admin.php:1021
+msgid ""
+"REST-API-Endpunkte für Benutzer ohne aktive NDA-Signatur mit HTTP 403 "
+"Forbidden sperren."
+msgstr ""
+"Etkin NDA imzası olmayan kullanıcılar için REST API uç noktalarını HTTP 403 "
+"Forbidden ile engelle."
+
+#: includes/class-nda-admin.php:1027
+msgid "Forensisches Bildschirm-Wasserzeichen"
+msgstr "Adli ekran filigranı"
+
+#: includes/class-nda-admin.php:1031
+msgid ""
+"Legt über jede Seite ein schwaches Raster, das Konto-ID und Minute des "
+"Aufrufs trägt. Aus einem unskalierten Screenshot lässt es sich mit \"wp nda "
+"wasserzeichen-lesen\" zurücklesen."
+msgstr ""
+"Her sayfanın üzerine hesap kimliği ve sunum dakikasını taşıyan hafif bir "
+"ızgara yerleştirir. Ölçeklenmemiş ekran görüntüsünden \"wp nda wasserzeichen-"
+"lesen\" ile okunabilir."
+
+#: includes/class-nda-admin.php:1033
+msgid ""
+"Schwach heißt nicht unsichtbar: auf großen einfarbigen Flächen ist das "
+"Raster erkennbar. Es überlebt Zuschneiden und JPEG, nicht aber Skalieren, "
+"Drehen oder Abfotografieren. Es benennt das Konto, dem die Seite "
+"ausgeliefert wurde — nicht, wer den Screenshot gemacht hat. Standardmäßig "
+"aus."
+msgstr ""
+"Hafif demek görünmez demek değildir: geniş düz alanlarda ızgara seçilebilir. "
+"Kırpmaya ve JPEG'e dayanır; ölçekleme, döndürme veya ekran fotoğrafına "
+"dayanmaz. Varsayılan olarak kapalıdır."
+
+#: includes/class-nda-admin.php:1038
+msgid "Aufbewahrungsfrist"
+msgstr "Saklama süresi"
+
+#: includes/class-nda-admin.php:1040
+msgid "Tage"
+msgstr "gün"
+
+#: includes/class-nda-admin.php:1041
+msgid ""
+"Täglich angewendet: Bei Signaturen, die älter als diese Frist sind, werden "
+"Name, E-Mail-Adresse und Browserkennung ersetzt. Gelöscht wird nichts — eine "
+"gelöschte Zeile würde das Register unterbrechen. Konto-ID, Zeitstempel, "
+"Vertragsversion, IP-Pseudonym und Interaktionsnachweis bleiben, weil sie "
+"Teil der verketteten Signatur sind. Unter 30 Tagen bedeutet: alles behalten."
+msgstr ""
+"Her gün uygulanır: bu süreden eski imzalarda ad, e-posta adresi ve tarayıcı "
+"bilgisi değiştirilir. Hiçbir şey silinmez — silinen bir satır kaydı bölerdi. "
+"Hesap ID, zaman damgası, sözleşme sürümü, IP takma adı ve etkileşim kanıtı, "
+"zincirleme imzanın parçası oldukları için kalır. 30 günün altı şu anlama "
+"gelir: her şeyi koru."
+
+#: includes/class-nda-admin.php:1046
+msgid "Daten bei Deinstallation löschen"
+msgstr "Kaldırırken verileri sil"
+
+#: includes/class-nda-admin.php:1050
+msgid ""
+"Alle Plugin-Optionen, Benutzer-Metadaten sowie beide NDA-Register-Tabellen "
+"beim Löschen des Plugins endgültig entfernen."
+msgstr ""
+"Eklenti silindiğinde tüm eklenti seçeneklerini, kullanıcı meta verilerini ve "
+"her iki NDA sicil tablosunu kalıcı olarak kaldır."
+
+#: includes/class-nda-admin.php:1052
+msgid ""
+"Standardmäßig deaktiviert, damit ein versehentliches Löschen oder "
+"Neuinstallieren des Plugins keine gespeicherten Zustimmungsnachweise "
+"vernichtet."
+msgstr ""
+"Yanlışlıkla silme veya yeniden kurulumun kayıtlı onay kanıtlarını yok "
+"etmemesi için varsayılan olarak kapalıdır."
+
+#: includes/class-nda-admin.php:1059
+msgid "Einstellungen speichern"
+msgstr "Ayarları kaydet"
+
+#: includes/class-nda-admin.php:1068
+msgid "Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr "Demo veri yönetimi ve fabrika sıfırlaması"
+
+#: includes/class-nda-admin.php:1071
+msgid ""
+"Fünf Beispiel-Signaturen ohne WordPress-Konto für Präsentationen – nur in "
+"einem Register ohne echte Signaturen; gelöscht werden können sie nur, "
+"solange keine echten Signaturen mit ihnen verkettet sind. Oder das NDA Gate "
+"auf Werkseinstellungen zurücksetzen."
+msgstr ""
+"Sunumlar için WordPress hesabı olmayan beş örnek imza — yalnızca gerçek imza "
+"bulunmayan sicilde."
+
+#: includes/class-nda-admin.php:1080
+msgid "Demodaten importieren (5 Beispiel-Signaturen)"
+msgstr "Demo verilerini içe aktar (5 örnek imza)"
+
+#: includes/class-nda-admin.php:1085
+msgid ""
+"Demodaten löschen? Das geht nur, wenn das Register keine echten Signaturen "
+"enthält."
+msgstr ""
+"Demo verileri silinsin mi? Yalnızca sicilde gerçek imza yoksa mümkündür."
+
+#: includes/class-nda-admin.php:1089
+msgid "Demodaten bereinigen (Nur Test-Signaturen)"
+msgstr "Demo verilerini temizle (yalnızca test imzaları)"
+
+#: includes/class-nda-admin.php:1100
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "Tehlikeli Bölge: Fabrika Ayarlarına Sıfırla"
+
+#: includes/class-nda-admin.php:1103
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Signaturen und NDA-Versionen, "
+"stellt die Standard-NDA v1.0.0 wieder her und setzt alle Einstellungen auf "
+"die Werksstandards zurück."
+msgstr ""
+"Bu işlem TÜM imzaları ve NDA sürümlerini geri döndürülemez biçimde siler, "
+"varsayılan NDA v1.0.0'ı geri yükler ve ayarları sıfırlar."
+
+#: includes/class-nda-admin.php:1105
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Signaturen und setzt das NDA Gate "
+"vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"UYARI: emin misiniz? Bu işlem TÜM imzaları siler ve NDA Gate'i tamamen "
+"fabrika ayarlarına döndürür!"
+
+#: includes/class-nda-admin.php:1109
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "Fabrika Ayarlarını Geri Yükle (Factory Reset)"
+
+#: includes/class-nda-admin.php:1129
+msgid "4-Stufen Perimeter-Schutz"
+msgstr "4 aşamalı çevre koruması"
+
+#: includes/class-nda-admin.php:1130
+msgid ""
+"verlangt von angemeldeten Benutzern die Bestätigung der aktiven "
+"Vertraulichkeitsvereinbarung an vier Stellen: Login-Checkbox, Admin-"
+"Weiterleitung, Frontend-Weiterleitung und REST-Sperre."
+msgstr ""
+"oturum açmış kullanıcılardan etkin gizlilik sözleşmesini dört noktada "
+"onaylamalarını ister: giriş kutusu, yönetim yönlendirmesi, ön yüz "
+"yönlendirmesi ve REST kilidi."
+
+#: includes/class-nda-admin.php:1135
+msgid "Version-Bump & Re-Signing"
+msgstr "Sürüm yükseltme ve yeniden imzalama"
+
+#: includes/class-nda-admin.php:1138
+msgid ""
+"Wird der NDA-Vertragstext aktualisiert und eine neue Versionsnummer "
+"vergeben, müssen alle Benutzer den neuen Text vor dem nächsten Zugriff "
+"bestätigen. Die bisherigen Bestätigungen bleiben mit ihrer Fassung im "
+"Register und lassen sich weiter prüfen."
+msgstr ""
+"NDA metni güncellenip yeni bir sürüm numarası aldığında tüm kullanıcıların "
+"bir sonraki erişimden önce yeni metni onaylaması gerekir. Önceki onaylar "
+"kendi sürümleriyle sicilde kalır ve yine doğrulanabilir."
+
+#: includes/class-nda-admin.php:1144
+msgid ""
+"Jede Signatur ist ein HMAC-SHA256 über die Signatur der vorhergehenden "
+"Zustimmung, User-ID, Versions-ID, Vertrags-Hash, Zeitstempel und die "
+"pseudonymisierte IP; die Spitze der Kette ist mit demselben Schlüssel "
+"versiegelt. Eine geänderte, gelöschte oder eingeschleuste Zustimmung fällt "
+"auf, solange der Schlüssel (AUTH_KEY aus der wp-config.php, ohne ihn ein "
+"Salt aus der Datenbank) nicht bekannt ist; eine vorher kopierte ältere "
+"Kettenspitze, die zurückgespielt wird, fällt nicht auf. Ein neuer Schlüssel "
+"macht alle gespeicherten Signaturen unprüfbar. IP-Adressen werden als HMAC "
+"mit einem täglich wechselnden Salt gespeichert."
+msgstr ""
+"Her imza önceki imza, kullanıcı ID, sürüm ID, sözleşme özeti, zaman damgası "
+"ve takma adlı IP üzerinden hesaplanan bir HMAC-SHA256 değeridir; zincir ucu "
+"aynı anahtarla mühürlenir."
+
+#: includes/class-nda-admin.php:1148
+msgid "Handbuch:"
+msgstr "El kitabı:"
+
+#: includes/class-nda-admin.php:1149
+msgid "Vollständiges Handbuch öffnen"
+msgstr "Tam el kitabını aç"
+
+#: includes/class-nda-admin.php:1150
+msgid "Entwickelt von WM Suite."
+msgstr "WM Suite tarafından geliştirildi."
+
+#: includes/class-nda-admin.php:1159 includes/class-nda-exporter.php:38
+#: includes/class-nda-exporter.php:124
+msgid "Unzureichende Berechtigungen."
+msgstr "Yetersiz yetki."
+
+#: includes/class-nda-admin.php:1167
+msgid "WM Prototype NDA Gate — Handbuch"
+msgstr "WM Prototype NDA Gate — El Kitabı"
+
+#: includes/class-nda-admin.php:1168
+msgid "Die vier Prüfstellen, das Signatur-Register, Hooks und Grenzen."
+msgstr "Dört kontrol noktası, imza sicili, kancalar ve sınırlar."
+
+#: includes/class-nda-admin.php:1179
+msgid "1. 4-Stufen Perimeter-Interzeption"
+msgstr "1. 4 aşamalı erişim yakalama"
+
+#: includes/class-nda-admin.php:1181
+msgid ""
+"Angemeldete Benutzer ohne Signatur der aktiven Version werden an vier "
+"Stellen angehalten:"
+msgstr ""
+"Etkin sürüm imzası olmayan oturum açmış kullanıcılar dört noktada durdurulur:"
+
+#: includes/class-nda-admin.php:1183
+msgid "Ebene 1 (wp-login.php):"
+msgstr "Aşama 1 (wp-login.php):"
+
+#: includes/class-nda-admin.php:1183
+msgid ""
+"Checkbox (24 × 24 px) auf wp-login.php; nach der Passwortprüfung wird die "
+"Anmeldung ohne Häkchen abgewiesen, wenn keine Signatur der aktiven Version "
+"vorliegt."
+msgstr ""
+"wp-login.php üzerinde onay kutusu (24 × 24 px); parola kontrolünden sonra "
+"etkin imza yoksa işaretsiz giriş reddedilir."
+
+#: includes/class-nda-admin.php:1184
+msgid "Ebene 2 (Frontend / Staging):"
+msgstr "Aşama 2 (Ön yüz / Staging):"
+
+#: includes/class-nda-admin.php:1184
+msgid ""
+"Leitet angemeldete Benutzer ohne Signatur bei template_redirect auf die "
+"Signaturseite um, bevor das Theme etwas ausgibt."
+msgstr ""
+"İmzası olmayan oturum açmış kullanıcıları template_redirect aşamasında tema "
+"çıktı vermeden önce imza sayfasına yönlendirir."
+
+#: includes/class-nda-admin.php:1185
+msgid "Ebene 3 (REST-API):"
+msgstr "Aşama 3 (REST API):"
+
+#: includes/class-nda-admin.php:1185
+msgid ""
+"Antwortet angemeldeten Benutzern ohne Signatur mit HTTP 403 "
+"(rest_forbidden); ausgenommen sind /wm-nda/v1/, /wp/v2/users/me und /wm-hub/"
+"v1/ (Filter wm_nda_whitelisted_routes). Anonyme Anfragen sind nicht "
+"betroffen."
+msgstr ""
+"İmzası olmayan oturum açmış kullanıcılara /wm-nda/v1/, /wp/v2/users/me ve /"
+"wm-hub/v1/ dışında HTTP 403 (rest_forbidden) döner "
+"(wm_nda_whitelisted_routes filtresi)."
+
+#: includes/class-nda-admin.php:1186
+msgid "Ebene 4 (wp-admin):"
+msgstr "Aşama 4 (wp-admin):"
+
+#: includes/class-nda-admin.php:1186
+msgid ""
+"Leitet bei admin_init auf die Signaturseite um, bevor eine wp-admin-Seite "
+"aufgebaut wird; dort das Vollbild-Modal mit WAI-ARIA Focus-Trap. admin-ajax "
+"antwortet mit HTTP 403."
+msgstr ""
+"admin_init aşamasında wp-admin ekranı kurulmadan önce tam ekran modal ve WAI-"
+"ARIA odak tuzağı bulunan imza sayfasına yönlendirir. admin-ajax HTTP 403 "
+"döner."
+
+#: includes/class-nda-admin.php:1194
+msgid "2. Der mitgelieferte Vertragstext"
+msgstr "2. Birlikte gelen sözleşme metni"
+
+#: includes/class-nda-admin.php:1196
+msgid ""
+"Der mitgelieferte Text ist ein Muster ohne juristische Prüfung und nennt "
+"keine Vorschriften. Er beschreibt den Gegenstand, die Pflichten, was bei "
+"einer Zustimmung gespeichert wird, und dass der Zugang bei einem Verstoß "
+"gesperrt werden kann."
+msgstr ""
+"Birlikte gelen metin, hukuki incelemeden geçmemiş bir örnektir ve hiçbir "
+"mevzuata atıf yapmaz. Konuyu, yükümlülükleri, onay verildiğinde nelerin "
+"saklandığını ve ihlal durumunda erişimin engellenebileceğini açıklar."
+
+#: includes/class-nda-admin.php:1197
+msgid ""
+"Ob Vereinbarung und Maßnahmen im Einzelfall tragen, beurteilt das Plugin "
+"nicht. Lassen Sie den Text prüfen und veröffentlichen Sie Ihre Fassung im "
+"Reiter \"Versionen\"; bereits veröffentlichte Versionen behalten ihren Text "
+"und ihre Signaturen."
+msgstr ""
+"Eklenti, sözleşmenin ve önlemlerin somut bir durumda geçerli olup olmadığını "
+"değerlendirmez. Metni inceletin ve kendi sürümünüzü \"Sürümler\" sekmesinde "
+"yayımlayın; daha önce yayımlanan sürümler metinlerini ve imzalarını korur."
+
+#: includes/class-nda-admin.php:1205
+msgid "3. Signatur-Kryptogramm & Entwickler-Hooks"
+msgstr "3. İmza kriptogramı ve geliştirici kancaları"
+
+#: includes/class-nda-admin.php:1207
+msgid ""
+"Bei jeder Bestätigung wird eine HMAC-SHA256-Signatur berechnet, die die "
+"vorherige Signatur einschließt:"
+msgstr "Her onayda önceki imzayı da içeren bir HMAC-SHA256 imzası hesaplanır:"
+
+#: includes/class-nda-admin.php:1213
+msgid "Entwickler-Action Hook:"
+msgstr "Geliştirici eylem kancası:"
+
+#: includes/class-nda-admin.php:1232
+msgid "4. Wichtige Hinweise, Gotchas & Best Practices"
+msgstr "4. Önemli notlar, incelikler ve iyi uygulamalar"
+
+#: includes/class-nda-admin.php:1235
+msgid "Version Bump & Re-Signing:"
+msgstr "Sürüm yükseltme ve yeniden imzalama:"
+
+#: includes/class-nda-admin.php:1235
+msgid ""
+"Sobald Sie im Reiter \"Versionen\" eine neue Version anlegen, muss jeder "
+"Benutzer die neue Fassung bestätigen; die bisherigen Bestätigungen bleiben "
+"mit ihrer Fassung im Register."
+msgstr ""
+"\"Sürümler\" sekmesinde yeni bir sürüm oluşturduğunuz anda her kullanıcının "
+"yeni sürümü onaylaması gerekir; önceki onaylar kendi sürümleriyle sicilde "
+"kalır."
+
+#: includes/class-nda-admin.php:1236
+msgid "WP-CLI & Cron-Automatisierung:"
+msgstr "WP-CLI ve Cron otomasyonu:"
+
+#: includes/class-nda-admin.php:1236
+msgid ""
+"Hintergrund-Crons und CLI-Befehle werden automatisch vom Gate ausgenommen, "
+"um Serverprozesse nicht zu blockieren."
+msgstr ""
+"Arka plan cron görevleri ve WP-CLI komutları sunucu süreçlerini engellememek "
+"için kapıdan otomatik muaf tutulur."
+
+#: includes/class-nda-admin.php:1237
+msgid "Export:"
+msgstr "Dışa aktarım:"
+
+#: includes/class-nda-admin.php:1237
+msgid ""
+"Unter \"Export\" gibt es CSV und JSON; das JSON enthält das Prüfergebnis des "
+"Registers und eine Prüfsumme über die Datei. Einen PDF-Export gibt es nicht."
+msgstr ""
+"\"Dışa Aktar\" altında CSV ve JSON bulunur; JSON sicil doğrulama sonucunu ve "
+"dosya sağlama toplamını içerir. PDF dışa aktarımı yoktur."
+
+#: includes/class-nda-admin.php:1238
+msgid "Interaktionsnachweis:"
+msgstr "Etkileşim kanıtı:"
+
+#: includes/class-nda-admin.php:1238
+msgid ""
+"Der Browser meldet bei der Bestätigung Eingabegerät, Verweildauer, "
+"Zeigerweg, gelesenen Anteil und Sichtfenster. Diese Angaben gehen in die "
+"Signatur ein, sind danach also nicht mehr änderbar, ohne die Kette zu "
+"brechen — aber sie stammen vom Client: sie zeigen, dass der Dialog bedient "
+"wurde, nicht von wem. Bestätigungen ohne JavaScript und alle vor dem "
+"16.09.2026 tragen keinen."
+msgstr ""
+"Onay sırasında tarayıcı giriş aygıtını, süreyi, işaretçi yolunu, kaydırılan "
+"oranı ve görünüm alanını bildirir. Bu bilgiler imzaya mühürlenir ancak "
+"istemciden gelir."
+
+#: includes/class-nda-core.php:97 includes/class-nda-core.php:119
+msgid "WM NDA Gate — Status"
+msgstr "WM NDA Gate — Durum"
+
+#: includes/class-nda-core.php:123
+msgid ""
+"Zeigt den aktuellen NDA-Bestätigungsstatus oder die aktive Vertragsversion "
+"an."
+msgstr "Geçerli NDA onay durumunu veya etkin sözleşme sürümünü gösterir."
+
+#: includes/class-nda-core.php:197
+msgid "Nicht angemeldet"
+msgstr "Oturum açılmadı"
+
+#: includes/class-nda-core.php:199
+msgid "Keine aktive Vereinbarung"
+msgstr "Etkin sözleşme yok"
+
+#. translators: %s: active NDA version string
+#: includes/class-nda-core.php:203
+#, php-format
+msgid "NDA v%s bestätigt"
+msgstr "NDA v%s onaylandı"
+
+#. translators: %s: active NDA version string
+#: includes/class-nda-core.php:209
+#, php-format
+msgid "NDA v%s ausstehend"
+msgstr "NDA v%s bekliyor"
+
+#. translators: %d: previously recorded number of acceptances
+#: includes/class-nda-database.php:617
+#, php-format
+msgid ""
+"Das Register ist leer, obwohl zuletzt %d Zustimmungen verzeichnet waren."
+msgstr "En son %d onay kayıtlı olmasına rağmen sicil boş."
+
+#: includes/class-nda-database.php:720
+msgid "Ein unsignierter Datensatz wurde nachträglich in die Kette eingefügt."
+msgstr "Zincire sonradan imzasız bir kayıt eklenmiş."
+
+#. translators: %d: acceptance id
+#: includes/class-nda-database.php:725
+#, php-format
+msgid ""
+"Kettenbruch bei Zustimmung #%d: eine Zustimmung wurde gelöscht, "
+"eingeschleust oder umsortiert."
+msgstr ""
+"#%d numaralı onayda zincir kırılması: bir onay silinmiş, araya eklenmiş veya "
+"yeniden sıralanmış."
+
+#: includes/class-nda-database.php:734
+msgid ""
+"Keine gespeicherte Signatur passt zum Schlüssel dieser Installation: der "
+"Signaturschlüssel (AUTH_KEY) wurde geändert, das Register stammt aus einer "
+"anderen Installation, oder jede Zeile wurde verändert. Mit diesem Schlüssel "
+"lässt sich das nicht unterscheiden."
+msgstr ""
+"Kayıtlı hiçbir imza bu kurulumun anahtarıyla eşleşmiyor: AUTH_KEY değişmiş, "
+"sicil başka kurulumdan gelmiş veya tüm satırlar değiştirilmiş."
+
+#. translators: %d: acceptance id
+#: includes/class-nda-database.php:739
+#, php-format
+msgid ""
+"Die Signatur der Zustimmung #%d passt nicht zu ihrem Inhalt: der Datensatz "
+"wurde nachträglich verändert oder mit einem anderen Schlüssel signiert."
+msgstr ""
+"#%d numaralı onayın imzası içeriğiyle uyuşmuyor: kayıt sonradan "
+"değiştirilmiş veya başka anahtarla imzalanmış."
+
+#: includes/class-nda-database.php:750
+msgid ""
+"Die Kettenspitze (Option wm_nda_register_tip) fehlt: ob die neuesten "
+"Zustimmungen entfernt wurden, lässt sich nicht prüfen."
+msgstr ""
+"Zincir ucu (wm_nda_register_tip seçeneği) eksik: en yeni onayların silinip "
+"silinmediği doğrulanamıyor."
+
+#: includes/class-nda-database.php:754
+msgid ""
+"Die Kettenspitze trägt kein Siegel: ob die neuesten Zustimmungen entfernt "
+"wurden, lässt sich nicht prüfen."
+msgstr ""
+"Zincir ucunda mühür yok: en yeni onayların silinip silinmediği "
+"doğrulanamıyor."
+
+#: includes/class-nda-database.php:762
+msgid ""
+"Das Siegel der Kettenspitze passt nicht zu ihrem Inhalt: die Option wurde "
+"ohne den Schlüssel verändert."
+msgstr ""
+"Zincir ucunun mührü içeriğiyle uyuşmuyor: seçenek anahtar olmadan "
+"değiştirilmiş."
+
+#. translators: 1: rows present, 2: rows recorded in the sealed tip
+#: includes/class-nda-database.php:768
+#, php-format
+msgid ""
+"Das Ende des Registers passt nicht zur versiegelten Kettenspitze (%1$d "
+"Zustimmungen vorhanden, %2$d verzeichnet): Zustimmungen wurden entfernt oder "
+"ohne Signatur angehängt."
+msgstr ""
+"Sicil sonu mühürlü zincir ucuyla uyuşmuyor (%1$d mevcut onay, %2$d kayıtlı): "
+"onaylar silinmiş veya imzasız eklenmiş."
+
+#: includes/class-nda-database.php:788
+msgid ""
+"Der Signaturschlüssel dieser Installation ist ein anderer als der, mit dem "
+"das Register versiegelt wurde (AUTH_KEY geändert oder Datenbank aus einer "
+"anderen Installation übernommen). Die gespeicherten Signaturen lassen sich "
+"mit diesem Schlüssel nicht prüfen."
+msgstr ""
+"Bu kurulumun imzalama anahtarı sicili mühürleyen anahtardan farklı (AUTH_KEY "
+"değişmiş veya veritabanı başka kurulumdan kopyalanmış)."
+
+#: includes/class-nda-evidence.php:177
+msgid "Maus"
+msgstr "Fare"
+
+#: includes/class-nda-evidence.php:178
+msgid "Stift"
+msgstr "Kalem / Stylus"
+
+#: includes/class-nda-evidence.php:179
+msgid "Touch"
+msgstr "Dokunmatik"
+
+#: includes/class-nda-evidence.php:180 includes/class-nda-evidence.php:193
+msgid "Tastatur"
+msgstr "Klavye"
+
+#: includes/class-nda-evidence.php:181
+msgid "nicht erkannt"
+msgstr "algılanmadı"
+
+#: includes/class-nda-evidence.php:185
+msgid "Eingabegerät"
+msgstr "Giriş aygıtı"
+
+#: includes/class-nda-evidence.php:191
+msgid "Bestätigt per"
+msgstr "Onay yöntemi"
+
+#: includes/class-nda-evidence.php:194
+msgid "Zeigegerät"
+msgstr "İşaret aygıtı"
+
+#: includes/class-nda-evidence.php:200
+msgid "Zeit im Dialog"
+msgstr "Pencerede geçen süre"
+
+#: includes/class-nda-evidence.php:207
+msgid "Zwischen Häkchen und Bestätigung"
+msgstr "İşaretleme ile onay arası"
+
+#: includes/class-nda-evidence.php:214
+msgid "Gelesener Anteil des Textfensters"
+msgstr "Metin penceresinin okunan oranı"
+
+#. translators: %d: percentage of the scrollable agreement text that was scrolled through
+#: includes/class-nda-evidence.php:216
+#, php-format
+msgid "%d %% durchgeblättert"
+msgstr "%d %% kaydırıldı"
+
+#: includes/class-nda-evidence.php:222
+msgid "Zeigerbewegung"
+msgstr "İşaretçi hareketi"
+
+#. translators: 1: number of pointer samples, 2: travelled distance in CSS pixels
+#: includes/class-nda-evidence.php:225
+#, php-format
+msgid "%1$d Messpunkte, %2$d px Weg"
+msgstr "%1$d örnek, %2$d px yol"
+
+#: includes/class-nda-evidence.php:234
+msgid "Höchster Druckwert"
+msgstr "En yüksek basınç değeri"
+
+#: includes/class-nda-evidence.php:241
+msgid "Sichtfenster"
+msgstr "Görünüm penceresi"
+
+#: includes/class-nda-evidence.php:248
+msgid "Zeitzonenversatz des Geräts"
+msgstr "Cihaz saat dilimi farkı"
+
+#. translators: %s: signed offset from UTC in minutes, as reported by the browser
+#: includes/class-nda-evidence.php:250
+#, php-format
+msgid "%s Minuten gegenüber UTC"
+msgstr "UTC'ye göre %s dakika"
+
+#: includes/class-nda-evidence.php:262
+msgid "Kein Interaktionsnachweis"
+msgstr "Etkileşim kanıtı yok"
+
+#. translators: %s: duration in seconds with one decimal
+#: includes/class-nda-evidence.php:280
+#, php-format
+msgid "%s s"
+msgstr "%s sn"
+
+#: includes/class-nda-evidence.php:292
+msgid "kein Drucksensor (Zeigegerät meldet den Festwert 0,5)"
+msgstr "basınç sensörü yok (işaret aygıtı sabit 0,5 değerini bildirir)"
+
+#. translators: %s: pressure between 0 and 1 with two decimals
+#: includes/class-nda-evidence.php:297
+#, php-format
+msgid "%s von 1,0"
+msgstr "%s / 1,0"
+
+#: includes/class-nda-exporter.php:216 includes/class-nda-exporter.php:227
+msgid "WM Prototype NDA Gate Signaturen"
+msgstr "WM Prototype NDA Gate İmzaları"
+
+#: includes/class-nda-exporter.php:273
+msgid "NDA Vereinbarung"
+msgstr "NDA Sözleşmesi"
+
+#: includes/class-nda-exporter.php:281
+msgid "Unterzeichner Name"
+msgstr "İmzalayan adı"
+
+#: includes/class-nda-exporter.php:285
+msgid "Unterzeichner E-Mail"
+msgstr "İmzalayan e-postası"
+
+#: includes/class-nda-exporter.php:293
+msgid "Signatur-Hash (SHA-256)"
+msgstr "İmza özeti (SHA-256)"
+
+#: includes/class-nda-exporter.php:309
+msgid "Prototyp NDA Signaturen"
+msgstr "Prototip NDA İmzaları"
+
+#. translators: %d: Number of signature records
+#: includes/class-nda-exporter.php:372
+#, php-format
+msgid ""
+"%d NDA-Signaturdatensätze wurden pseudonymisiert: Name, E-Mail-Adresse und "
+"User-Agent sind ersetzt."
+msgstr ""
+"%d NDA imza kaydı takma adlandırıldı: ad, e-posta adresi ve user-agent "
+"değiştirildi."
+
+#: includes/class-nda-exporter.php:375
+msgid ""
+"Beibehalten, weil sie Teil der verketteten Signatur sind: Konto-ID, Signatur-"
+"Hash, Zeitstempel, Vertragsversion, das tagesgesalzene IP-Pseudonym und der "
+"Interaktionsnachweis (Eingabegerät, Dauer, Zeigerweg, Sichtfenster, "
+"Zeitzonenversatz). Die Konto-ID verweist weiter auf das WordPress-Konto, wer "
+"den Salt kennt, kann das IP-Pseudonym gegen Kandidaten-Adressen prüfen, und "
+"Sichtfenster und Zeitzonenversatz beschreiben das benutzte Gerät."
+msgstr ""
+"Zincirleme imzanın parçası oldukları için korunur: hesap ID, imza özeti, "
+"zaman damgası, sözleşme sürümü, günlük tuzlanmış IP takma adı ve etkileşim "
+"kanıtı (giriş aygıtı, süre, işaretçi yolu, görünüm alanı, saat dilimi "
+"farkı). Hesap ID hâlâ WordPress hesabına işaret eder, tuzu bilen biri IP "
+"takma adını aday adreslere karşı test edebilir ve görünüm alanı ile saat "
+"dilimi farkı kullanılan cihazı tanımlar."
+
+#: includes/class-nda-i18n.php:49
+msgid ""
+"Ich habe die Vertraulichkeitsvereinbarung (NDA) für dieses Prototyp-System "
+"gelesen und stimme ihr zu."
+msgstr ""
+"Bu prototip sistemi için gizlilik sözleşmesini (NDA) okudum ve kabul "
+"ediyorum."
+
+#: includes/class-nda-i18n.php:56
+msgid "Zwingende Vertraulichkeitsverpflichtung (NDA)"
+msgstr "Zorunlu Gizlilik Yükümlülüğü (NDA)"
+
+#: includes/class-nda-i18n.php:63
+msgid "NDA akzeptieren & fortfahren"
+msgstr "NDA'yı kabul et ve devam et"
+
+#: includes/class-nda-i18n.php:70
+msgid "Ablehnen & Abmelden"
+msgstr "Reddet ve çıkış yap"
+
+#: includes/class-nda-i18n.php:81
+msgid ""
+"Bitte bestätigen Sie die Vertraulichkeitsvereinbarung (NDA) mit dem Kästchen "
+"unter dem Passwort, um sich anzumelden. Für die aktuelle Fassung liegt von "
+"Ihnen noch keine Bestätigung vor."
+msgstr ""
+"Giriş yapmak için parolanın altındaki kutucukla gizlilik sözleşmesini (NDA) "
+"onaylayın. Geçerli sürüm için henüz kayıtlı onayınız bulunmuyor."
+
+#: includes/class-nda-i18n.php:85
+msgid "Der Anmeldeversuch wurde forensisch erfasst."
+msgstr "Giriş denemesi adli olarak kaydedildi."
+
+#: includes/class-nda-i18n.php:86
+msgid "Der Anmeldeversuch wurde protokolliert."
+msgstr "Giriş denemesi günlüğe kaydedildi."
+
+#: includes/class-nda-i18n.php:94
+msgid ""
+"Bitte bestätigen Sie zuerst die aktuelle Vertraulichkeitsvereinbarung (NDA)."
+msgstr "Lütfen önce geçerli gizlilik sözleşmesini (NDA) onaylayın."
+
+#: includes/class-nda-interceptor.php:75
+msgid "[Vollständigen NDA-Text lesen]"
+msgstr "[Tam NDA metnini oku]"
+
+#: includes/class-nda-interceptor.php:79
+msgid "Nur nötig, wenn Sie die aktuelle Fassung noch nicht bestätigt haben."
+msgstr "Yalnızca geçerli sürümü henüz onaylamadıysanız gereklidir."
+
+#: includes/class-nda-interceptor.php:206
+#: includes/class-nda-interceptor.php:234
+msgid "Fehler:"
+msgstr "Hata:"
+
+#: includes/class-nda-interceptor.php:234
+msgid ""
+"Ihre Bestätigung konnte nicht gespeichert werden; die Anmeldung wurde "
+"deshalb nicht fortgesetzt. Bitte versuchen Sie es erneut."
+msgstr ""
+"Onayınız kaydedilemedi; bu nedenle giriş tamamlanmadı. Lütfen tekrar deneyin."
+
+#: includes/class-nda-interceptor.php:338
+msgid "NDA"
+msgstr "NDA"
+
+#: includes/class-nda-modal.php:38
+msgid "Zustimmung gespeichert. Weiterleitung …"
+msgstr "Onay kaydedildi. Yönlendiriliyor …"
+
+#: includes/class-nda-modal.php:38
+msgid "Fehler bei der Signaturübermittlung."
+msgstr "İmza gönderilirken hata oluştu."
+
+#: includes/class-nda-modal.php:38
+msgid "Netzwerkfehler:"
+msgstr "Ağ hatası:"
+
+#: includes/class-nda-modal.php:58
+msgid "Vertragstext der Geheimhaltungsvereinbarung"
+msgstr "Gizlilik sözleşmesi metni"
+
+#: includes/class-nda-modal.php:63
+msgid ""
+"Hinweis: Der Zugang zu diesem Prototyp setzt Ihre Zustimmung zur folgenden "
+"Vereinbarung voraus. Gespeichert werden Benutzer-ID, E-Mail-Adresse, "
+"Anzeigename, User-Agent, Zeitpunkt, die Prüfsumme des Textes, ein Pseudonym "
+"Ihrer IP-Adresse und der Interaktionsnachweis."
+msgstr ""
+"Not: Bu prototipe erişim, aşağıdaki sözleşmeye onay vermenizi gerektirir. "
+"Kullanıcı kimliği, e-posta adresi, görünen ad, kullanıcı aracısı, zaman, "
+"metnin sağlama toplamı, IP adresinizin takma adı ve etkileşim kanıtı "
+"saklanır."
+
+#: includes/class-nda-modal.php:72
+msgid "Dokumenten-Prüfsumme (SHA-256):"
+msgstr "Belge sağlama toplamı (SHA-256):"
+
+#: includes/class-nda-rest-api.php:38
+msgid "Vom Browser gemeldete Interaktionsdaten der Click-Wrap-Bestätigung."
+msgstr "Tarayıcı tarafından bildirilen click-wrap etkileşim verileri."
+
+#: includes/class-nda-rest-api.php:105 includes/class-nda-rest-api.php:154
+msgid "Zu viele Anfragen. Bitte warten Sie eine Minute."
+msgstr "Çok fazla istek. Lütfen bir dakika bekleyin."
+
+#: includes/class-nda-rest-api.php:120
+msgid "Authentifizierung erforderlich."
+msgstr "Kimlik doğrulama gerekli."
+
+#: includes/class-nda-rest-api.php:167
+msgid "Die angeforderte NDA-Version ist nicht die aktive Fassung."
+msgstr "İstenen NDA sürümü etkin sürüm değil."
+
+#: includes/class-nda-rest-api.php:188
+msgid "Fehler beim Speichern der Signatur in der Datenbank."
+msgstr "İmza veritabanına kaydedilirken hata oluştu."
+
+#: includes/class-nda-rest-api.php:196
+msgid "NDA-Zustimmung gespeichert."
+msgstr "NDA onayı kaydedildi."
+
+#: includes/class-nda-rest-api.php:238
+msgid "Für andere Benutzer ist diese Auskunft Administratoren vorbehalten."
+msgstr "Diğer kullanıcılara ilişkin bu bilgi yalnızca yöneticilere açıktır."
+
+#: includes/class-nda-rest-api.php:266
+msgid "Keine aktive Vertraulichkeitsvereinbarung konfiguriert."
+msgstr "Yapılandırılmış etkin bir gizlilik sözleşmesi yok."
+
+#: includes/class-nda-watermark.php:340
+msgid ""
+"Die PHP-Erweiterung GD fehlt; ohne sie lässt sich kein Screenshot lesen."
+msgstr "PHP GD eklentisi eksik; onsuz ekran görüntüsü okunamaz."
+
+#: includes/class-nda-watermark.php:344
+msgid "Datei nicht lesbar."
+msgstr "Dosya okunamıyor."
+
+#: includes/class-nda-watermark.php:349
+msgid "Die Datei ist kein lesbares Bild (PNG, JPEG oder WebP)."
+msgstr "Dosya okunabilir bir görsel değil (PNG, JPEG veya WebP)."
+
+#: includes/class-nda-watermark.php:442
+msgid "Das Bild ist kleiner als ein Block des Musters."
+msgstr "Görsel, desenin tek bir bloğundan daha küçük."
+
+#: includes/class-nda-watermark.php:468
+msgid ""
+"Kein Wasserzeichen gefunden: die Prüfsumme keines gefundenen Rasters passt. "
+"Entweder trägt das Bild keines, es stammt aus einer anderen Installation, "
+"oder es wurde skaliert, gedreht oder zu stark komprimiert."
+msgstr ""
+"Filigran bulunamadı: tespit edilen hiçbir ızgaranın sağlama toplamı "
+"eşleşmiyor."
+
+#: wm-prototype-nda-gate.php:244
+msgid "Signatur-Protokoll"
+msgstr "İmza günlüğü"
+
+#: wm-prototype-nda-gate.php:262
+msgid "NDA-Vertragstext bearbeiten"
+msgstr "NDA sözleşme metnini düzenle"

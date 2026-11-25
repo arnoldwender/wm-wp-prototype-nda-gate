@@ -1,0 +1,26 @@
+# WM Prototype NDA Gate
+
+> WordPress plugin that asks logged-in users to accept a confidentiality agreement at login (after the password check), before wp-admin and frontend pages and on REST routes, and keeps every acceptance in an HMAC-chained register with a sealed tip, verification and CSV/JSON export. Anonymous visitors are not gated; the plugin makes no legal assessment.
+
+## Overview
+
+
+- REST: `wm-nda/v1` — `POST /accept`, `GET /verify`, `GET /register-integrity` (administrators), `GET /active-terms`
+- WP-CLI: `wp nda status`, `list`, `verify`, `demodaten`, `retention`, `wasserzeichen-lesen`, `wasserzeichen-probe`
+- Block Bindings & GenerateBlocks: `wm-nda/status` (WP 6.5+) and `{{wm_nda_status}}` (GenerateBlocks 2.x)
+- Storage: `wp_wm_nda_terms`, `wp_wm_nda_acceptances`, options `wm_nda_register_tip` (sealed), `wm_nda_cache_salt`, `wm_nda_delete_data_on_uninstall` (opt-in uninstall, default `0`)
+- Documentation measured against the code on 2026-09-15: README.md, DEVELOPERS.md, docs/
+- Version 1.3.4.
+
+## Standards
+
+- PHP 8.2+ with strict types in every shipped file; WordPress coding style
+- Zero-CDN Invariant (self-hosted assets in `/assets/`)
+- Nonce & Capability Verification / Late Escaping
+- Standalone test suite with a mutation check; read-only runtime check inside WordPress
+
+## Official Links
+
+- Plugin Page: https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/
+- GitHub Repository: https://github.com/arnoldwender/wm-wp-prototype-nda-gate
+- Support & Liability: Zero support — reproducible bugs on https://github.com/arnoldwender/wm-wp-prototype-nda-gate/issues only · no private support · AS IS / no liability (SUPPORT.md)

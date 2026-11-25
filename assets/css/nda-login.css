@@ -1,0 +1,84 @@
+/**
+ * WM Suite Prototype NDA Gate — checkbox on wp-login.php.
+ *
+ * The tokens live on the field itself (the login screen loads no family sheet); tests/test-suite.php measures
+ * the text pairs from these values.
+ */
+
+.wm-nda-login-field {
+	--wm-nda-login-bg: #f0f6fc;
+	--wm-nda-login-border: #c8d7e1;
+	--wm-nda-login-accent: #2271b1;
+	--wm-nda-login-text: #1d2327;
+	--wm-nda-login-link: #2271b1;
+	--wm-nda-login-link-hover: #135e96;
+	--wm-nda-login-space-1: 4px;
+	--wm-nda-login-space-2: 10px;
+	--wm-nda-login-space-3: 12px;
+	--wm-nda-login-space-4: 16px;
+	--wm-nda-login-space-5: 20px;
+	--wm-nda-login-radius: 4px;
+	--wm-nda-login-text-size: 13px;
+	--wm-nda-login-control-size: 24px;
+
+	margin-top: var(--wm-nda-login-space-4);
+	margin-bottom: var(--wm-nda-login-space-5);
+	padding: var(--wm-nda-login-space-3);
+	background: var(--wm-nda-login-bg);
+	border: 1px solid var(--wm-nda-login-border);
+	border-left: 4px solid var(--wm-nda-login-accent);
+	border-radius: var(--wm-nda-login-radius);
+	box-sizing: border-box;
+}
+
+.wm-nda-login-label {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--wm-nda-login-space-2);
+	font-size: var(--wm-nda-login-text-size);
+	line-height: 1.5;
+	color: var(--wm-nda-login-text);
+	cursor: pointer;
+	user-select: none;
+}
+
+.wm-nda-login-label input[type="checkbox"] {
+	min-width: var(--wm-nda-login-control-size);
+	min-height: var(--wm-nda-login-control-size);
+	width: var(--wm-nda-login-control-size);
+	height: var(--wm-nda-login-control-size);
+	margin: 0;
+	margin-top: 2px;
+	cursor: pointer;
+	accent-color: var(--wm-nda-login-accent);
+	flex-shrink: 0;
+}
+
+.wm-nda-login-label input[type="checkbox"]:focus {
+	outline: 2px solid var(--wm-nda-login-accent);
+	outline-offset: 2px;
+}
+
+.wm-nda-login-text {
+	display: inline-block;
+}
+
+.wm-nda-open-modal-link {
+	display: inline-block;
+	margin-top: var(--wm-nda-login-space-1);
+	background: none;
+	border: none;
+	padding: 0;
+	color: var(--wm-nda-login-link);
+	font-size: var(--wm-nda-login-text-size);
+	font-weight: 600;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.wm-nda-open-modal-link:hover,
+.wm-nda-open-modal-link:focus {
+	color: var(--wm-nda-login-link-hover);
+	outline: 2px solid var(--wm-nda-login-accent);
+	outline-offset: 2px;
+}

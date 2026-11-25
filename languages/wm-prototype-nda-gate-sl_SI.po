@@ -1,0 +1,1463 @@
+# Translation of wm-prototype-nda-gate in sl_SI
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-prototype-nda-gate 1.3.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-prototype-nda-"
+"gate\n"
+"POT-Creation-Date: 2026-11-22T00:26:19+00:00\n"
+"PO-Revision-Date: 2026-11-22 01:31+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-prototype-"
+"nda-gate/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-prototype-nda-"
+"gate/issues>\n"
+"Language: sl_SI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-prototype-nda-gate\n"
+
+#. Plugin Name of the plugin
+#: wm-prototype-nda-gate.php includes/class-nda-admin.php:1130
+msgid "WM Prototype NDA Gate"
+msgstr "WM Prototype NDA Gate"
+
+#. Plugin URI of the plugin
+#: wm-prototype-nda-gate.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/"
+
+#. Description of the plugin
+#: wm-prototype-nda-gate.php
+msgid ""
+"Verlangt von angemeldeten Benutzern die Bestätigung einer "
+"Vertraulichkeitsvereinbarung vor Login, wp-admin, Frontend und REST und "
+"speichert jede Bestätigung in einem verketteten HMAC-Register mit CSV- und "
+"JSON-Export. Keine rechtliche Bewertung."
+msgstr ""
+"Od prijavljenih uporabnikov zahteva potrditev dogovora o zaupnosti pred wp-"
+"login, wp-admin, predstavitvenim delom in REST ter vsako potrditev shrani v "
+"verižni register HMAC z izvozom CSV in JSON. Brez pravne presoje."
+
+#. Author of the plugin
+#: wm-prototype-nda-gate.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-prototype-nda-gate.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-nda-admin.php:51
+msgid "WM Prototype NDA Gate — Signaturen"
+msgstr "WM Prototype NDA Gate — Podpisi"
+
+#: includes/class-nda-admin.php:69
+msgid "NDA-Gate aktiv (Admin- und/oder Frontend-Gate an)"
+msgstr "Vrata NDA aktivna (vključena skrbniška in/ali sprednja zaščita)"
+
+#: includes/class-nda-admin.php:69
+msgid "NDA-Schranke deaktiviert (Admin- und Frontend-Gate aus)"
+msgstr "Vrata NDA izklopljena (skrbniška in sprednja zaščita izklopljeni)"
+
+#: includes/class-nda-admin.php:71
+msgid "Verkettetes Signatur-Register (HMAC-SHA256)"
+msgstr "Verižni register podpisov (HMAC-SHA256)"
+
+#: includes/class-nda-admin.php:78
+msgid "Signiert (aktive Version)"
+msgstr "Podpisano (aktivna različica)"
+
+#: includes/class-nda-admin.php:82 includes/class-nda-admin.php:476
+msgid "Ausstehend"
+msgstr "V čakanju"
+
+#: includes/class-nda-admin.php:86 includes/class-nda-admin.php:484
+msgid "NDA-Version"
+msgstr "Različica NDA"
+
+#: includes/class-nda-admin.php:92
+msgid "NDA Gate Cockpit"
+msgstr "Nadzorna plošča NDA Gate"
+
+#: includes/class-nda-admin.php:153
+msgid ""
+"Neue Fassung veröffentlichen? Die bisherige wird deaktiviert, und wer die "
+"neue noch nicht bestätigt hat, wird beim nächsten Zugriff darum gebeten."
+msgstr ""
+"Objaviti novo različico? Prejšnja različica bo deaktivirana, uporabniki brez "
+"potrditve nove različice pa bodo k temu pozvani ob naslednjem dostopu."
+
+#: includes/class-nda-admin.php:204
+msgid "Part of the WM Suite plugin family"
+msgstr "Del družine vtičnikov WM Suite"
+
+#: includes/class-nda-admin.php:206
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-nda-admin.php:207
+msgid "Hub"
+msgstr "Način Hub"
+
+#: includes/class-nda-admin.php:207
+msgid "Standalone"
+msgstr "Samostojno"
+
+#: includes/class-nda-admin.php:224 includes/class-nda-admin.php:225
+msgid "WM NDA Gate"
+msgstr "WM NDA Gate"
+
+#: includes/class-nda-admin.php:235 includes/class-nda-admin.php:376
+msgid "Dashboard & KPIs"
+msgstr "Nadzorna plošča in kazalniki"
+
+#: includes/class-nda-admin.php:236
+msgid "Dashboard"
+msgstr "Nadzorna plošča"
+
+#: includes/class-nda-admin.php:244
+msgid "Aktivitäten & Signaturen"
+msgstr "Dejavnosti in podpisi"
+
+#: includes/class-nda-admin.php:245 includes/class-nda-admin.php:377
+msgid "Signaturen & Log"
+msgstr "Podpisi in dnevnik"
+
+#: includes/class-nda-admin.php:253 includes/class-nda-admin.php:761
+msgid "NDA-Versionen"
+msgstr "Različice NDA"
+
+#: includes/class-nda-admin.php:254 includes/class-nda-admin.php:378
+#: includes/class-nda-admin.php:760
+msgid "Versionen"
+msgstr "Različice"
+
+#: includes/class-nda-admin.php:262 includes/class-nda-admin.php:263
+#: includes/class-nda-admin.php:379 includes/class-nda-admin.php:874
+msgid "Export"
+msgstr "Izvoz"
+
+#: includes/class-nda-admin.php:271 includes/class-nda-admin.php:272
+#: includes/class-nda-admin.php:380 includes/class-nda-admin.php:921
+#: wm-prototype-nda-gate.php:233
+msgid "Einstellungen"
+msgstr "Nastavitve"
+
+#: includes/class-nda-admin.php:280
+msgid "Handbuch & Dokumentation"
+msgstr "Priročnik in dokumentacija"
+
+#: includes/class-nda-admin.php:281 includes/class-nda-admin.php:1166
+#: wm-prototype-nda-gate.php:239 wm-prototype-nda-gate.php:257
+msgid "Handbuch"
+msgstr "Priročnik"
+
+#: includes/class-nda-admin.php:381
+msgid "Handbuch & Glossar"
+msgstr "Priročnik in slovar"
+
+#: includes/class-nda-admin.php:384
+msgid "Plugin-Navigation"
+msgstr "Navigacija vtičnika"
+
+#: includes/class-nda-admin.php:409 includes/class-nda-modal.php:47
+msgid "Vertraulichkeitsvereinbarung"
+msgstr "Dogovor o zaupnosti"
+
+#: includes/class-nda-admin.php:410
+msgid "WM Prototype NDA Gate — Cockpit"
+msgstr "WM Prototype NDA Gate — Nadzorna plošča"
+
+#: includes/class-nda-admin.php:411
+msgid "NDA für angemeldete Benutzer, Signatur-Register und Export."
+msgstr "NDA za prijavljene uporabnike, register podpisov in izvoz."
+
+#: includes/class-nda-admin.php:419
+msgid "Springen zu:"
+msgstr "Skoči na:"
+
+#: includes/class-nda-admin.php:420
+msgid "Kurzanleitung"
+msgstr "Kratka navodila"
+
+#: includes/class-nda-admin.php:421
+msgid "Kennzahlen"
+msgstr "Kazalniki"
+
+#: includes/class-nda-admin.php:422
+msgid "Vorschau des Modals"
+msgstr "Predogled modalnega okna"
+
+#: includes/class-nda-admin.php:423 includes/class-nda-admin.php:540
+msgid "Letzte Signaturen"
+msgstr "Zadnji podpisi"
+
+#: includes/class-nda-admin.php:430
+msgid "Was dieses Plugin tut"
+msgstr "Kaj počne ta vtičnik"
+
+#: includes/class-nda-admin.php:433
+msgid ""
+"Für Websites, Prototypen oder Staging-Umgebungen, die angemeldeten Kunden "
+"oder Partnern gezeigt werden: Das Plugin verlangt vor Login, wp-admin, "
+"Frontend und REST die Bestätigung einer Vertraulichkeitsvereinbarung und "
+"speichert jede Bestätigung mit Zeitpunkt, Hash des Vertragstextes und "
+"verketteter Signatur. Nicht angemeldete Besucher sind nicht betroffen. Ob "
+"Vereinbarung und Maßnahmen rechtlich tragen, beurteilt das Plugin nicht."
+msgstr ""
+"Za spletna mesta, prototipe ali testna okolja, prikazana prijavljenim "
+"strankam ali partnerjem: vtičnik zahteva potrditev dogovora o zaupnosti pred "
+"prijavo, wp-admin, predstavitvenim delom in REST ter vsako potrditev shrani "
+"s časom, zgoščeno vrednostjo besedila in verižnim podpisom. Neprijavljeni "
+"obiskovalci niso zajeti. Vtičnik ne presoja, ali dogovor in ukrepi pravno "
+"vzdržijo."
+
+#: includes/class-nda-admin.php:436
+msgid "Schnellzugriff:"
+msgstr "Hitri dostop:"
+
+#: includes/class-nda-admin.php:439
+msgid "NDA-Text bearbeiten (neue Version)"
+msgstr "Uredi besedilo NDA (nova različica)"
+
+#: includes/class-nda-admin.php:443
+msgid "Signaturen exportieren"
+msgstr "Izvozi podpise"
+
+#: includes/class-nda-admin.php:447
+msgid "Handbuch öffnen"
+msgstr "Odpri priročnik"
+
+#: includes/class-nda-admin.php:457
+msgid "Bestätigungsquote"
+msgstr "Stopnja potrditve"
+
+#: includes/class-nda-admin.php:468
+msgid "Signiert (aktive Version) / Benutzer"
+msgstr "Podpisani (aktivna različica) / Uporabniki"
+
+#: includes/class-nda-admin.php:492
+msgid "Vorschau: das Signatur-Modal"
+msgstr "Predogled: podpisno modalno okno"
+
+#: includes/class-nda-admin.php:494
+msgid ""
+"Vereinfachte Darstellung des Modals, das angemeldete Benutzer ohne Signatur "
+"sehen (Titel und Textanfang der aktiven Version):"
+msgstr ""
+"Poenostavljen prikaz modalnega okna za prijavljene uporabnike brez podpisa "
+"(naslov in začetek aktivne različice):"
+
+#: includes/class-nda-admin.php:501 includes/class-nda-interceptor.php:62
+#: includes/class-nda-interceptor.php:337
+#: includes/class-nda-interceptor.php:352
+msgid "Vertraulichkeitsvereinbarung (NDA)"
+msgstr "Dogovor o zaupnosti (NDA)"
+
+#: includes/class-nda-admin.php:504
+msgid "Keine aktive Version hinterlegt."
+msgstr "Aktivna različica ni shranjena."
+
+#: includes/class-nda-admin.php:518
+msgid "Aktive Vertraulichkeitsvereinbarung"
+msgstr "Aktivni dogovor o zaupnosti"
+
+#: includes/class-nda-admin.php:521
+msgid "Titel:"
+msgstr "Naslov:"
+
+#: includes/class-nda-admin.php:522
+msgid "Version:"
+msgstr "Različica:"
+
+#: includes/class-nda-admin.php:522
+msgid "Erstellt am:"
+msgstr "Ustvarjeno:"
+
+#: includes/class-nda-admin.php:523
+msgid "Integritäts-Hash (SHA-256):"
+msgstr "Zgoščena vrednost celovitosti (SHA-256):"
+
+#: includes/class-nda-admin.php:527
+msgid "Neue Version veröffentlichen (Version Bump)"
+msgstr "Objavi novo različico (Version Bump)"
+
+#: includes/class-nda-admin.php:530
+msgid "Register als JSON herunterladen"
+msgstr "Prenesi register kot JSON"
+
+#: includes/class-nda-admin.php:534
+msgid "Keine aktive NDA-Version hinterlegt."
+msgstr "Nobena aktivna različica NDA ni shranjena."
+
+#: includes/class-nda-admin.php:544 includes/class-nda-admin.php:669
+msgid "Benutzer"
+msgstr "Uporabnik"
+
+#: includes/class-nda-admin.php:545 includes/class-nda-admin.php:670
+msgid "E-Mail"
+msgstr "E-pošta"
+
+#: includes/class-nda-admin.php:546 includes/class-nda-admin.php:671
+#: includes/class-nda-admin.php:796 includes/class-nda-exporter.php:277
+msgid "Version"
+msgstr "Različica"
+
+#: includes/class-nda-admin.php:547
+msgid "Signiert am (UTC)"
+msgstr "Podpisano (UTC)"
+
+#: includes/class-nda-admin.php:548 includes/class-nda-admin.php:673
+msgid "IP-HMAC"
+msgstr "IP-HMAC"
+
+#: includes/class-nda-admin.php:549
+msgid "Signatur-Hash"
+msgstr "Zgoščena vrednost podpisa"
+
+#: includes/class-nda-admin.php:566
+msgid "Bisher keine Signaturen erfasst."
+msgstr "Doslej še ni zabeleženih podpisov."
+
+#: includes/class-nda-admin.php:602 includes/class-nda-admin.php:1143
+msgid "Signatur-Register"
+msgstr "Register podpisov"
+
+#: includes/class-nda-admin.php:603
+msgid "Aktivitäten & Signaturprotokoll"
+msgstr "Dejavnosti in protokol podpisov"
+
+#: includes/class-nda-admin.php:604
+msgid ""
+"Alle gespeicherten Bestätigungen mit Signatur und Prüfergebnis des Registers."
+msgstr "Vse shranjene potrditve s podpisom in rezultatom preverjanja registra."
+
+#. translators: %d: number of chained acceptances recomputed and verified
+#: includes/class-nda-admin.php:621
+#, php-format
+msgid "Register integer — %d Zustimmungen neu berechnet und verkettet geprüft."
+msgstr ""
+"Register neoporečen — %d potrditev preračunanih in verižno preverjenih."
+
+#: includes/class-nda-admin.php:622
+msgid "Register NICHT integer"
+msgstr "Register NI neoporečen"
+
+#. translators: %d: number of acceptances recorded before the chain existed
+#: includes/class-nda-admin.php:633
+#, php-format
+msgid ""
+"%d Zustimmung(en) stammen aus der Zeit vor der Verkettung und tragen keine "
+"prüfbare Signatur. Sie gelten als ungeprüft, nicht als integer."
+msgstr ""
+"%d potrditev izvira iz časa pred veriženjem in nima preverljivega podpisa. "
+"Štejejo se kot nepreverjene."
+
+#: includes/class-nda-admin.php:639
+msgid ""
+"AUTH_KEY ist nicht definiert: der Signaturschlüssel stammt aus der Datenbank "
+"— also von dort, wo ein Angreifer ohnehin schreiben würde. Der Nachweis hält "
+"hier nur gegen Unfälle. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"AUTH_KEY ni določen: podpisni ključ izvira iz podatkovne zbirke — z istega "
+"mesta, kamor bi pisal napadalec. Določite AUTH_KEY v wp-config.php."
+
+#: includes/class-nda-admin.php:648
+msgid "Alle Versionen anzeigen"
+msgstr "Prikaži vse različice"
+
+#: includes/class-nda-admin.php:656
+msgid "Benutzer oder E-Mail suchen..."
+msgstr "Išči uporabnika ali e-pošto..."
+
+#: includes/class-nda-admin.php:657
+msgid "Filtern"
+msgstr "Filtriraj"
+
+#: includes/class-nda-admin.php:660
+msgid "Zurücksetzen"
+msgstr "Ponastavi"
+
+#: includes/class-nda-admin.php:668
+msgid "ID"
+msgstr "ID"
+
+#: includes/class-nda-admin.php:672 includes/class-nda-exporter.php:289
+msgid "Signatur-Zeitpunkt (UTC)"
+msgstr "Čas podpisa (UTC)"
+
+#: includes/class-nda-admin.php:674
+msgid "Interaktionsnachweis"
+msgstr "Dokaz interakcije"
+
+#: includes/class-nda-admin.php:675
+msgid "Signatur-Hash (HMAC-SHA256)"
+msgstr "Zgoščena vrednost podpisa (HMAC-SHA256)"
+
+#: includes/class-nda-admin.php:701
+msgid ""
+"Vom Browser gemeldet und mit der Signatur dieser Zeile versiegelt: "
+"nachträglich geändert bricht die Kette. Ob der Browser richtig gemeldet hat, "
+"kann das Plugin nicht prüfen."
+msgstr ""
+"Sporočil brskalnik in zapečateno s podpisom te vrstice: naknadna sprememba "
+"prekine verigo. Ali je brskalnik poročal resnično, vtičnik ne more preveriti."
+
+#: includes/class-nda-admin.php:710
+msgid "Keine Einträge gefunden."
+msgstr "Ni najdenih vnosov."
+
+#. translators: %d: total number of acceptance records
+#: includes/class-nda-admin.php:723
+#, php-format
+msgid "%d Einträge"
+msgstr "%d vnosov"
+
+#: includes/class-nda-admin.php:762
+msgid ""
+"Erstellen Sie neue Versionen des Vertragstextes. Das Veröffentlichen einer "
+"neuen Version erzwingt für alle Benutzer eine erneute Zustimmung (Version "
+"Bump Re-acceptance)."
+msgstr ""
+"Ustvarite nove različice pogodbenega besedila. Objava nove različice zahteva "
+"ponovno potrditev vseh uporabnikov."
+
+#: includes/class-nda-admin.php:771
+msgid ""
+"Die Fassung ist gespeichert und aktiv. Wer sie noch nicht bestätigt hat, "
+"wird beim nächsten Zugriff darum gebeten."
+msgstr ""
+"Različica je shranjena in aktivna. Kdor je še ni potrdil, bo pozvan ob "
+"naslednjem obisku."
+
+#. translators: 1: maximum characters of the version number, 2: maximum characters of the title
+#: includes/class-nda-admin.php:781
+#, php-format
+msgid ""
+"Die Fassung wurde nicht gespeichert; die bisherige bleibt aktiv. "
+"Versionsnummer höchstens %1$d Zeichen, Titel höchstens %2$d Zeichen, Text "
+"nicht leer."
+msgstr ""
+"Različica ni bila shranjena; prejšnja ostaja aktivna. Številka različice "
+"največ %1$d znakov, naslov največ %2$d znakov, besedilo ne sme biti prazno."
+
+#: includes/class-nda-admin.php:792
+msgid "Bestehende NDA-Versionen"
+msgstr "Obstoječe različice NDA"
+
+#: includes/class-nda-admin.php:797
+msgid "Titel"
+msgstr "Naslov"
+
+#: includes/class-nda-admin.php:798
+msgid "Status"
+msgstr "Stanje"
+
+#: includes/class-nda-admin.php:799
+msgid "SHA-256 Hash"
+msgstr "Zgoščena vrednost SHA-256"
+
+#: includes/class-nda-admin.php:800
+msgid "Erstellt am (UTC)"
+msgstr "Ustvarjeno (UTC)"
+
+#: includes/class-nda-admin.php:810
+msgid "Aktiv"
+msgstr "Aktivna"
+
+#: includes/class-nda-admin.php:812
+msgid "Archiviert"
+msgstr "Arhivirana"
+
+#: includes/class-nda-admin.php:827
+msgid "Neue Version herausgeben"
+msgstr "Izdaj novo različico"
+
+#: includes/class-nda-admin.php:832
+msgid "Versionsnummer:"
+msgstr "Številka različice:"
+
+#: includes/class-nda-admin.php:837
+msgid "Vertragstitel:"
+msgstr "Naslov pogodbe:"
+
+#: includes/class-nda-admin.php:842
+msgid "Vertragstext (HTML erlaubt):"
+msgstr "Besedilo pogodbe (HTML dovoljen):"
+
+#: includes/class-nda-admin.php:847
+msgid ""
+"Achtung: Durch Veröffentlichung wird die bisherige Version sofort "
+"deaktiviert und alle Benutzer werden beim nächsten Zugriff zur erneuten "
+"Bestätigung aufgefordert."
+msgstr ""
+"Pozor: z objavo se prejšnja različica takoj deaktivira in vsi uporabniki "
+"morajo ob naslednjem dostopu znova potrditi."
+
+#: includes/class-nda-admin.php:852
+msgid "Version aktivieren"
+msgstr "Aktiviraj različico"
+
+#: includes/class-nda-admin.php:875
+msgid "Export des Signatur-Registers"
+msgstr "Izvoz registra podpisov"
+
+#: includes/class-nda-admin.php:876
+msgid ""
+"Das Zustimmungsregister als CSV oder als JSON mit Signaturkette und "
+"aktuellem Prüfergebnis. Welche Beweiskraft das hat, beurteilt das Plugin "
+"nicht."
+msgstr ""
+"Register soglasij kot CSV ali JSON z verigo podpisov in trenutnim izidom "
+"preverjanja. Vtičnik ne presoja dokazne moči."
+
+#: includes/class-nda-admin.php:884
+msgid "CSV-Signaturprotokoll (CWE-1236 gehärtet)"
+msgstr "CSV protokol podpisov (utrjen proti CWE-1236)"
+
+#: includes/class-nda-admin.php:885
+msgid ""
+"Strukturierter tabellarischer Export aller Signaturvorgänge mit "
+"automatischer Bereinigung von potenziellen Formel-Injektionen (Formulas/"
+"Macros)."
+msgstr ""
+"Strukturiran tabelarični izvoz vseh podpisov s samodejnim čiščenjem "
+"morebitnih vrivanj formul ali makrov."
+
+#: includes/class-nda-admin.php:887
+msgid "CSV-Datei herunterladen"
+msgstr "Prenesi datoteko CSV"
+
+#: includes/class-nda-admin.php:892
+msgid "JSON-Export mit Prüfergebnis"
+msgstr "Izvoz JSON z izidom preverjanja"
+
+#: includes/class-nda-admin.php:893
+msgid ""
+"Vollständiger JSON-Export mit Signaturkette, Prüfergebnis des Registers und "
+"einer SHA-256-Prüfsumme; wie sie sich nachrechnen lässt, steht in der Datei. "
+"Die Prüfsumme belegt, dass das Dokument nach dem Export unverändert ist; "
+"über die Datenbank sagt sie nichts — dafür steht das mitexportierte "
+"Prüfergebnis."
+msgstr ""
+"Celoten izvoz JSON z verigo podpisov, preverjanjem registra in kontrolno "
+"vsoto SHA-256, opisano v datoteki."
+
+#: includes/class-nda-admin.php:895
+msgid "JSON herunterladen"
+msgstr "Prenesi JSON"
+
+#: includes/class-nda-admin.php:922
+msgid "Einstellungen — WM Prototype NDA Gate"
+msgstr "Nastavitve — WM Prototype NDA Gate"
+
+#: includes/class-nda-admin.php:923
+msgid ""
+"Login-Checkbox, Admin-, Frontend- und REST-Sperre, Projektname, Demodaten."
+msgstr ""
+"Potrditveno polje ob prijavi, zapora skrbništva, sprednjega dela in REST, "
+"ime projekta in predstavitveni podatki."
+
+#: includes/class-nda-admin.php:931
+msgid "Einstellungen erfolgreich gespeichert."
+msgstr "Nastavitve so uspešno shranjene."
+
+#. translators: %d: number of demo signatures created
+#: includes/class-nda-admin.php:940
+#, php-format
+msgid "%d Demodaten-Signaturen (ohne WordPress-Konto) wurden erzeugt."
+msgstr ""
+"Ustvarjenih je bilo %d predstavitvenih podpisov (brez računa WordPress)."
+
+#. translators: %d: number of demo signatures deleted
+#: includes/class-nda-admin.php:953
+#, php-format
+msgid "%d Demodaten-Signaturen wurden gelöscht."
+msgstr "Izbrisanih je bilo %d predstavitvenih podpisov."
+
+#: includes/class-nda-admin.php:964
+msgid ""
+"Nicht ausgeführt: das Register enthält echte Signaturen. Demodaten werden "
+"nicht mit ihnen verkettet und nicht aus einer Kette mit ihnen gelöscht, "
+"sonst verifiziert das Register nicht mehr."
+msgstr ""
+"Ni izvedeno: register vsebuje prave podpise. Predstavitveni podatki se ne "
+"verižijo s pravimi podpisi in ne brišejo iz takšne verige."
+
+#: includes/class-nda-admin.php:970
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "Tovarniške nastavitve obnovljene:"
+
+#: includes/class-nda-admin.php:970
+msgid ""
+"Alle Signaturen wurden gelöscht, die Standard-NDA v1.0.0 wurde neu "
+"initialisiert und alle Optionen zurückgesetzt."
+msgstr ""
+"Vsi podpisi so bili izbrisani, privzeti NDA v1.0.0 je bil znova "
+"inicializiran in vse možnosti ponastavljene."
+
+#: includes/class-nda-admin.php:979
+msgid "Projektbezeichnung (Prototyp)"
+msgstr "Oznaka projekta (prototip)"
+
+#: includes/class-nda-admin.php:982
+msgid ""
+"Erscheint im Modal. In den Vertragstext gelangt er nur, wenn die "
+"Standardfassung neu angelegt wird (Aktivierung ohne Fassung, "
+"Werkseinstellungen); die aktive Fassung ändert sich nicht."
+msgstr ""
+"Prikaže se v modalnem oknu. V besedilo pogodbe vstopi le ob ponovni "
+"vzpostavitvi privzete različice; aktivna različica se ne spremeni."
+
+#: includes/class-nda-admin.php:987
+msgid "Login-Checkbox erzwingen"
+msgstr "Zahtevaj potrditveno polje ob prijavi"
+
+#: includes/class-nda-admin.php:991
+msgid ""
+"Checkbox auf wp-login.php einblenden; Benutzer ohne Signatur der aktiven "
+"Version werden nach der Passwortprüfung ohne Häkchen abgewiesen."
+msgstr ""
+"Prikaži polje na wp-login.php; uporabniki brez podpisa aktivne različice so "
+"po preverjanju gesla brez kljukice zavrnjeni."
+
+#: includes/class-nda-admin.php:997
+msgid "Admin-Gate (wp-admin)"
+msgstr "Skrbniška vrata (wp-admin)"
+
+#: includes/class-nda-admin.php:1001
+msgid ""
+"Benutzer ohne Signatur der aktuellen NDA-Version werden vor dem Aufbau jeder "
+"wp-admin-Seite auf die Signaturseite umgeleitet; admin-ajax antwortet mit "
+"HTTP 403."
+msgstr ""
+"Preusmeri uporabnike brez podpisa trenutne različice NDA na podpisno stran "
+"pred izgradnjo katere koli strani wp-admin; admin-ajax odgovori s HTTP 403."
+
+#: includes/class-nda-admin.php:1007
+msgid "Frontend-Gate (Prototyp / Staging)"
+msgstr "Sprednja vrata (prototip / staging)"
+
+#: includes/class-nda-admin.php:1011
+msgid ""
+"Angemeldete Benutzer ohne Signatur werden von jeder Frontend-Seite auf die "
+"Signaturseite umgeleitet (template_redirect). Nicht angemeldete Besucher "
+"sind davon nicht betroffen."
+msgstr ""
+"Preusmeri prijavljene uporabnike brez podpisa s katere koli sprednje strani "
+"na podpisno stran (template_redirect). Neprijavljeni obiskovalci niso "
+"prizadeti."
+
+#: includes/class-nda-admin.php:1017
+msgid "REST API Schutz"
+msgstr "Zaščita REST API"
+
+#: includes/class-nda-admin.php:1021
+msgid ""
+"REST-API-Endpunkte für Benutzer ohne aktive NDA-Signatur mit HTTP 403 "
+"Forbidden sperren."
+msgstr ""
+"Blokiraj končne točke REST API s HTTP 403 Forbidden za uporabnike brez "
+"aktivnega podpisa NDA."
+
+#: includes/class-nda-admin.php:1027
+msgid "Forensisches Bildschirm-Wasserzeichen"
+msgstr "Forenzični zaslonski vodni žig"
+
+#: includes/class-nda-admin.php:1031
+msgid ""
+"Legt über jede Seite ein schwaches Raster, das Konto-ID und Minute des "
+"Aufrufs trägt. Aus einem unskalierten Screenshot lässt es sich mit \"wp nda "
+"wasserzeichen-lesen\" zurücklesen."
+msgstr ""
+"Čez vsako stran položi šibko mrežo z ID-jem računa in minuto prikaza. Iz "
+"nepovečanega posnetka zaslona jo prebere \"wp nda wasserzeichen-lesen\"."
+
+#: includes/class-nda-admin.php:1033
+msgid ""
+"Schwach heißt nicht unsichtbar: auf großen einfarbigen Flächen ist das "
+"Raster erkennbar. Es überlebt Zuschneiden und JPEG, nicht aber Skalieren, "
+"Drehen oder Abfotografieren. Es benennt das Konto, dem die Seite "
+"ausgeliefert wurde — nicht, wer den Screenshot gemacht hat. Standardmäßig "
+"aus."
+msgstr ""
+"Šibko ne pomeni nevidno: na velikih enobarvnih površinah je mreža opazna. "
+"Preživi obrezovanje in JPEG, ne pa spreminjanja velikosti, obračanja ali "
+"fotografiranja zaslona. Privzeto izklopljeno."
+
+#: includes/class-nda-admin.php:1038
+msgid "Aufbewahrungsfrist"
+msgstr "Rok hrambe"
+
+#: includes/class-nda-admin.php:1040
+msgid "Tage"
+msgstr "dni"
+
+#: includes/class-nda-admin.php:1041
+msgid ""
+"Täglich angewendet: Bei Signaturen, die älter als diese Frist sind, werden "
+"Name, E-Mail-Adresse und Browserkennung ersetzt. Gelöscht wird nichts — eine "
+"gelöschte Zeile würde das Register unterbrechen. Konto-ID, Zeitstempel, "
+"Vertragsversion, IP-Pseudonym und Interaktionsnachweis bleiben, weil sie "
+"Teil der verketteten Signatur sind. Unter 30 Tagen bedeutet: alles behalten."
+msgstr ""
+"Izvaja se dnevno: pri podpisih, starejših od tega roka, se zamenjajo ime, e-"
+"poštni naslov in oznaka brskalnika. Nič se ne izbriše — izbrisana vrstica bi "
+"prekinila register. ID računa, časovni žig, različica pogodbe, psevdonim IP "
+"in dokaz interakcije ostanejo, ker so del verižnega podpisa. Pod 30 dni "
+"pomeni: obdrži vse."
+
+#: includes/class-nda-admin.php:1046
+msgid "Daten bei Deinstallation löschen"
+msgstr "Izbriši podatke ob odstranitvi"
+
+#: includes/class-nda-admin.php:1050
+msgid ""
+"Alle Plugin-Optionen, Benutzer-Metadaten sowie beide NDA-Register-Tabellen "
+"beim Löschen des Plugins endgültig entfernen."
+msgstr ""
+"Ob izbrisu vtičnika trajno odstrani vse nastavitve vtičnika, uporabniške "
+"metapodatke in obe tabeli registra NDA."
+
+#: includes/class-nda-admin.php:1052
+msgid ""
+"Standardmäßig deaktiviert, damit ein versehentliches Löschen oder "
+"Neuinstallieren des Plugins keine gespeicherten Zustimmungsnachweise "
+"vernichtet."
+msgstr ""
+"Privzeto izklopljeno, da nenameren izbris ali ponovna namestitev ne uniči "
+"shranjenih dokazil o soglasju."
+
+#: includes/class-nda-admin.php:1059
+msgid "Einstellungen speichern"
+msgstr "Shrani nastavitve"
+
+#: includes/class-nda-admin.php:1068
+msgid "Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr "Upravljanje predstavitvenih podatkov in tovarniška ponastavitev"
+
+#: includes/class-nda-admin.php:1071
+msgid ""
+"Fünf Beispiel-Signaturen ohne WordPress-Konto für Präsentationen – nur in "
+"einem Register ohne echte Signaturen; gelöscht werden können sie nur, "
+"solange keine echten Signaturen mit ihnen verkettet sind. Oder das NDA Gate "
+"auf Werkseinstellungen zurücksetzen."
+msgstr ""
+"Pet vzorčnih podpisov brez računa WordPress za predstavitve — samo v "
+"registru brez pravih podpisov."
+
+#: includes/class-nda-admin.php:1080
+msgid "Demodaten importieren (5 Beispiel-Signaturen)"
+msgstr "Uvozi predstavitvene podatke (5 vzorčnih podpisov)"
+
+#: includes/class-nda-admin.php:1085
+msgid ""
+"Demodaten löschen? Das geht nur, wenn das Register keine echten Signaturen "
+"enthält."
+msgstr ""
+"Izbrisati predstavitvene podatke? Mogoče le, če register ne vsebuje pravih "
+"podpisov."
+
+#: includes/class-nda-admin.php:1089
+msgid "Demodaten bereinigen (Nur Test-Signaturen)"
+msgstr "Počisti predstavitvene podatke (samo testni podpisi)"
+
+#: includes/class-nda-admin.php:1100
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "Nevarno območje: ponastavi na tovarniške nastavitve"
+
+#: includes/class-nda-admin.php:1103
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Signaturen und NDA-Versionen, "
+"stellt die Standard-NDA v1.0.0 wieder her und setzt alle Einstellungen auf "
+"die Werksstandards zurück."
+msgstr ""
+"Ta postopek nepreklicno izbriše VSE podpise in različice NDA, obnovi "
+"privzeti NDA v1.0.0 ter ponastavi nastavitve."
+
+#: includes/class-nda-admin.php:1105
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Signaturen und setzt das NDA Gate "
+"vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"OPOZORILO: ste prepričani? To bo izbrisalo VSE podpise in v celoti "
+"ponastavilo NDA Gate!"
+
+#: includes/class-nda-admin.php:1109
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "Obnovi tovarniške nastavitve (Factory Reset)"
+
+#: includes/class-nda-admin.php:1129
+msgid "4-Stufen Perimeter-Schutz"
+msgstr "4-stopenjska obodna zaščita"
+
+#: includes/class-nda-admin.php:1130
+msgid ""
+"verlangt von angemeldeten Benutzern die Bestätigung der aktiven "
+"Vertraulichkeitsvereinbarung an vier Stellen: Login-Checkbox, Admin-"
+"Weiterleitung, Frontend-Weiterleitung und REST-Sperre."
+msgstr ""
+"od prijavljenih uporabnikov zahteva potrditev aktivnega dogovora o zaupnosti "
+"na štirih mestih: prijavno polje, skrbniška preusmeritev, sprednja "
+"preusmeritev in zapora REST."
+
+#: includes/class-nda-admin.php:1135
+msgid "Version-Bump & Re-Signing"
+msgstr "Menjava različice in ponovni podpis"
+
+#: includes/class-nda-admin.php:1138
+msgid ""
+"Wird der NDA-Vertragstext aktualisiert und eine neue Versionsnummer "
+"vergeben, müssen alle Benutzer den neuen Text vor dem nächsten Zugriff "
+"bestätigen. Die bisherigen Bestätigungen bleiben mit ihrer Fassung im "
+"Register und lassen sich weiter prüfen."
+msgstr ""
+"Ko je besedilo NDA posodobljeno in dobi novo številko različice, morajo vsi "
+"uporabniki pred naslednjim dostopom potrditi novo besedilo. Dosedanje "
+"potrditve ostanejo v registru s svojo različico in jih je mogoče še naprej "
+"preverjati."
+
+#: includes/class-nda-admin.php:1144
+msgid ""
+"Jede Signatur ist ein HMAC-SHA256 über die Signatur der vorhergehenden "
+"Zustimmung, User-ID, Versions-ID, Vertrags-Hash, Zeitstempel und die "
+"pseudonymisierte IP; die Spitze der Kette ist mit demselben Schlüssel "
+"versiegelt. Eine geänderte, gelöschte oder eingeschleuste Zustimmung fällt "
+"auf, solange der Schlüssel (AUTH_KEY aus der wp-config.php, ohne ihn ein "
+"Salt aus der Datenbank) nicht bekannt ist; eine vorher kopierte ältere "
+"Kettenspitze, die zurückgespielt wird, fällt nicht auf. Ein neuer Schlüssel "
+"macht alle gespeicherten Signaturen unprüfbar. IP-Adressen werden als HMAC "
+"mit einem täglich wechselnden Salt gespeichert."
+msgstr ""
+"Vsak podpis je HMAC-SHA256 čez prejšnji podpis, ID uporabnika, ID različice, "
+"zgoščeno vrednost pogodbe, čas in psevdonimiziran IP; vrh verige je "
+"zapečaten z istim ključem."
+
+#: includes/class-nda-admin.php:1148
+msgid "Handbuch:"
+msgstr "Priročnik:"
+
+#: includes/class-nda-admin.php:1149
+msgid "Vollständiges Handbuch öffnen"
+msgstr "Odpri celoten priročnik"
+
+#: includes/class-nda-admin.php:1150
+msgid "Entwickelt von WM Suite."
+msgstr "Razvil WM Suite."
+
+#: includes/class-nda-admin.php:1159 includes/class-nda-exporter.php:38
+#: includes/class-nda-exporter.php:124
+msgid "Unzureichende Berechtigungen."
+msgstr "Nezadostne pravice."
+
+#: includes/class-nda-admin.php:1167
+msgid "WM Prototype NDA Gate — Handbuch"
+msgstr "WM Prototype NDA Gate — Priročnik"
+
+#: includes/class-nda-admin.php:1168
+msgid "Die vier Prüfstellen, das Signatur-Register, Hooks und Grenzen."
+msgstr "Štiri kontrolne točke, register podpisov, kljuke in omejitve."
+
+#: includes/class-nda-admin.php:1179
+msgid "1. 4-Stufen Perimeter-Interzeption"
+msgstr "1. 4-stopenjsko prestrezanje dostopa"
+
+#: includes/class-nda-admin.php:1181
+msgid ""
+"Angemeldete Benutzer ohne Signatur der aktiven Version werden an vier "
+"Stellen angehalten:"
+msgstr ""
+"Prijavljeni uporabniki brez podpisa aktivne različice so ustavljeni na "
+"štirih mestih:"
+
+#: includes/class-nda-admin.php:1183
+msgid "Ebene 1 (wp-login.php):"
+msgstr "Raven 1 (wp-login.php):"
+
+#: includes/class-nda-admin.php:1183
+msgid ""
+"Checkbox (24 × 24 px) auf wp-login.php; nach der Passwortprüfung wird die "
+"Anmeldung ohne Häkchen abgewiesen, wenn keine Signatur der aktiven Version "
+"vorliegt."
+msgstr ""
+"Potrditveno polje (24 × 24 px) na wp-login.php; po preverjanju gesla je "
+"prijava brez kljukice zavrnjena, če ni aktivnega podpisa."
+
+#: includes/class-nda-admin.php:1184
+msgid "Ebene 2 (Frontend / Staging):"
+msgstr "Raven 2 (Frontend / Staging):"
+
+#: includes/class-nda-admin.php:1184
+msgid ""
+"Leitet angemeldete Benutzer ohne Signatur bei template_redirect auf die "
+"Signaturseite um, bevor das Theme etwas ausgibt."
+msgstr ""
+"Preusmeri prijavljene uporabnike brez podpisa ob template_redirect na "
+"podpisno stran, preden tema kar koli izpiše."
+
+#: includes/class-nda-admin.php:1185
+msgid "Ebene 3 (REST-API):"
+msgstr "Raven 3 (REST API):"
+
+#: includes/class-nda-admin.php:1185
+msgid ""
+"Antwortet angemeldeten Benutzern ohne Signatur mit HTTP 403 "
+"(rest_forbidden); ausgenommen sind /wm-nda/v1/, /wp/v2/users/me und /wm-hub/"
+"v1/ (Filter wm_nda_whitelisted_routes). Anonyme Anfragen sind nicht "
+"betroffen."
+msgstr ""
+"Prijavljenim uporabnikom brez podpisa odgovori s HTTP 403 (rest_forbidden), "
+"razen za /wm-nda/v1/, /wp/v2/users/me in /wm-hub/v1/ (filter "
+"wm_nda_whitelisted_routes)."
+
+#: includes/class-nda-admin.php:1186
+msgid "Ebene 4 (wp-admin):"
+msgstr "Raven 4 (wp-admin):"
+
+#: includes/class-nda-admin.php:1186
+msgid ""
+"Leitet bei admin_init auf die Signaturseite um, bevor eine wp-admin-Seite "
+"aufgebaut wird; dort das Vollbild-Modal mit WAI-ARIA Focus-Trap. admin-ajax "
+"antwortet mit HTTP 403."
+msgstr ""
+"Preusmeri ob admin_init na podpisno stran pred izgradnjo strani wp-admin, s "
+"celozaslonskim modalnim oknom in pastjo fokusa WAI-ARIA. admin-ajax vrne "
+"HTTP 403."
+
+#: includes/class-nda-admin.php:1194
+msgid "2. Der mitgelieferte Vertragstext"
+msgstr "2. Priloženo besedilo dogovora"
+
+#: includes/class-nda-admin.php:1196
+msgid ""
+"Der mitgelieferte Text ist ein Muster ohne juristische Prüfung und nennt "
+"keine Vorschriften. Er beschreibt den Gegenstand, die Pflichten, was bei "
+"einer Zustimmung gespeichert wird, und dass der Zugang bei einem Verstoß "
+"gesperrt werden kann."
+msgstr ""
+"Priloženo besedilo je vzorec brez pravnega pregleda in ne navaja predpisov. "
+"Opisuje predmet, obveznosti, kaj se shrani ob soglasju, in da je dostop ob "
+"kršitvi mogoče blokirati."
+
+#: includes/class-nda-admin.php:1197
+msgid ""
+"Ob Vereinbarung und Maßnahmen im Einzelfall tragen, beurteilt das Plugin "
+"nicht. Lassen Sie den Text prüfen und veröffentlichen Sie Ihre Fassung im "
+"Reiter \"Versionen\"; bereits veröffentlichte Versionen behalten ihren Text "
+"und ihre Signaturen."
+msgstr ""
+"Vtičnik ne presoja, ali dogovor in ukrepi v posameznem primeru vzdržijo. "
+"Dajte besedilo v pregled in objavite svojo različico na zavihku "
+"\"Različice\"; že objavljene različice ohranijo svoje besedilo in podpise."
+
+#: includes/class-nda-admin.php:1205
+msgid "3. Signatur-Kryptogramm & Entwickler-Hooks"
+msgstr "3. Kriptogram podpisa in razvijalske kljuke"
+
+#: includes/class-nda-admin.php:1207
+msgid ""
+"Bei jeder Bestätigung wird eine HMAC-SHA256-Signatur berechnet, die die "
+"vorherige Signatur einschließt:"
+msgstr ""
+"Ob vsaki potrditvi se izračuna podpis HMAC-SHA256, ki vključuje prejšnji "
+"podpis:"
+
+#: includes/class-nda-admin.php:1213
+msgid "Entwickler-Action Hook:"
+msgstr "Razvijalska akcijska kljuka:"
+
+#: includes/class-nda-admin.php:1232
+msgid "4. Wichtige Hinweise, Gotchas & Best Practices"
+msgstr "4. Pomembni napotki, pasti in dobre prakse"
+
+#: includes/class-nda-admin.php:1235
+msgid "Version Bump & Re-Signing:"
+msgstr "Menjava različice in ponovni podpis:"
+
+#: includes/class-nda-admin.php:1235
+msgid ""
+"Sobald Sie im Reiter \"Versionen\" eine neue Version anlegen, muss jeder "
+"Benutzer die neue Fassung bestätigen; die bisherigen Bestätigungen bleiben "
+"mit ihrer Fassung im Register."
+msgstr ""
+"Takoj ko v zavihku \"Različice\" ustvarite novo različico, mora vsak "
+"uporabnik potrditi novo različico; dosedanje potrditve ostanejo v registru s "
+"svojo različico."
+
+#: includes/class-nda-admin.php:1236
+msgid "WP-CLI & Cron-Automatisierung:"
+msgstr "Avtomatizacija WP-CLI in Cron:"
+
+#: includes/class-nda-admin.php:1236
+msgid ""
+"Hintergrund-Crons und CLI-Befehle werden automatisch vom Gate ausgenommen, "
+"um Serverprozesse nicht zu blockieren."
+msgstr ""
+"Ozadnja opravila cron in ukazi WP-CLI so samodejno izvzeti iz vrat, da ne "
+"blokirajo strežniških procesov."
+
+#: includes/class-nda-admin.php:1237
+msgid "Export:"
+msgstr "Izvoz:"
+
+#: includes/class-nda-admin.php:1237
+msgid ""
+"Unter \"Export\" gibt es CSV und JSON; das JSON enthält das Prüfergebnis des "
+"Registers und eine Prüfsumme über die Datei. Einen PDF-Export gibt es nicht."
+msgstr ""
+"Pod \"Izvoz\" sta na voljo CSV in JSON; JSON vsebuje izid preverjanja "
+"registra in kontrolno vsoto datoteke. Izvoza PDF ni."
+
+#: includes/class-nda-admin.php:1238
+msgid "Interaktionsnachweis:"
+msgstr "Dokaz interakcije:"
+
+#: includes/class-nda-admin.php:1238
+msgid ""
+"Der Browser meldet bei der Bestätigung Eingabegerät, Verweildauer, "
+"Zeigerweg, gelesenen Anteil und Sichtfenster. Diese Angaben gehen in die "
+"Signatur ein, sind danach also nicht mehr änderbar, ohne die Kette zu "
+"brechen — aber sie stammen vom Client: sie zeigen, dass der Dialog bedient "
+"wurde, nicht von wem. Bestätigungen ohne JavaScript und alle vor dem "
+"16.09.2026 tragen keinen."
+msgstr ""
+"Ob potrditvi brskalnik sporoči vhodno napravo, trajanje, pot kazalca, "
+"prebrani delež in velikost okna. Ti podatki so zapečateni v podpisu, a "
+"izvirajo iz odjemalca."
+
+#: includes/class-nda-core.php:97 includes/class-nda-core.php:119
+msgid "WM NDA Gate — Status"
+msgstr "WM NDA Gate — Stanje"
+
+#: includes/class-nda-core.php:123
+msgid ""
+"Zeigt den aktuellen NDA-Bestätigungsstatus oder die aktive Vertragsversion "
+"an."
+msgstr "Prikazuje trenutno stanje potrditve NDA ali aktivno različico pogodbe."
+
+#: includes/class-nda-core.php:197
+msgid "Nicht angemeldet"
+msgstr "Ni prijavljen"
+
+#: includes/class-nda-core.php:199
+msgid "Keine aktive Vereinbarung"
+msgstr "Ni aktivnega dogovora"
+
+#. translators: %s: active NDA version string
+#: includes/class-nda-core.php:203
+#, php-format
+msgid "NDA v%s bestätigt"
+msgstr "NDA v%s potrjen"
+
+#. translators: %s: active NDA version string
+#: includes/class-nda-core.php:209
+#, php-format
+msgid "NDA v%s ausstehend"
+msgstr "NDA v%s v čakanju"
+
+#. translators: %d: previously recorded number of acceptances
+#: includes/class-nda-database.php:617
+#, php-format
+msgid ""
+"Das Register ist leer, obwohl zuletzt %d Zustimmungen verzeichnet waren."
+msgstr "Register je prazen, čeprav je bilo nazadnje zabeleženih %d potrditev."
+
+#: includes/class-nda-database.php:720
+msgid "Ein unsignierter Datensatz wurde nachträglich in die Kette eingefügt."
+msgstr "V verigo je bil naknadno vstavljen nepodpisan zapis."
+
+#. translators: %d: acceptance id
+#: includes/class-nda-database.php:725
+#, php-format
+msgid ""
+"Kettenbruch bei Zustimmung #%d: eine Zustimmung wurde gelöscht, "
+"eingeschleust oder umsortiert."
+msgstr ""
+"Prekinitev verige pri potrditvi #%d: potrditev je bila izbrisana, vstavljena "
+"ali prerazporejena."
+
+#: includes/class-nda-database.php:734
+msgid ""
+"Keine gespeicherte Signatur passt zum Schlüssel dieser Installation: der "
+"Signaturschlüssel (AUTH_KEY) wurde geändert, das Register stammt aus einer "
+"anderen Installation, oder jede Zeile wurde verändert. Mit diesem Schlüssel "
+"lässt sich das nicht unterscheiden."
+msgstr ""
+"Noben shranjen podpis se ne ujema s ključem te namestitve: spremenjen je bil "
+"AUTH_KEY, register izvira iz druge namestitve ali pa je bila spremenjena "
+"vsaka vrstica."
+
+#. translators: %d: acceptance id
+#: includes/class-nda-database.php:739
+#, php-format
+msgid ""
+"Die Signatur der Zustimmung #%d passt nicht zu ihrem Inhalt: der Datensatz "
+"wurde nachträglich verändert oder mit einem anderen Schlüssel signiert."
+msgstr ""
+"Podpis potrditve #%d se ne ujema z vsebino: zapis je bil naknadno spremenjen "
+"ali podpisan z drugim ključem."
+
+#: includes/class-nda-database.php:750
+msgid ""
+"Die Kettenspitze (Option wm_nda_register_tip) fehlt: ob die neuesten "
+"Zustimmungen entfernt wurden, lässt sich nicht prüfen."
+msgstr ""
+"Vrh verige (možnost wm_nda_register_tip) manjka: ni mogoče preveriti, ali so "
+"bile odstranjene najnovejše potrditve."
+
+#: includes/class-nda-database.php:754
+msgid ""
+"Die Kettenspitze trägt kein Siegel: ob die neuesten Zustimmungen entfernt "
+"wurden, lässt sich nicht prüfen."
+msgstr ""
+"Vrh verige nima pečata: ni mogoče preveriti, ali so bile odstranjene "
+"najnovejše potrditve."
+
+#: includes/class-nda-database.php:762
+msgid ""
+"Das Siegel der Kettenspitze passt nicht zu ihrem Inhalt: die Option wurde "
+"ohne den Schlüssel verändert."
+msgstr ""
+"Pečat vrha verige se ne ujema z vsebino: možnost je bila spremenjena brez "
+"ključa."
+
+#. translators: 1: rows present, 2: rows recorded in the sealed tip
+#: includes/class-nda-database.php:768
+#, php-format
+msgid ""
+"Das Ende des Registers passt nicht zur versiegelten Kettenspitze (%1$d "
+"Zustimmungen vorhanden, %2$d verzeichnet): Zustimmungen wurden entfernt oder "
+"ohne Signatur angehängt."
+msgstr ""
+"Konec registra se ne ujema z zapečatenim vrhom (%1$d prisotnih potrditev, "
+"%2$d zabeleženih): potrditve so bile odstranjene ali dodane brez podpisa."
+
+#: includes/class-nda-database.php:788
+msgid ""
+"Der Signaturschlüssel dieser Installation ist ein anderer als der, mit dem "
+"das Register versiegelt wurde (AUTH_KEY geändert oder Datenbank aus einer "
+"anderen Installation übernommen). Die gespeicherten Signaturen lassen sich "
+"mit diesem Schlüssel nicht prüfen."
+msgstr ""
+"Podpisni ključ te namestitve se razlikuje od ključa, s katerim je bil "
+"register zapečaten (spremenjen AUTH_KEY ali kopirana zbirka iz druge "
+"namestitve)."
+
+#: includes/class-nda-evidence.php:177
+msgid "Maus"
+msgstr "Miška"
+
+#: includes/class-nda-evidence.php:178
+msgid "Stift"
+msgstr "Pisalo"
+
+#: includes/class-nda-evidence.php:179
+msgid "Touch"
+msgstr "Dotik"
+
+#: includes/class-nda-evidence.php:180 includes/class-nda-evidence.php:193
+msgid "Tastatur"
+msgstr "Tipkovnica"
+
+#: includes/class-nda-evidence.php:181
+msgid "nicht erkannt"
+msgstr "ni zaznano"
+
+#: includes/class-nda-evidence.php:185
+msgid "Eingabegerät"
+msgstr "Vhodna naprava"
+
+#: includes/class-nda-evidence.php:191
+msgid "Bestätigt per"
+msgstr "Potrjeno prek"
+
+#: includes/class-nda-evidence.php:194
+msgid "Zeigegerät"
+msgstr "Kazalna naprava"
+
+#: includes/class-nda-evidence.php:200
+msgid "Zeit im Dialog"
+msgstr "Čas v pogovornem oknu"
+
+#: includes/class-nda-evidence.php:207
+msgid "Zwischen Häkchen und Bestätigung"
+msgstr "Med kljukico in potrditvijo"
+
+#: includes/class-nda-evidence.php:214
+msgid "Gelesener Anteil des Textfensters"
+msgstr "Prebrani delež besedilnega okna"
+
+#. translators: %d: percentage of the scrollable agreement text that was scrolled through
+#: includes/class-nda-evidence.php:216
+#, php-format
+msgid "%d %% durchgeblättert"
+msgstr "%d %% prebrano"
+
+#: includes/class-nda-evidence.php:222
+msgid "Zeigerbewegung"
+msgstr "Gibanje kazalca"
+
+#. translators: 1: number of pointer samples, 2: travelled distance in CSS pixels
+#: includes/class-nda-evidence.php:225
+#, php-format
+msgid "%1$d Messpunkte, %2$d px Weg"
+msgstr "%1$d vzorcev, %2$d px poti"
+
+#: includes/class-nda-evidence.php:234
+msgid "Höchster Druckwert"
+msgstr "Najvišja vrednost pritiska"
+
+#: includes/class-nda-evidence.php:241
+msgid "Sichtfenster"
+msgstr "Vidno okno"
+
+#: includes/class-nda-evidence.php:248
+msgid "Zeitzonenversatz des Geräts"
+msgstr "Zamik časovnega pasu naprave"
+
+#. translators: %s: signed offset from UTC in minutes, as reported by the browser
+#: includes/class-nda-evidence.php:250
+#, php-format
+msgid "%s Minuten gegenüber UTC"
+msgstr "%s minut glede na UTC"
+
+#: includes/class-nda-evidence.php:262
+msgid "Kein Interaktionsnachweis"
+msgstr "Brez dokaza interakcije"
+
+#. translators: %s: duration in seconds with one decimal
+#: includes/class-nda-evidence.php:280
+#, php-format
+msgid "%s s"
+msgstr "%s s"
+
+#: includes/class-nda-evidence.php:292
+msgid "kein Drucksensor (Zeigegerät meldet den Festwert 0,5)"
+msgstr "brez tipala pritiska (kazalna naprava sporoča stalno vrednost 0,5)"
+
+#. translators: %s: pressure between 0 and 1 with two decimals
+#: includes/class-nda-evidence.php:297
+#, php-format
+msgid "%s von 1,0"
+msgstr "%s od 1,0"
+
+#: includes/class-nda-exporter.php:216 includes/class-nda-exporter.php:227
+msgid "WM Prototype NDA Gate Signaturen"
+msgstr "Podpisi WM Prototype NDA Gate"
+
+#: includes/class-nda-exporter.php:273
+msgid "NDA Vereinbarung"
+msgstr "Dogovor NDA"
+
+#: includes/class-nda-exporter.php:281
+msgid "Unterzeichner Name"
+msgstr "Ime podpisnika"
+
+#: includes/class-nda-exporter.php:285
+msgid "Unterzeichner E-Mail"
+msgstr "E-pošta podpisnika"
+
+#: includes/class-nda-exporter.php:293
+msgid "Signatur-Hash (SHA-256)"
+msgstr "Zgoščena vrednost podpisa (SHA-256)"
+
+#: includes/class-nda-exporter.php:309
+msgid "Prototyp NDA Signaturen"
+msgstr "Podpisi prototipnega NDA"
+
+#. translators: %d: Number of signature records
+#: includes/class-nda-exporter.php:372
+#, php-format
+msgid ""
+"%d NDA-Signaturdatensätze wurden pseudonymisiert: Name, E-Mail-Adresse und "
+"User-Agent sind ersetzt."
+msgstr ""
+"%d zapisov podpisov NDA je bilo psevdonimiziranih: ime, e-poštni naslov in "
+"user-agent so nadomeščeni."
+
+#: includes/class-nda-exporter.php:375
+msgid ""
+"Beibehalten, weil sie Teil der verketteten Signatur sind: Konto-ID, Signatur-"
+"Hash, Zeitstempel, Vertragsversion, das tagesgesalzene IP-Pseudonym und der "
+"Interaktionsnachweis (Eingabegerät, Dauer, Zeigerweg, Sichtfenster, "
+"Zeitzonenversatz). Die Konto-ID verweist weiter auf das WordPress-Konto, wer "
+"den Salt kennt, kann das IP-Pseudonym gegen Kandidaten-Adressen prüfen, und "
+"Sichtfenster und Zeitzonenversatz beschreiben das benutzte Gerät."
+msgstr ""
+"Ohranjeno, ker so del verižnega podpisa: ID računa, zgoščena vrednost "
+"podpisa, časovni žig, različica pogodbe, dnevno soljeni psevdonim IP in "
+"dokaz interakcije (vhodna naprava, trajanje, pot kazalca, vidno okno, zamik "
+"časovnega pasu). ID računa še vedno kaže na račun WordPress, kdor pozna sol, "
+"lahko psevdonim IP preveri glede na kandidatne naslove, vidno okno in zamik "
+"časovnega pasu pa opisujeta uporabljeno napravo."
+
+#: includes/class-nda-i18n.php:49
+msgid ""
+"Ich habe die Vertraulichkeitsvereinbarung (NDA) für dieses Prototyp-System "
+"gelesen und stimme ihr zu."
+msgstr ""
+"Prebral(a) sem dogovor o zaupnosti (NDA) za ta prototipni sistem in se z "
+"njim strinjam."
+
+#: includes/class-nda-i18n.php:56
+msgid "Zwingende Vertraulichkeitsverpflichtung (NDA)"
+msgstr "Obvezna zaveza o zaupnosti (NDA)"
+
+#: includes/class-nda-i18n.php:63
+msgid "NDA akzeptieren & fortfahren"
+msgstr "Sprejmi NDA in nadaljuj"
+
+#: includes/class-nda-i18n.php:70
+msgid "Ablehnen & Abmelden"
+msgstr "Zavrni in se odjavi"
+
+#: includes/class-nda-i18n.php:81
+msgid ""
+"Bitte bestätigen Sie die Vertraulichkeitsvereinbarung (NDA) mit dem Kästchen "
+"unter dem Passwort, um sich anzumelden. Für die aktuelle Fassung liegt von "
+"Ihnen noch keine Bestätigung vor."
+msgstr ""
+"Za prijavo potrdite dogovor o zaupnosti (NDA) s poljem pod geslom. Za "
+"trenutno različico vaša potrditev še ni zabeležena."
+
+#: includes/class-nda-i18n.php:85
+msgid "Der Anmeldeversuch wurde forensisch erfasst."
+msgstr "Poskus prijave je bil forenzično zabeležen."
+
+#: includes/class-nda-i18n.php:86
+msgid "Der Anmeldeversuch wurde protokolliert."
+msgstr "Poskus prijave je bil zabeležen."
+
+#: includes/class-nda-i18n.php:94
+msgid ""
+"Bitte bestätigen Sie zuerst die aktuelle Vertraulichkeitsvereinbarung (NDA)."
+msgstr "Najprej potrdite veljavni dogovor o zaupnosti (NDA)."
+
+#: includes/class-nda-interceptor.php:75
+msgid "[Vollständigen NDA-Text lesen]"
+msgstr "[Preberi celotno besedilo NDA]"
+
+#: includes/class-nda-interceptor.php:79
+msgid "Nur nötig, wenn Sie die aktuelle Fassung noch nicht bestätigt haben."
+msgstr "Potrebno le, če trenutne različice še niste potrdili."
+
+#: includes/class-nda-interceptor.php:206
+#: includes/class-nda-interceptor.php:234
+msgid "Fehler:"
+msgstr "Napaka:"
+
+#: includes/class-nda-interceptor.php:234
+msgid ""
+"Ihre Bestätigung konnte nicht gespeichert werden; die Anmeldung wurde "
+"deshalb nicht fortgesetzt. Bitte versuchen Sie es erneut."
+msgstr ""
+"Vaše potrditve ni bilo mogoče shraniti; prijava zato ni bila nadaljevana. "
+"Poskusite znova."
+
+#: includes/class-nda-interceptor.php:338
+msgid "NDA"
+msgstr "NDA"
+
+#: includes/class-nda-modal.php:38
+msgid "Zustimmung gespeichert. Weiterleitung …"
+msgstr "Soglasje shranjeno. Preusmerjanje …"
+
+#: includes/class-nda-modal.php:38
+msgid "Fehler bei der Signaturübermittlung."
+msgstr "Napaka pri pošiljanju podpisa."
+
+#: includes/class-nda-modal.php:38
+msgid "Netzwerkfehler:"
+msgstr "Omrežna napaka:"
+
+#: includes/class-nda-modal.php:58
+msgid "Vertragstext der Geheimhaltungsvereinbarung"
+msgstr "Pogodbeno besedilo dogovora o zaupnosti"
+
+#: includes/class-nda-modal.php:63
+msgid ""
+"Hinweis: Der Zugang zu diesem Prototyp setzt Ihre Zustimmung zur folgenden "
+"Vereinbarung voraus. Gespeichert werden Benutzer-ID, E-Mail-Adresse, "
+"Anzeigename, User-Agent, Zeitpunkt, die Prüfsumme des Textes, ein Pseudonym "
+"Ihrer IP-Adresse und der Interaktionsnachweis."
+msgstr ""
+"Opomba: Dostop do tega prototipa zahteva vaše soglasje z naslednjim "
+"dogovorom. Shranijo se ID uporabnika, e-poštni naslov, prikazno ime, oznaka "
+"brskalnika (user agent), čas, kontrolna vsota besedila, psevdonim vašega "
+"naslova IP in dokaz interakcije."
+
+#: includes/class-nda-modal.php:72
+msgid "Dokumenten-Prüfsumme (SHA-256):"
+msgstr "Kontrolna vsota dokumenta (SHA-256):"
+
+#: includes/class-nda-rest-api.php:38
+msgid "Vom Browser gemeldete Interaktionsdaten der Click-Wrap-Bestätigung."
+msgstr "Podatki o interakciji click-wrap, ki jih je sporočil brskalnik."
+
+#: includes/class-nda-rest-api.php:105 includes/class-nda-rest-api.php:154
+msgid "Zu viele Anfragen. Bitte warten Sie eine Minute."
+msgstr "Preveč zahtevkov. Počakajte eno minuto."
+
+#: includes/class-nda-rest-api.php:120
+msgid "Authentifizierung erforderlich."
+msgstr "Zahtevana je avtentikacija."
+
+#: includes/class-nda-rest-api.php:167
+msgid "Die angeforderte NDA-Version ist nicht die aktive Fassung."
+msgstr "Zahtevana različica NDA ni aktivna različica."
+
+#: includes/class-nda-rest-api.php:188
+msgid "Fehler beim Speichern der Signatur in der Datenbank."
+msgstr "Napaka pri shranjevanju podpisa v podatkovno zbirko."
+
+#: includes/class-nda-rest-api.php:196
+msgid "NDA-Zustimmung gespeichert."
+msgstr "Potrditev NDA shranjena."
+
+#: includes/class-nda-rest-api.php:238
+msgid "Für andere Benutzer ist diese Auskunft Administratoren vorbehalten."
+msgstr "Poizvedba za druge uporabnike je dovoljena samo skrbnikom."
+
+#: includes/class-nda-rest-api.php:266
+msgid "Keine aktive Vertraulichkeitsvereinbarung konfiguriert."
+msgstr "Aktivni dogovor o zaupnosti ni nastavljen."
+
+#: includes/class-nda-watermark.php:340
+msgid ""
+"Die PHP-Erweiterung GD fehlt; ohne sie lässt sich kein Screenshot lesen."
+msgstr ""
+"Razširitev PHP GD manjka; brez nje posnetka zaslona ni mogoče prebrati."
+
+#: includes/class-nda-watermark.php:344
+msgid "Datei nicht lesbar."
+msgstr "Datoteke ni mogoče brati."
+
+#: includes/class-nda-watermark.php:349
+msgid "Die Datei ist kein lesbares Bild (PNG, JPEG oder WebP)."
+msgstr "Datoteka ni berljiva slika (PNG, JPEG ali WebP)."
+
+#: includes/class-nda-watermark.php:442
+msgid "Das Bild ist kleiner als ein Block des Musters."
+msgstr "Slika je manjša od enega bloka vzorca."
+
+#: includes/class-nda-watermark.php:468
+msgid ""
+"Kein Wasserzeichen gefunden: die Prüfsumme keines gefundenen Rasters passt. "
+"Entweder trägt das Bild keines, es stammt aus einer anderen Installation, "
+"oder es wurde skaliert, gedreht oder zu stark komprimiert."
+msgstr ""
+"Vodni žig ni bil najden: kontrolna vsota nobene zaznane mreže se ne ujema."
+
+#: wm-prototype-nda-gate.php:244
+msgid "Signatur-Protokoll"
+msgstr "Dnevnik podpisov"
+
+#: wm-prototype-nda-gate.php:262
+msgid "NDA-Vertragstext bearbeiten"
+msgstr "Uredi besedilo pogodbe NDA"

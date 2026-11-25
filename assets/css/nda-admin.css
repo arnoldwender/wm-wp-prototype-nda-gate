@@ -1,0 +1,498 @@
+/**
+ * WM Prototype NDA Gate — plugin layer on top of the WM Suite family sheets.
+ *
+ * Loaded after wm-admin-tokens.css and wm-admin-ui.css (byte-identical copies of the hub's
+ * canonical sheets, pinned by tests/test-ui-family.php). The family renders the page wrapper,
+ * the command header, the tabs, the quick guide, the preset pills and the jump bar; this file
+ * carries only what is specific to the NDA Gate: KPI tiles with an icon column and the acceptance
+ * bar, the modal preview on the dashboard, version status pills, the two-column layout of the
+ * versions screen, the shortened hashes and hyphenated labels in the tables, the filter bar, the
+ * settings danger zone and the code samples of the handbook.
+ *
+ * No colour value in a rule: every colour is a family token. The one local token is the backdrop
+ * of the modal preview, which mirrors the real gate overlay.
+ */
+
+:root {
+	--wm-nda-preview-backdrop: rgba(15, 23, 42, 0.7);
+}
+
+/* ==========================================================================
+   1. Icons next to text
+   ========================================================================== */
+
+.wm-nda-admin-wrap .wm-tab-link .dashicons,
+.wm-nda-admin-wrap .wm-jump-link .dashicons,
+.wm-nda-admin-wrap .wm-preset-pill-btn .dashicons,
+.wm-nda-admin-wrap .wm-quick-guide-title .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	line-height: 1;
+}
+
+.wm-nda-admin-wrap .wm-nda-eyebrow {
+	margin-bottom: var(--wm-space-2);
+}
+
+.wm-nda-admin-wrap .wm-nda-eyebrow .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	line-height: 1;
+}
+
+/* ==========================================================================
+   2. KPI tiles — family tile with an icon column and the acceptance-rate bar
+   ========================================================================== */
+
+.wm-nda-kpi-grid {
+	margin-bottom: var(--wm-space-6);
+}
+
+.wm-nda-kpi-card {
+	flex-direction: row;
+	align-items: center;
+	gap: var(--wm-space-4);
+	flex-wrap: wrap;
+}
+
+.wm-nda-kpi-icon {
+	width: 46px;
+	height: 46px;
+	border-radius: var(--wm-radius-md);
+	background: var(--wm-accent-light);
+	border: 1px solid var(--wm-accent-border);
+	color: var(--wm-accent-primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.wm-nda-kpi-icon .dashicons {
+	font-size: 22px;
+	width: 22px;
+	height: 22px;
+}
+
+.wm-nda-kpi-icon.wm-kpi-success {
+	background: var(--wm-success-bg);
+	border-color: var(--wm-success-border);
+	color: var(--wm-success);
+}
+
+.wm-nda-kpi-data {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wm-space-1);
+	min-width: 0;
+}
+
+.wm-nda-kpi-bar {
+	flex-basis: 100%;
+	height: 6px;
+	background: var(--wm-border-faint);
+	border-radius: var(--wm-radius-pill);
+	overflow: hidden;
+}
+
+.wm-nda-kpi-bar-fill {
+	height: 100%;
+	background: var(--wm-accent-primary);
+	border-radius: inherit;
+}
+
+.wm-nda-kpi-card.wm-kpi-warning .wm-nda-kpi-icon {
+	background: var(--wm-warning-bg);
+	border-color: var(--wm-warning-border);
+	color: var(--wm-warning);
+}
+
+.wm-nda-kpi-card.wm-kpi-warning .wm-kpi-val {
+	color: var(--wm-warning);
+}
+
+/* ==========================================================================
+   3. Cards, columns, meta, badges
+   ========================================================================== */
+
+.wm-nda-card {
+	margin-bottom: var(--wm-space-6);
+}
+
+.wm-nda-card-accent {
+	border-left: 4px solid var(--wm-accent-primary);
+}
+
+.wm-nda-icon-accent {
+	color: var(--wm-accent-primary);
+}
+
+.wm-nda-active-meta p {
+	margin: 0 0 var(--wm-space-2) 0;
+}
+
+.wm-nda-active-meta code {
+	word-break: break-all;
+}
+
+.wm-nda-actions-row {
+	display: flex;
+	gap: var(--wm-space-4);
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: var(--wm-space-5);
+}
+
+.wm-nda-actions-row form {
+	display: inline;
+}
+
+.wm-nda-alert {
+	display: flex;
+	gap: 10px;
+	align-items: flex-start;
+	padding: var(--wm-space-3) var(--wm-space-4);
+	border-radius: var(--wm-radius-sm);
+	border: 1px solid var(--wm-border-subtle);
+	background: var(--wm-bg-surface-subtle);
+	color: var(--wm-text-secondary);
+	font-size: 13px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.wm-nda-alert-warning {
+	background: var(--wm-warning-bg);
+	border-color: var(--wm-warning-border);
+	color: var(--wm-warning);
+}
+
+.wm-nda-badge {
+	font-family: var(--wm-font-mono);
+	font-size: var(--wm-text-xs);
+	padding: 2px 8px;
+	border-radius: var(--wm-radius-sm);
+	background: var(--wm-bg-surface-subtle);
+	border: 1px solid var(--wm-border-subtle);
+	color: var(--wm-text-secondary);
+	white-space: nowrap;
+}
+
+.wm-nda-status-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 4px 10px;
+	border-radius: var(--wm-radius-pill);
+	font-size: var(--wm-text-xs);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	line-height: 1;
+	background: var(--wm-bg-surface-subtle);
+	color: var(--wm-text-secondary);
+	border: 1px solid var(--wm-border-subtle);
+	white-space: nowrap;
+}
+
+.wm-nda-status-pill.wm-status-active {
+	background: var(--wm-success-bg);
+	color: var(--wm-success);
+	border-color: var(--wm-success-border);
+}
+
+.wm-nda-columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: var(--wm-space-5);
+	margin-bottom: var(--wm-space-6);
+}
+
+.wm-nda-columns:has(.wm-nda-col-side) {
+	grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
+}
+
+.wm-nda-columns .wm-nda-card,
+.wm-nda-docs-grid .wm-nda-card {
+	margin-bottom: 0;
+}
+
+.wm-nda-docs-grid {
+	margin-bottom: var(--wm-space-6);
+}
+
+.wm-nda-list {
+	list-style: disc;
+	margin: 0 0 0 var(--wm-space-5);
+	color: var(--wm-text-secondary);
+	line-height: 1.6;
+}
+
+.wm-nda-divider {
+	border: 0;
+	border-top: 1px solid var(--wm-border-faint);
+	margin: var(--wm-space-5) 0;
+}
+
+/* ==========================================================================
+   4. Modal preview on the dashboard — a still of the real gate over its backdrop
+   ========================================================================== */
+
+.wm-nda-preview-stage {
+	background: var(--wm-nda-preview-backdrop);
+	padding: var(--wm-space-6);
+	border-radius: var(--wm-radius-md);
+	max-width: 650px;
+	margin: 0 auto;
+	box-shadow: var(--wm-shadow-elevated);
+}
+
+.wm-nda-preview-card {
+	background: var(--wm-bg-surface);
+	border-radius: var(--wm-radius-md);
+	padding: var(--wm-space-5);
+	color: var(--wm-text-primary);
+	box-shadow: var(--wm-shadow-card);
+}
+
+.wm-nda-preview-head {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-bottom: 1px solid var(--wm-border-faint);
+	padding-bottom: var(--wm-space-3);
+	margin-bottom: var(--wm-space-3);
+}
+
+.wm-nda-preview-head .dashicons {
+	color: var(--wm-accent-primary);
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+}
+
+.wm-nda-admin-wrap .wm-nda-preview-head h3 {
+	margin: 0;
+	font-size: 16px;
+}
+
+.wm-nda-preview-body {
+	max-height: 120px;
+	overflow-y: auto;
+	background: var(--wm-bg-surface-subtle);
+	padding: 10px;
+	border-radius: var(--wm-radius-sm);
+	font-size: var(--wm-text-sm);
+	line-height: 1.5;
+	color: var(--wm-text-secondary);
+	margin-bottom: 14px;
+}
+
+.wm-nda-preview-foot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--wm-space-3);
+	flex-wrap: wrap;
+	font-size: var(--wm-text-sm);
+}
+
+.wm-nda-preview-foot label {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 600;
+}
+
+.wm-nda-preview-foot .button {
+	pointer-events: none;
+}
+
+/* ==========================================================================
+   5. Signatures filter bar
+   ========================================================================== */
+
+.wm-nda-filter-bar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--wm-space-3);
+	align-items: center;
+	margin-bottom: var(--wm-space-4);
+	padding: var(--wm-space-3) var(--wm-space-4);
+	background: var(--wm-bg-surface);
+	border: 1px solid var(--wm-border-subtle);
+	border-radius: var(--wm-radius-md);
+	box-shadow: var(--wm-shadow-card);
+}
+
+.wm-nda-filter-bar input[type="search"] {
+	flex: 1 1 260px;
+	min-height: 38px;
+}
+
+.wm-nda-filter-bar select {
+	min-height: 38px;
+}
+
+/* ==========================================================================
+   6. Settings — demo data card and the factory-reset danger zone
+   ========================================================================== */
+
+.wm-nda-danger-zone {
+	background: var(--wm-danger-bg);
+	border: 1px solid var(--wm-danger-border);
+	border-radius: var(--wm-radius-md);
+	padding: var(--wm-space-4);
+}
+
+.wm-nda-danger-zone h4 {
+	margin: 0 0 var(--wm-space-2) 0;
+	color: var(--wm-danger);
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	gap: var(--wm-space-2);
+}
+
+.wm-nda-danger-zone p {
+	color: var(--wm-text-secondary);
+	font-size: 13px;
+	margin: 0 0 14px 0;
+}
+
+.wm-nda-admin-wrap .button.wm-nda-btn-danger-text {
+	color: var(--wm-danger);
+}
+
+/* ==========================================================================
+   7. Handbook code samples — syntax roles over tokens
+   ========================================================================== */
+
+/* Comment and variable were text-muted (4.36:1) and warning (4.44:1) on the code block (reader audit 2026-09-15, D21). */
+.wm-code-cm { color: var(--wm-text-secondary); }
+.wm-code-kw { color: var(--wm-danger); }
+.wm-code-str { color: var(--wm-accent-primary); }
+.wm-code-fn { color: var(--wm-purple); }
+.wm-code-var { color: var(--wm-success); }
+
+/* ==========================================================================
+   7b. Signatures screen and demo buttons — formerly inline styles
+   ========================================================================== */
+
+.wm-nda-admin-wrap .wm-nda-integrity-notice {
+	margin: var(--wm-space-3) 0;
+}
+
+.wm-nda-admin-wrap .wm-nda-col-id {
+	width: 60px;
+}
+
+.wm-nda-admin-wrap .wm-nda-btn-icon {
+	margin-top: var(--wm-space-1);
+}
+
+/* ==========================================================================
+   7c. Shortened hashes and the version column
+   ========================================================================== */
+
+/* WM_NDA_Admin::short_hash(): a prefix and "…" as one unit. WordPress gives every .widefat
+   descendant word-wrap: break-word and these tables are table-layout: fixed, so a column narrower
+   than the token cut it where the column ended (versions screen at 1440 px: "8dfac83423be6a76" on
+   one line, "..." on the next; 21.11.2026). One line; where the column is narrower, the browser
+   clips it and draws the ellipsis itself. */
+.wm-nda-admin-wrap code.wm-nda-hash {
+	display: inline-block;
+	max-width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+/* Five equal columns left the short version number half empty while the title broke inside a
+   word ("Nutzungsvereinbarun" / "g"); sized in em of the header, so the label fits at any font size. */
+.wm-nda-admin-wrap .wm-nda-col-version {
+	width: 6.5em;
+}
+
+/* German compounds in a narrow column broke wherever the column ended ("Interaktionsnac" / "hweis",
+   signatures screen at 1280 px; 21.11.2026); hyphenated at a syllable instead ("Interaktions-" /
+   "nachweis"). Headers, the version title and the interaction summary only: a hyphen inside an
+   e-mail address reads as part of it, and names are not split. No fragment under four letters:
+   Safari ignores hyphenate-limit-chars and keeps to its prefixed before/after limits.
+   WordPress sets the page language on <html>, which hyphenation needs. */
+.wm-nda-admin-wrap .widefat thead th,
+.wm-nda-admin-wrap .widefat .wm-nda-hyphenate {
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	hyphenate-limit-chars: 10 4 4;
+	-webkit-hyphenate-limit-before: 4;
+	-webkit-hyphenate-limit-after: 4;
+}
+
+/* ==========================================================================
+   8. Dashboard widget — family .wm-dash-* plus a danger state for pending signatures
+   ========================================================================== */
+
+.wm-nda-dash-widget .wm-dash-banner .dashicons {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+	color: var(--wm-success);
+}
+
+.wm-nda-dash-widget .wm-dash-banner.is-warning .dashicons {
+	color: var(--wm-warning);
+}
+
+.wm-nda-dash-widget .wm-dash-kpi-val.is-danger {
+	color: var(--wm-danger);
+}
+
+.wm-nda-dash-widget .wm-dash-btn .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+/* ==========================================================================
+   9. Responsive
+   ========================================================================== */
+
+/* Versions screen: the form moves below the table where two thirds of the page no longer hold it.
+   Stacked only from 1024 px down, the table kept 105 px per column at 1100 px: the status pill
+   (129 px) spilled into the next column and the title broke inside its words (21.11.2026). */
+@media (max-width: 1280px) {
+	.wm-nda-columns:has(.wm-nda-col-side) {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 782px) {
+	.wm-nda-kpi-card {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+/* Interaction record on the signatures screen: the details list inside the <details> cell. */
+.wm-nda-interaction-detail {
+	margin: var(--wm-space-2) 0 0;
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 2px var(--wm-space-3);
+	font-size: var(--wm-text-xs);
+}
+
+.wm-nda-interaction-detail dt {
+	color: var(--wm-text-secondary);
+	font-weight: 600;
+	margin: 0;
+}
+
+.wm-nda-interaction-detail dd {
+	margin: 0;
+}

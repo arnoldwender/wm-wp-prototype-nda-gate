@@ -1,0 +1,47 @@
+/* humanstxt.org */
+/* The humans responsible & technology colophon */
+
+# TEAM
+
+    Author: Arnold Wender
+
+    Built with: an agentic workflow (AI coding agents)
+# THANKS
+
+    To My Family -- For unconditional love, strength & continuous inspiration
+    WordPress Community & Core Contributors -- For democratizing publishing and powering the open web
+    Open Source Community -- For making software accessible to everyone
+
+# TECHNOLOGY COLOPHON
+
+    ## Architecture & Core
+    WordPress 6.4+
+    PHP 8.2+ (strict types)
+    Two plugin tables: agreement versions and an HMAC-SHA256 chained acceptance register with a sealed tip
+    WP-CLI command and REST routes
+
+    ## Frontend
+    Login checkbox and signature modal in vanilla JS
+    Scoped CSS custom properties; admin screens on the WM Suite family sheets
+    Self-hosted scripts and styles (no CDN)
+
+    ## Quality
+    Standalone test suite with a mutation check on PHP 8.2 and 8.3, a read-only runtime check inside WordPress
+    Contrast ratios of the modal and login tokens measured in the tests
+    No legal assessment of the agreement or the measures
+
+# SITE & PROJECT
+
+    Plugin: wm-prototype-nda-gate
+    Stack: WordPress Enterprise Extension
+    Standards: no runtime dependency on other plugins
+
+# CONTACT
+
+    Author Website: https://arnoldwender.com
+    Repository: https://github.com/arnoldwender/wm-wp-prototype-nda-gate
+    Support: Zero support — reproducible bugs on GitHub Issues only (SUPPORT.md)
+
+# DEDICATION
+
+    Dedicated to my family with eternal love and gratitude.

@@ -1,0 +1,1478 @@
+# Translation of wm-prototype-nda-gate in nl_NL
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-prototype-nda-gate 1.3.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-prototype-nda-"
+"gate\n"
+"POT-Creation-Date: 2026-11-22T00:26:19+00:00\n"
+"PO-Revision-Date: 2026-11-22 01:31+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-prototype-"
+"nda-gate/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-prototype-nda-"
+"gate/issues>\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-prototype-nda-gate\n"
+
+#. Plugin Name of the plugin
+#: wm-prototype-nda-gate.php includes/class-nda-admin.php:1130
+msgid "WM Prototype NDA Gate"
+msgstr "WM Prototype NDA Gate"
+
+#. Plugin URI of the plugin
+#: wm-prototype-nda-gate.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/"
+
+#. Description of the plugin
+#: wm-prototype-nda-gate.php
+msgid ""
+"Verlangt von angemeldeten Benutzern die Bestätigung einer "
+"Vertraulichkeitsvereinbarung vor Login, wp-admin, Frontend und REST und "
+"speichert jede Bestätigung in einem verketteten HMAC-Register mit CSV- und "
+"JSON-Export. Keine rechtliche Bewertung."
+msgstr ""
+"Vraagt ingelogde gebruikers een geheimhoudingsovereenkomst te bevestigen "
+"vóór wp-login, wp-admin, frontend en REST en slaat elke bevestiging op in "
+"een gekoppeld HMAC-register met CSV- en JSON-export. Geen juridisch oordeel."
+
+#. Author of the plugin
+#: wm-prototype-nda-gate.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-prototype-nda-gate.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-nda-admin.php:51
+msgid "WM Prototype NDA Gate — Signaturen"
+msgstr "WM Prototype NDA Gate — Handtekeningen"
+
+#: includes/class-nda-admin.php:69
+msgid "NDA-Gate aktiv (Admin- und/oder Frontend-Gate an)"
+msgstr "NDA-poort actief (admin- en/of frontend-poort aan)"
+
+#: includes/class-nda-admin.php:69
+msgid "NDA-Schranke deaktiviert (Admin- und Frontend-Gate aus)"
+msgstr "NDA-poort uitgeschakeld (admin- en frontend-poort uit)"
+
+#: includes/class-nda-admin.php:71
+msgid "Verkettetes Signatur-Register (HMAC-SHA256)"
+msgstr "Gekoppeld handtekeningenregister (HMAC-SHA256)"
+
+#: includes/class-nda-admin.php:78
+msgid "Signiert (aktive Version)"
+msgstr "Ondertekend (actieve versie)"
+
+#: includes/class-nda-admin.php:82 includes/class-nda-admin.php:476
+msgid "Ausstehend"
+msgstr "Openstaand"
+
+#: includes/class-nda-admin.php:86 includes/class-nda-admin.php:484
+msgid "NDA-Version"
+msgstr "NDA-versie"
+
+#: includes/class-nda-admin.php:92
+msgid "NDA Gate Cockpit"
+msgstr "NDA Gate Cockpit"
+
+#: includes/class-nda-admin.php:153
+msgid ""
+"Neue Fassung veröffentlichen? Die bisherige wird deaktiviert, und wer die "
+"neue noch nicht bestätigt hat, wird beim nächsten Zugriff darum gebeten."
+msgstr ""
+"Nieuwe versie publiceren? De vorige versie wordt gedeactiveerd en iedereen "
+"die de nieuwe versie nog niet heeft bevestigd, wordt bij het volgende bezoek "
+"hierom gevraagd."
+
+#: includes/class-nda-admin.php:204
+msgid "Part of the WM Suite plugin family"
+msgstr "Onderdeel van de WM Suite-pluginfamilie"
+
+#: includes/class-nda-admin.php:206
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-nda-admin.php:207
+msgid "Hub"
+msgstr "Hub-modus"
+
+#: includes/class-nda-admin.php:207
+msgid "Standalone"
+msgstr "Zelfstandig"
+
+#: includes/class-nda-admin.php:224 includes/class-nda-admin.php:225
+msgid "WM NDA Gate"
+msgstr "WM NDA Gate"
+
+#: includes/class-nda-admin.php:235 includes/class-nda-admin.php:376
+msgid "Dashboard & KPIs"
+msgstr "Dashboard & KPI's"
+
+#: includes/class-nda-admin.php:236
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: includes/class-nda-admin.php:244
+msgid "Aktivitäten & Signaturen"
+msgstr "Activiteiten & handtekeningen"
+
+#: includes/class-nda-admin.php:245 includes/class-nda-admin.php:377
+msgid "Signaturen & Log"
+msgstr "Handtekeningen & log"
+
+#: includes/class-nda-admin.php:253 includes/class-nda-admin.php:761
+msgid "NDA-Versionen"
+msgstr "NDA-versies"
+
+#: includes/class-nda-admin.php:254 includes/class-nda-admin.php:378
+#: includes/class-nda-admin.php:760
+msgid "Versionen"
+msgstr "Versies"
+
+#: includes/class-nda-admin.php:262 includes/class-nda-admin.php:263
+#: includes/class-nda-admin.php:379 includes/class-nda-admin.php:874
+msgid "Export"
+msgstr "Exporteren"
+
+#: includes/class-nda-admin.php:271 includes/class-nda-admin.php:272
+#: includes/class-nda-admin.php:380 includes/class-nda-admin.php:921
+#: wm-prototype-nda-gate.php:233
+msgid "Einstellungen"
+msgstr "Instellingen"
+
+#: includes/class-nda-admin.php:280
+msgid "Handbuch & Dokumentation"
+msgstr "Handboek & documentatie"
+
+#: includes/class-nda-admin.php:281 includes/class-nda-admin.php:1166
+#: wm-prototype-nda-gate.php:239 wm-prototype-nda-gate.php:257
+msgid "Handbuch"
+msgstr "Handboek"
+
+#: includes/class-nda-admin.php:381
+msgid "Handbuch & Glossar"
+msgstr "Handboek & woordenlijst"
+
+#: includes/class-nda-admin.php:384
+msgid "Plugin-Navigation"
+msgstr "Pluginnavigatie"
+
+#: includes/class-nda-admin.php:409 includes/class-nda-modal.php:47
+msgid "Vertraulichkeitsvereinbarung"
+msgstr "Geheimhoudingsovereenkomst"
+
+#: includes/class-nda-admin.php:410
+msgid "WM Prototype NDA Gate — Cockpit"
+msgstr "WM Prototype NDA Gate — Cockpit"
+
+#: includes/class-nda-admin.php:411
+msgid "NDA für angemeldete Benutzer, Signatur-Register und Export."
+msgstr "NDA voor ingelogde gebruikers, handtekeningenregister en export."
+
+#: includes/class-nda-admin.php:419
+msgid "Springen zu:"
+msgstr "Spring naar:"
+
+#: includes/class-nda-admin.php:420
+msgid "Kurzanleitung"
+msgstr "Snelstartgids"
+
+#: includes/class-nda-admin.php:421
+msgid "Kennzahlen"
+msgstr "Kerncijfers"
+
+#: includes/class-nda-admin.php:422
+msgid "Vorschau des Modals"
+msgstr "Voorbeeld van het venster"
+
+#: includes/class-nda-admin.php:423 includes/class-nda-admin.php:540
+msgid "Letzte Signaturen"
+msgstr "Laatste handtekeningen"
+
+#: includes/class-nda-admin.php:430
+msgid "Was dieses Plugin tut"
+msgstr "Wat deze plugin doet"
+
+#: includes/class-nda-admin.php:433
+msgid ""
+"Für Websites, Prototypen oder Staging-Umgebungen, die angemeldeten Kunden "
+"oder Partnern gezeigt werden: Das Plugin verlangt vor Login, wp-admin, "
+"Frontend und REST die Bestätigung einer Vertraulichkeitsvereinbarung und "
+"speichert jede Bestätigung mit Zeitpunkt, Hash des Vertragstextes und "
+"verketteter Signatur. Nicht angemeldete Besucher sind nicht betroffen. Ob "
+"Vereinbarung und Maßnahmen rechtlich tragen, beurteilt das Plugin nicht."
+msgstr ""
+"Voor websites, prototypes of testomgevingen die aan ingelogde klanten of "
+"partners worden getoond: de plugin vraagt vóór login, wp-admin, frontend en "
+"REST om bevestiging van een geheimhoudingsovereenkomst en bewaart elke "
+"bevestiging met tijdstip, teksthash en gekoppelde handtekening. Niet-"
+"ingelogde bezoekers worden niet geraakt. Of de overeenkomst en de "
+"maatregelen juridisch standhouden, beoordeelt de plugin niet."
+
+#: includes/class-nda-admin.php:436
+msgid "Schnellzugriff:"
+msgstr "Snelle toegang:"
+
+#: includes/class-nda-admin.php:439
+msgid "NDA-Text bearbeiten (neue Version)"
+msgstr "NDA-tekst bewerken (nieuwe versie)"
+
+#: includes/class-nda-admin.php:443
+msgid "Signaturen exportieren"
+msgstr "Handtekeningen exporteren"
+
+#: includes/class-nda-admin.php:447
+msgid "Handbuch öffnen"
+msgstr "Handboek openen"
+
+#: includes/class-nda-admin.php:457
+msgid "Bestätigungsquote"
+msgstr "Bevestigingspercentage"
+
+#: includes/class-nda-admin.php:468
+msgid "Signiert (aktive Version) / Benutzer"
+msgstr "Ondertekend (actieve versie) / Gebruikers"
+
+#: includes/class-nda-admin.php:492
+msgid "Vorschau: das Signatur-Modal"
+msgstr "Voorbeeld: het ondertekeningsvenster"
+
+#: includes/class-nda-admin.php:494
+msgid ""
+"Vereinfachte Darstellung des Modals, das angemeldete Benutzer ohne Signatur "
+"sehen (Titel und Textanfang der aktiven Version):"
+msgstr ""
+"Vereenvoudigde weergave van het venster dat ingelogde gebruikers zonder "
+"handtekening zien (titel en begin van de actieve versie):"
+
+#: includes/class-nda-admin.php:501 includes/class-nda-interceptor.php:62
+#: includes/class-nda-interceptor.php:337
+#: includes/class-nda-interceptor.php:352
+msgid "Vertraulichkeitsvereinbarung (NDA)"
+msgstr "Geheimhoudingsovereenkomst (NDA)"
+
+#: includes/class-nda-admin.php:504
+msgid "Keine aktive Version hinterlegt."
+msgstr "Geen actieve versie ingesteld."
+
+#: includes/class-nda-admin.php:518
+msgid "Aktive Vertraulichkeitsvereinbarung"
+msgstr "Actieve geheimhoudingsovereenkomst"
+
+#: includes/class-nda-admin.php:521
+msgid "Titel:"
+msgstr "Titel:"
+
+#: includes/class-nda-admin.php:522
+msgid "Version:"
+msgstr "Versie:"
+
+#: includes/class-nda-admin.php:522
+msgid "Erstellt am:"
+msgstr "Aangemaakt op:"
+
+#: includes/class-nda-admin.php:523
+msgid "Integritäts-Hash (SHA-256):"
+msgstr "Integriteitshash (SHA-256):"
+
+#: includes/class-nda-admin.php:527
+msgid "Neue Version veröffentlichen (Version Bump)"
+msgstr "Nieuwe versie publiceren (Version Bump)"
+
+#: includes/class-nda-admin.php:530
+msgid "Register als JSON herunterladen"
+msgstr "Register als JSON downloaden"
+
+#: includes/class-nda-admin.php:534
+msgid "Keine aktive NDA-Version hinterlegt."
+msgstr "Geen actieve NDA-versie ingesteld."
+
+#: includes/class-nda-admin.php:544 includes/class-nda-admin.php:669
+msgid "Benutzer"
+msgstr "Gebruiker"
+
+#: includes/class-nda-admin.php:545 includes/class-nda-admin.php:670
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: includes/class-nda-admin.php:546 includes/class-nda-admin.php:671
+#: includes/class-nda-admin.php:796 includes/class-nda-exporter.php:277
+msgid "Version"
+msgstr "Versie"
+
+#: includes/class-nda-admin.php:547
+msgid "Signiert am (UTC)"
+msgstr "Ondertekend op (UTC)"
+
+#: includes/class-nda-admin.php:548 includes/class-nda-admin.php:673
+msgid "IP-HMAC"
+msgstr "IP-HMAC"
+
+#: includes/class-nda-admin.php:549
+msgid "Signatur-Hash"
+msgstr "Handtekeninghash"
+
+#: includes/class-nda-admin.php:566
+msgid "Bisher keine Signaturen erfasst."
+msgstr "Nog geen handtekeningen geregistreerd."
+
+#: includes/class-nda-admin.php:602 includes/class-nda-admin.php:1143
+msgid "Signatur-Register"
+msgstr "Handtekeningenregister"
+
+#: includes/class-nda-admin.php:603
+msgid "Aktivitäten & Signaturprotokoll"
+msgstr "Activiteiten & handtekeningenlogboek"
+
+#: includes/class-nda-admin.php:604
+msgid ""
+"Alle gespeicherten Bestätigungen mit Signatur und Prüfergebnis des Registers."
+msgstr ""
+"Alle opgeslagen bevestigingen met handtekening en controleresultaat van het "
+"register."
+
+#. translators: %d: number of chained acceptances recomputed and verified
+#: includes/class-nda-admin.php:621
+#, php-format
+msgid "Register integer — %d Zustimmungen neu berechnet und verkettet geprüft."
+msgstr ""
+"Register intact — %d bevestigingen herberekend en in keten gecontroleerd."
+
+#: includes/class-nda-admin.php:622
+msgid "Register NICHT integer"
+msgstr "Register NIET intact"
+
+#. translators: %d: number of acceptances recorded before the chain existed
+#: includes/class-nda-admin.php:633
+#, php-format
+msgid ""
+"%d Zustimmung(en) stammen aus der Zeit vor der Verkettung und tragen keine "
+"prüfbare Signatur. Sie gelten als ungeprüft, nicht als integer."
+msgstr ""
+"%d bevestiging(en) dateren van vóór de keten en hebben geen controleerbare "
+"handtekening. Ze gelden als ongecontroleerd."
+
+#: includes/class-nda-admin.php:639
+msgid ""
+"AUTH_KEY ist nicht definiert: der Signaturschlüssel stammt aus der Datenbank "
+"— also von dort, wo ein Angreifer ohnehin schreiben würde. Der Nachweis hält "
+"hier nur gegen Unfälle. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"AUTH_KEY is niet gedefinieerd: de sleutel komt uit de database — precies "
+"waar een aanvaller ook zou schrijven. Stel AUTH_KEY in wp-config.php in."
+
+#: includes/class-nda-admin.php:648
+msgid "Alle Versionen anzeigen"
+msgstr "Alle versies tonen"
+
+#: includes/class-nda-admin.php:656
+msgid "Benutzer oder E-Mail suchen..."
+msgstr "Gebruiker of e-mail zoeken..."
+
+#: includes/class-nda-admin.php:657
+msgid "Filtern"
+msgstr "Filteren"
+
+#: includes/class-nda-admin.php:660
+msgid "Zurücksetzen"
+msgstr "Herstellen"
+
+#: includes/class-nda-admin.php:668
+msgid "ID"
+msgstr "ID"
+
+#: includes/class-nda-admin.php:672 includes/class-nda-exporter.php:289
+msgid "Signatur-Zeitpunkt (UTC)"
+msgstr "Tijdstip van ondertekening (UTC)"
+
+#: includes/class-nda-admin.php:674
+msgid "Interaktionsnachweis"
+msgstr "Interactiebewijs"
+
+#: includes/class-nda-admin.php:675
+msgid "Signatur-Hash (HMAC-SHA256)"
+msgstr "Handtekeninghash (HMAC-SHA256)"
+
+#: includes/class-nda-admin.php:701
+msgid ""
+"Vom Browser gemeldet und mit der Signatur dieser Zeile versiegelt: "
+"nachträglich geändert bricht die Kette. Ob der Browser richtig gemeldet hat, "
+"kann das Plugin nicht prüfen."
+msgstr ""
+"Door de browser gemeld en met de handtekening van deze rij verzegeld: "
+"achteraf wijzigen verbreekt de keten. Of de browser juist heeft gemeld, kan "
+"de plugin niet controleren."
+
+#: includes/class-nda-admin.php:710
+msgid "Keine Einträge gefunden."
+msgstr "Geen vermeldingen gevonden."
+
+#. translators: %d: total number of acceptance records
+#: includes/class-nda-admin.php:723
+#, php-format
+msgid "%d Einträge"
+msgstr "%d vermeldingen"
+
+#: includes/class-nda-admin.php:762
+msgid ""
+"Erstellen Sie neue Versionen des Vertragstextes. Das Veröffentlichen einer "
+"neuen Version erzwingt für alle Benutzer eine erneute Zustimmung (Version "
+"Bump Re-acceptance)."
+msgstr ""
+"Maak nieuwe versies van de overeenkomsttekst. Publicatie van een nieuwe "
+"versie vraagt alle gebruikers opnieuw om toestemming."
+
+#: includes/class-nda-admin.php:771
+msgid ""
+"Die Fassung ist gespeichert und aktiv. Wer sie noch nicht bestätigt hat, "
+"wird beim nächsten Zugriff darum gebeten."
+msgstr ""
+"De versie is opgeslagen en actief. Wie haar nog niet heeft bevestigd, wordt "
+"bij het volgende bezoek gevraagd."
+
+#. translators: 1: maximum characters of the version number, 2: maximum characters of the title
+#: includes/class-nda-admin.php:781
+#, php-format
+msgid ""
+"Die Fassung wurde nicht gespeichert; die bisherige bleibt aktiv. "
+"Versionsnummer höchstens %1$d Zeichen, Titel höchstens %2$d Zeichen, Text "
+"nicht leer."
+msgstr ""
+"De versie is niet opgeslagen; de vorige blijft actief. Versienummer maximaal "
+"%1$d tekens, titel maximaal %2$d tekens, tekst niet leeg."
+
+#: includes/class-nda-admin.php:792
+msgid "Bestehende NDA-Versionen"
+msgstr "Bestaande NDA-versies"
+
+#: includes/class-nda-admin.php:797
+msgid "Titel"
+msgstr "Titel"
+
+#: includes/class-nda-admin.php:798
+msgid "Status"
+msgstr "Status"
+
+#: includes/class-nda-admin.php:799
+msgid "SHA-256 Hash"
+msgstr "SHA-256-hash"
+
+#: includes/class-nda-admin.php:800
+msgid "Erstellt am (UTC)"
+msgstr "Aangemaakt op (UTC)"
+
+#: includes/class-nda-admin.php:810
+msgid "Aktiv"
+msgstr "Actief"
+
+#: includes/class-nda-admin.php:812
+msgid "Archiviert"
+msgstr "Gearchiveerd"
+
+#: includes/class-nda-admin.php:827
+msgid "Neue Version herausgeben"
+msgstr "Nieuwe versie uitgeven"
+
+#: includes/class-nda-admin.php:832
+msgid "Versionsnummer:"
+msgstr "Versienummer:"
+
+#: includes/class-nda-admin.php:837
+msgid "Vertragstitel:"
+msgstr "Overeenkomsttitel:"
+
+#: includes/class-nda-admin.php:842
+msgid "Vertragstext (HTML erlaubt):"
+msgstr "Overeenkomsttekst (HTML toegestaan):"
+
+#: includes/class-nda-admin.php:847
+msgid ""
+"Achtung: Durch Veröffentlichung wird die bisherige Version sofort "
+"deaktiviert und alle Benutzer werden beim nächsten Zugriff zur erneuten "
+"Bestätigung aufgefordert."
+msgstr ""
+"Let op: door publicatie wordt de vorige versie direct gedeactiveerd en "
+"moeten alle gebruikers bij het volgende bezoek opnieuw bevestigen."
+
+#: includes/class-nda-admin.php:852
+msgid "Version aktivieren"
+msgstr "Versie activeren"
+
+#: includes/class-nda-admin.php:875
+msgid "Export des Signatur-Registers"
+msgstr "Export van het handtekeningenregister"
+
+#: includes/class-nda-admin.php:876
+msgid ""
+"Das Zustimmungsregister als CSV oder als JSON mit Signaturkette und "
+"aktuellem Prüfergebnis. Welche Beweiskraft das hat, beurteilt das Plugin "
+"nicht."
+msgstr ""
+"Het toestemmingsregister als CSV of JSON met handtekeningketen en actueel "
+"controleresultaat. De plugin beoordeelt de bewijskracht niet."
+
+#: includes/class-nda-admin.php:884
+msgid "CSV-Signaturprotokoll (CWE-1236 gehärtet)"
+msgstr "CSV-handtekeningenprotocol (CWE-1236 gehard)"
+
+#: includes/class-nda-admin.php:885
+msgid ""
+"Strukturierter tabellarischer Export aller Signaturvorgänge mit "
+"automatischer Bereinigung von potenziellen Formel-Injektionen (Formulas/"
+"Macros)."
+msgstr ""
+"Gestructureerde tabelexport van alle ondertekeningen met automatische "
+"opschoning tegen formule-injecties (formules/macro's)."
+
+#: includes/class-nda-admin.php:887
+msgid "CSV-Datei herunterladen"
+msgstr "CSV-bestand downloaden"
+
+#: includes/class-nda-admin.php:892
+msgid "JSON-Export mit Prüfergebnis"
+msgstr "JSON-export met controleresultaat"
+
+#: includes/class-nda-admin.php:893
+msgid ""
+"Vollständiger JSON-Export mit Signaturkette, Prüfergebnis des Registers und "
+"einer SHA-256-Prüfsumme; wie sie sich nachrechnen lässt, steht in der Datei. "
+"Die Prüfsumme belegt, dass das Dokument nach dem Export unverändert ist; "
+"über die Datenbank sagt sie nichts — dafür steht das mitexportierte "
+"Prüfergebnis."
+msgstr ""
+"Volledige JSON-export met handtekeningketen, registercontrole en een SHA-256-"
+"controlesom waarvan de berekening in het bestand staat."
+
+#: includes/class-nda-admin.php:895
+msgid "JSON herunterladen"
+msgstr "JSON downloaden"
+
+#: includes/class-nda-admin.php:922
+msgid "Einstellungen — WM Prototype NDA Gate"
+msgstr "Instellingen — WM Prototype NDA Gate"
+
+#: includes/class-nda-admin.php:923
+msgid ""
+"Login-Checkbox, Admin-, Frontend- und REST-Sperre, Projektname, Demodaten."
+msgstr ""
+"Login-selectievakje, admin-, frontend- en REST-poort, projectnaam en "
+"demogegevens."
+
+#: includes/class-nda-admin.php:931
+msgid "Einstellungen erfolgreich gespeichert."
+msgstr "Instellingen succesvol opgeslagen."
+
+#. translators: %d: number of demo signatures created
+#: includes/class-nda-admin.php:940
+#, php-format
+msgid "%d Demodaten-Signaturen (ohne WordPress-Konto) wurden erzeugt."
+msgstr "%d demohandtekeningen (zonder WordPress-account) aangemaakt."
+
+#. translators: %d: number of demo signatures deleted
+#: includes/class-nda-admin.php:953
+#, php-format
+msgid "%d Demodaten-Signaturen wurden gelöscht."
+msgstr "%d demohandtekeningen verwijderd."
+
+#: includes/class-nda-admin.php:964
+msgid ""
+"Nicht ausgeführt: das Register enthält echte Signaturen. Demodaten werden "
+"nicht mit ihnen verkettet und nicht aus einer Kette mit ihnen gelöscht, "
+"sonst verifiziert das Register nicht mehr."
+msgstr ""
+"Niet uitgevoerd: het register bevat echte handtekeningen. Demogegevens "
+"worden niet gekoppeld aan echte handtekeningen en niet uit zo'n keten "
+"verwijderd."
+
+#: includes/class-nda-admin.php:970
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "Fabrieksinstellingen hersteld:"
+
+#: includes/class-nda-admin.php:970
+msgid ""
+"Alle Signaturen wurden gelöscht, die Standard-NDA v1.0.0 wurde neu "
+"initialisiert und alle Optionen zurückgesetzt."
+msgstr ""
+"Alle handtekeningen zijn gewist, de standaard-NDA v1.0.0 is opnieuw "
+"ingesteld en alle opties zijn teruggezet."
+
+#: includes/class-nda-admin.php:979
+msgid "Projektbezeichnung (Prototyp)"
+msgstr "Projectnaam (prototype)"
+
+#: includes/class-nda-admin.php:982
+msgid ""
+"Erscheint im Modal. In den Vertragstext gelangt er nur, wenn die "
+"Standardfassung neu angelegt wird (Aktivierung ohne Fassung, "
+"Werkseinstellungen); die aktive Fassung ändert sich nicht."
+msgstr ""
+"Verschijnt in het venster. Komt alleen in de tekst terecht wanneer de "
+"standaardversie opnieuw wordt aangemaakt; de actieve versie verandert niet."
+
+#: includes/class-nda-admin.php:987
+msgid "Login-Checkbox erzwingen"
+msgstr "Login-selectievakje afdwingen"
+
+#: includes/class-nda-admin.php:991
+msgid ""
+"Checkbox auf wp-login.php einblenden; Benutzer ohne Signatur der aktiven "
+"Version werden nach der Passwortprüfung ohne Häkchen abgewiesen."
+msgstr ""
+"Selectievakje op wp-login.php tonen; gebruikers zonder handtekening voor de "
+"actieve versie worden na wachtwoordcontrole zonder vinkje geweigerd."
+
+#: includes/class-nda-admin.php:997
+msgid "Admin-Gate (wp-admin)"
+msgstr "Admin-poort (wp-admin)"
+
+#: includes/class-nda-admin.php:1001
+msgid ""
+"Benutzer ohne Signatur der aktuellen NDA-Version werden vor dem Aufbau jeder "
+"wp-admin-Seite auf die Signaturseite umgeleitet; admin-ajax antwortet mit "
+"HTTP 403."
+msgstr ""
+"Gebruikers zonder handtekening voor de actieve NDA-versie vóór het opbouwen "
+"van elke wp-admin-pagina doorsturen naar de ondertekeningspagina; admin-ajax "
+"antwoordt met HTTP 403."
+
+#: includes/class-nda-admin.php:1007
+msgid "Frontend-Gate (Prototyp / Staging)"
+msgstr "Frontend-poort (prototype / staging)"
+
+#: includes/class-nda-admin.php:1011
+msgid ""
+"Angemeldete Benutzer ohne Signatur werden von jeder Frontend-Seite auf die "
+"Signaturseite umgeleitet (template_redirect). Nicht angemeldete Besucher "
+"sind davon nicht betroffen."
+msgstr ""
+"Ingelogde gebruikers zonder handtekening vanaf elke frontend-pagina "
+"doorsturen naar de ondertekeningspagina (template_redirect). Anonieme "
+"bezoekers worden niet geraakt."
+
+#: includes/class-nda-admin.php:1017
+msgid "REST API Schutz"
+msgstr "REST API-beveiliging"
+
+#: includes/class-nda-admin.php:1021
+msgid ""
+"REST-API-Endpunkte für Benutzer ohne aktive NDA-Signatur mit HTTP 403 "
+"Forbidden sperren."
+msgstr ""
+"REST-API-eindpunten met HTTP 403 Forbidden blokkeren voor gebruikers zonder "
+"actieve NDA-handtekening."
+
+#: includes/class-nda-admin.php:1027
+msgid "Forensisches Bildschirm-Wasserzeichen"
+msgstr "Forensisch schermwatermerk"
+
+#: includes/class-nda-admin.php:1031
+msgid ""
+"Legt über jede Seite ein schwaches Raster, das Konto-ID und Minute des "
+"Aufrufs trägt. Aus einem unskalierten Screenshot lässt es sich mit \"wp nda "
+"wasserzeichen-lesen\" zurücklesen."
+msgstr ""
+"Legt over elke pagina een zwak raster met account-ID en minuut van weergave. "
+"Uit een ongeschaalde screenshot terug te lezen met \"wp nda wasserzeichen-"
+"lesen\"."
+
+#: includes/class-nda-admin.php:1033
+msgid ""
+"Schwach heißt nicht unsichtbar: auf großen einfarbigen Flächen ist das "
+"Raster erkennbar. Es überlebt Zuschneiden und JPEG, nicht aber Skalieren, "
+"Drehen oder Abfotografieren. Es benennt das Konto, dem die Seite "
+"ausgeliefert wurde — nicht, wer den Screenshot gemacht hat. Standardmäßig "
+"aus."
+msgstr ""
+"Zwak betekent niet onzichtbaar: op grote egale vlakken is het raster "
+"zichtbaar. Het overleeft bijsnijden en JPEG, maar niet schalen, draaien of "
+"fotograferen van het scherm. Standaard uit."
+
+#: includes/class-nda-admin.php:1038
+msgid "Aufbewahrungsfrist"
+msgstr "Bewaartermijn"
+
+#: includes/class-nda-admin.php:1040
+msgid "Tage"
+msgstr "dagen"
+
+#: includes/class-nda-admin.php:1041
+msgid ""
+"Täglich angewendet: Bei Signaturen, die älter als diese Frist sind, werden "
+"Name, E-Mail-Adresse und Browserkennung ersetzt. Gelöscht wird nichts — eine "
+"gelöschte Zeile würde das Register unterbrechen. Konto-ID, Zeitstempel, "
+"Vertragsversion, IP-Pseudonym und Interaktionsnachweis bleiben, weil sie "
+"Teil der verketteten Signatur sind. Unter 30 Tagen bedeutet: alles behalten."
+msgstr ""
+"Dagelijks toegepast: bij handtekeningen ouder dan deze termijn worden naam, "
+"e-mailadres en browserkenmerk vervangen. Er wordt niets verwijderd — een "
+"verwijderde rij zou het register onderbreken. Account-ID, tijdstip, "
+"contractversie, IP-pseudoniem en interactiebewijs blijven, omdat ze deel "
+"uitmaken van de gekoppelde handtekening. Onder 30 dagen betekent: alles "
+"bewaren."
+
+#: includes/class-nda-admin.php:1046
+msgid "Daten bei Deinstallation löschen"
+msgstr "Gegevens wissen bij verwijderen"
+
+#: includes/class-nda-admin.php:1050
+msgid ""
+"Alle Plugin-Optionen, Benutzer-Metadaten sowie beide NDA-Register-Tabellen "
+"beim Löschen des Plugins endgültig entfernen."
+msgstr ""
+"Alle pluginopties, gebruikersmetadata en beide NDA-registertabellen "
+"definitief verwijderen wanneer de plugin wordt verwijderd."
+
+#: includes/class-nda-admin.php:1052
+msgid ""
+"Standardmäßig deaktiviert, damit ein versehentliches Löschen oder "
+"Neuinstallieren des Plugins keine gespeicherten Zustimmungsnachweise "
+"vernichtet."
+msgstr ""
+"Standaard uitgeschakeld zodat per ongeluk verwijderen of herinstalleren geen "
+"opgeslagen toestemmingsbewijzen vernietigt."
+
+#: includes/class-nda-admin.php:1059
+msgid "Einstellungen speichern"
+msgstr "Instellingen opslaan"
+
+#: includes/class-nda-admin.php:1068
+msgid "Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr "Beheer van demogegevens & fabrieksinstellingen"
+
+#: includes/class-nda-admin.php:1071
+msgid ""
+"Fünf Beispiel-Signaturen ohne WordPress-Konto für Präsentationen – nur in "
+"einem Register ohne echte Signaturen; gelöscht werden können sie nur, "
+"solange keine echten Signaturen mit ihnen verkettet sind. Oder das NDA Gate "
+"auf Werkseinstellungen zurücksetzen."
+msgstr ""
+"Vijf voorbeeldhandtekeningen zonder WordPress-account voor demonstraties — "
+"alleen in een register zonder echte handtekeningen."
+
+#: includes/class-nda-admin.php:1080
+msgid "Demodaten importieren (5 Beispiel-Signaturen)"
+msgstr "Demogegevens importeren (5 voorbeeldhandtekeningen)"
+
+#: includes/class-nda-admin.php:1085
+msgid ""
+"Demodaten löschen? Das geht nur, wenn das Register keine echten Signaturen "
+"enthält."
+msgstr ""
+"Demogegevens verwijderen? Dit kan alleen als het register geen echte "
+"handtekeningen bevat."
+
+#: includes/class-nda-admin.php:1089
+msgid "Demodaten bereinigen (Nur Test-Signaturen)"
+msgstr "Demogegevens opschonen (alleen testhandtekeningen)"
+
+#: includes/class-nda-admin.php:1100
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "Gevarenzone: terugzetten naar fabrieksinstellingen"
+
+#: includes/class-nda-admin.php:1103
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Signaturen und NDA-Versionen, "
+"stellt die Standard-NDA v1.0.0 wieder her und setzt alle Einstellungen auf "
+"die Werksstandards zurück."
+msgstr ""
+"Deze actie verwijdert onomkeerbaar ALLE handtekeningen en NDA-versies, "
+"herstelt de standaard-NDA v1.0.0 en zet alle instellingen terug."
+
+#: includes/class-nda-admin.php:1105
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Signaturen und setzt das NDA Gate "
+"vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"WAARSCHUWING: weet u het zeker? Dit verwijdert ALLE handtekeningen en zet "
+"NDA Gate volledig terug naar de fabrieksinstellingen!"
+
+#: includes/class-nda-admin.php:1109
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "Fabrieksinstellingen herstellen (Factory Reset)"
+
+#: includes/class-nda-admin.php:1129
+msgid "4-Stufen Perimeter-Schutz"
+msgstr "4-laags perimeterbeveiliging"
+
+#: includes/class-nda-admin.php:1130
+msgid ""
+"verlangt von angemeldeten Benutzern die Bestätigung der aktiven "
+"Vertraulichkeitsvereinbarung an vier Stellen: Login-Checkbox, Admin-"
+"Weiterleitung, Frontend-Weiterleitung und REST-Sperre."
+msgstr ""
+"vraagt ingelogde gebruikers op vier plaatsen om bevestiging van de actieve "
+"geheimhoudingsovereenkomst: loginvakje, admin-doorsturing, frontend-"
+"doorsturing en REST-blokkade."
+
+#: includes/class-nda-admin.php:1135
+msgid "Version-Bump & Re-Signing"
+msgstr "Versiewissel & opnieuw tekenen"
+
+#: includes/class-nda-admin.php:1138
+msgid ""
+"Wird der NDA-Vertragstext aktualisiert und eine neue Versionsnummer "
+"vergeben, müssen alle Benutzer den neuen Text vor dem nächsten Zugriff "
+"bestätigen. Die bisherigen Bestätigungen bleiben mit ihrer Fassung im "
+"Register und lassen sich weiter prüfen."
+msgstr ""
+"Wanneer de NDA-tekst wordt bijgewerkt en een nieuw versienummer krijgt, "
+"moeten alle gebruikers de nieuwe tekst vóór hun volgende toegang bevestigen. "
+"De eerdere bevestigingen blijven met hun versie in het register en kunnen "
+"nog steeds worden gecontroleerd."
+
+#: includes/class-nda-admin.php:1144
+msgid ""
+"Jede Signatur ist ein HMAC-SHA256 über die Signatur der vorhergehenden "
+"Zustimmung, User-ID, Versions-ID, Vertrags-Hash, Zeitstempel und die "
+"pseudonymisierte IP; die Spitze der Kette ist mit demselben Schlüssel "
+"versiegelt. Eine geänderte, gelöschte oder eingeschleuste Zustimmung fällt "
+"auf, solange der Schlüssel (AUTH_KEY aus der wp-config.php, ohne ihn ein "
+"Salt aus der Datenbank) nicht bekannt ist; eine vorher kopierte ältere "
+"Kettenspitze, die zurückgespielt wird, fällt nicht auf. Ein neuer Schlüssel "
+"macht alle gespeicherten Signaturen unprüfbar. IP-Adressen werden als HMAC "
+"mit einem täglich wechselnden Salt gespeichert."
+msgstr ""
+"Elke handtekening is een HMAC-SHA256 over de vorige handtekening, gebruikers-"
+"ID, versie-ID, teksthash, tijdstip en gepseudonimiseerd IP-adres; de "
+"ketenkop is met dezelfde sleutel verzegeld."
+
+#: includes/class-nda-admin.php:1148
+msgid "Handbuch:"
+msgstr "Handboek:"
+
+#: includes/class-nda-admin.php:1149
+msgid "Vollständiges Handbuch öffnen"
+msgstr "Volledig handboek openen"
+
+#: includes/class-nda-admin.php:1150
+msgid "Entwickelt von WM Suite."
+msgstr "Ontwikkeld door WM Suite."
+
+#: includes/class-nda-admin.php:1159 includes/class-nda-exporter.php:38
+#: includes/class-nda-exporter.php:124
+msgid "Unzureichende Berechtigungen."
+msgstr "Onvoldoende rechten."
+
+#: includes/class-nda-admin.php:1167
+msgid "WM Prototype NDA Gate — Handbuch"
+msgstr "WM Prototype NDA Gate — Handboek"
+
+#: includes/class-nda-admin.php:1168
+msgid "Die vier Prüfstellen, das Signatur-Register, Hooks und Grenzen."
+msgstr "De vier controlepunten, het handtekeningenregister, hooks en grenzen."
+
+#: includes/class-nda-admin.php:1179
+msgid "1. 4-Stufen Perimeter-Interzeption"
+msgstr "1. 4-laags perimeterinterceptie"
+
+#: includes/class-nda-admin.php:1181
+msgid ""
+"Angemeldete Benutzer ohne Signatur der aktiven Version werden an vier "
+"Stellen angehalten:"
+msgstr ""
+"Ingelogde gebruikers zonder handtekening voor de actieve versie worden op "
+"vier plaatsen tegengehouden:"
+
+#: includes/class-nda-admin.php:1183
+msgid "Ebene 1 (wp-login.php):"
+msgstr "Laag 1 (wp-login.php):"
+
+#: includes/class-nda-admin.php:1183
+msgid ""
+"Checkbox (24 × 24 px) auf wp-login.php; nach der Passwortprüfung wird die "
+"Anmeldung ohne Häkchen abgewiesen, wenn keine Signatur der aktiven Version "
+"vorliegt."
+msgstr ""
+"Selectievakje (24 × 24 px) op wp-login.php; na wachtwoordcontrole wordt "
+"inloggen zonder vinkje geweigerd als er geen geldige handtekening is."
+
+#: includes/class-nda-admin.php:1184
+msgid "Ebene 2 (Frontend / Staging):"
+msgstr "Laag 2 (Frontend / Staging):"
+
+#: includes/class-nda-admin.php:1184
+msgid ""
+"Leitet angemeldete Benutzer ohne Signatur bei template_redirect auf die "
+"Signaturseite um, bevor das Theme etwas ausgibt."
+msgstr ""
+"Stuurt ingelogde gebruikers zonder handtekening bij template_redirect door "
+"naar de ondertekeningspagina voordat het thema iets weergeeft."
+
+#: includes/class-nda-admin.php:1185
+msgid "Ebene 3 (REST-API):"
+msgstr "Laag 3 (REST-API):"
+
+#: includes/class-nda-admin.php:1185
+msgid ""
+"Antwortet angemeldeten Benutzern ohne Signatur mit HTTP 403 "
+"(rest_forbidden); ausgenommen sind /wm-nda/v1/, /wp/v2/users/me und /wm-hub/"
+"v1/ (Filter wm_nda_whitelisted_routes). Anonyme Anfragen sind nicht "
+"betroffen."
+msgstr ""
+"Antwoordt ingelogde gebruikers zonder handtekening met HTTP 403 "
+"(rest_forbidden), behalve voor /wm-nda/v1/, /wp/v2/users/me en /wm-hub/v1/ "
+"(filter wm_nda_whitelisted_routes)."
+
+#: includes/class-nda-admin.php:1186
+msgid "Ebene 4 (wp-admin):"
+msgstr "Laag 4 (wp-admin):"
+
+#: includes/class-nda-admin.php:1186
+msgid ""
+"Leitet bei admin_init auf die Signaturseite um, bevor eine wp-admin-Seite "
+"aufgebaut wird; dort das Vollbild-Modal mit WAI-ARIA Focus-Trap. admin-ajax "
+"antwortet mit HTTP 403."
+msgstr ""
+"Stuurt bij admin_init door naar de ondertekeningspagina vóór de opbouw van "
+"een wp-admin-scherm, met volledig schermvenster en WAI-ARIA-focusval. admin-"
+"ajax antwoordt met HTTP 403."
+
+#: includes/class-nda-admin.php:1194
+msgid "2. Der mitgelieferte Vertragstext"
+msgstr "2. De meegeleverde overeenkomsttekst"
+
+#: includes/class-nda-admin.php:1196
+msgid ""
+"Der mitgelieferte Text ist ein Muster ohne juristische Prüfung und nennt "
+"keine Vorschriften. Er beschreibt den Gegenstand, die Pflichten, was bei "
+"einer Zustimmung gespeichert wird, und dass der Zugang bei einem Verstoß "
+"gesperrt werden kann."
+msgstr ""
+"De meegeleverde tekst is een model zonder juridische toetsing en noemt geen "
+"wetsbepalingen. Hij beschrijft het onderwerp, de verplichtingen, wat bij een "
+"toestemming wordt opgeslagen en dat de toegang bij een overtreding kan "
+"worden geblokkeerd."
+
+#: includes/class-nda-admin.php:1197
+msgid ""
+"Ob Vereinbarung und Maßnahmen im Einzelfall tragen, beurteilt das Plugin "
+"nicht. Lassen Sie den Text prüfen und veröffentlichen Sie Ihre Fassung im "
+"Reiter \"Versionen\"; bereits veröffentlichte Versionen behalten ihren Text "
+"und ihre Signaturen."
+msgstr ""
+"Of de overeenkomst en de maatregelen in een concreet geval standhouden, "
+"beoordeelt de plugin niet. Laat de tekst controleren en publiceer uw versie "
+"op het tabblad \"Versies\"; reeds gepubliceerde versies behouden hun tekst "
+"en hun handtekeningen."
+
+#: includes/class-nda-admin.php:1205
+msgid "3. Signatur-Kryptogramm & Entwickler-Hooks"
+msgstr "3. Handtekeningcryptogram & ontwikkelaarshooks"
+
+#: includes/class-nda-admin.php:1207
+msgid ""
+"Bei jeder Bestätigung wird eine HMAC-SHA256-Signatur berechnet, die die "
+"vorherige Signatur einschließt:"
+msgstr ""
+"Bij elke bevestiging wordt een HMAC-SHA256-handtekening berekend die de "
+"vorige handtekening meeneemt:"
+
+#: includes/class-nda-admin.php:1213
+msgid "Entwickler-Action Hook:"
+msgstr "Ontwikkelaars-action-hook:"
+
+#: includes/class-nda-admin.php:1232
+msgid "4. Wichtige Hinweise, Gotchas & Best Practices"
+msgstr "4. Belangrijke aanwijzingen, valkuilen & best practices"
+
+#: includes/class-nda-admin.php:1235
+msgid "Version Bump & Re-Signing:"
+msgstr "Versiewissel & opnieuw tekenen:"
+
+#: includes/class-nda-admin.php:1235
+msgid ""
+"Sobald Sie im Reiter \"Versionen\" eine neue Version anlegen, muss jeder "
+"Benutzer die neue Fassung bestätigen; die bisherigen Bestätigungen bleiben "
+"mit ihrer Fassung im Register."
+msgstr ""
+"Zodra u onder \"Versies\" een nieuwe versie aanmaakt, moet iedere gebruiker "
+"de nieuwe versie bevestigen; de eerdere bevestigingen blijven met hun versie "
+"in het register."
+
+#: includes/class-nda-admin.php:1236
+msgid "WP-CLI & Cron-Automatisierung:"
+msgstr "WP-CLI & cron-automatisering:"
+
+#: includes/class-nda-admin.php:1236
+msgid ""
+"Hintergrund-Crons und CLI-Befehle werden automatisch vom Gate ausgenommen, "
+"um Serverprozesse nicht zu blockieren."
+msgstr ""
+"Achtergrond-crons en WP-CLI-opdrachten zijn automatisch vrijgesteld zodat "
+"serverprocessen niet worden geblokkeerd."
+
+#: includes/class-nda-admin.php:1237
+msgid "Export:"
+msgstr "Export:"
+
+#: includes/class-nda-admin.php:1237
+msgid ""
+"Unter \"Export\" gibt es CSV und JSON; das JSON enthält das Prüfergebnis des "
+"Registers und eine Prüfsumme über die Datei. Einen PDF-Export gibt es nicht."
+msgstr ""
+"Onder \"Exporteren\" zijn CSV en JSON beschikbaar; de JSON bevat het "
+"controleresultaat van het register en een controlesom over het bestand. Er "
+"is geen PDF-export."
+
+#: includes/class-nda-admin.php:1238
+msgid "Interaktionsnachweis:"
+msgstr "Interactiebewijs:"
+
+#: includes/class-nda-admin.php:1238
+msgid ""
+"Der Browser meldet bei der Bestätigung Eingabegerät, Verweildauer, "
+"Zeigerweg, gelesenen Anteil und Sichtfenster. Diese Angaben gehen in die "
+"Signatur ein, sind danach also nicht mehr änderbar, ohne die Kette zu "
+"brechen — aber sie stammen vom Client: sie zeigen, dass der Dialog bedient "
+"wurde, nicht von wem. Bestätigungen ohne JavaScript und alle vor dem "
+"16.09.2026 tragen keinen."
+msgstr ""
+"Bij bevestiging meldt de browser invoerapparaat, verblijfsduur, "
+"aanwijzerpad, gelezen aandeel en viewport. Deze waarden zijn meegetekend in "
+"de keten, maar komen van de client."
+
+#: includes/class-nda-core.php:97 includes/class-nda-core.php:119
+msgid "WM NDA Gate — Status"
+msgstr "WM NDA Gate — Status"
+
+#: includes/class-nda-core.php:123
+msgid ""
+"Zeigt den aktuellen NDA-Bestätigungsstatus oder die aktive Vertragsversion "
+"an."
+msgstr ""
+"Toont de huidige NDA-bevestigingsstatus of de actieve overeenkomstversie."
+
+#: includes/class-nda-core.php:197
+msgid "Nicht angemeldet"
+msgstr "Niet ingelogd"
+
+#: includes/class-nda-core.php:199
+msgid "Keine aktive Vereinbarung"
+msgstr "Geen actieve overeenkomst"
+
+#. translators: %s: active NDA version string
+#: includes/class-nda-core.php:203
+#, php-format
+msgid "NDA v%s bestätigt"
+msgstr "NDA v%s bevestigd"
+
+#. translators: %s: active NDA version string
+#: includes/class-nda-core.php:209
+#, php-format
+msgid "NDA v%s ausstehend"
+msgstr "NDA v%s openstaand"
+
+#. translators: %d: previously recorded number of acceptances
+#: includes/class-nda-database.php:617
+#, php-format
+msgid ""
+"Das Register ist leer, obwohl zuletzt %d Zustimmungen verzeichnet waren."
+msgstr ""
+"Het register is leeg hoewel er laatst %d bevestigingen geregistreerd stonden."
+
+#: includes/class-nda-database.php:720
+msgid "Ein unsignierter Datensatz wurde nachträglich in die Kette eingefügt."
+msgstr "Er is achteraf een ongetekend record in de keten ingevoegd."
+
+#. translators: %d: acceptance id
+#: includes/class-nda-database.php:725
+#, php-format
+msgid ""
+"Kettenbruch bei Zustimmung #%d: eine Zustimmung wurde gelöscht, "
+"eingeschleust oder umsortiert."
+msgstr ""
+"Ketenbreuk bij bevestiging #%d: een bevestiging is verwijderd, ingevoegd of "
+"verplaatst."
+
+#: includes/class-nda-database.php:734
+msgid ""
+"Keine gespeicherte Signatur passt zum Schlüssel dieser Installation: der "
+"Signaturschlüssel (AUTH_KEY) wurde geändert, das Register stammt aus einer "
+"anderen Installation, oder jede Zeile wurde verändert. Mit diesem Schlüssel "
+"lässt sich das nicht unterscheiden."
+msgstr ""
+"Geen enkele opgeslagen handtekening past bij de sleutel van deze "
+"installatie: AUTH_KEY is gewijzigd, het register komt uit een andere "
+"installatie of elke rij is aangepast."
+
+#. translators: %d: acceptance id
+#: includes/class-nda-database.php:739
+#, php-format
+msgid ""
+"Die Signatur der Zustimmung #%d passt nicht zu ihrem Inhalt: der Datensatz "
+"wurde nachträglich verändert oder mit einem anderen Schlüssel signiert."
+msgstr ""
+"De handtekening van bevestiging #%d past niet bij de inhoud: het record is "
+"achteraf gewijzigd of met een andere sleutel ondertekend."
+
+#: includes/class-nda-database.php:750
+msgid ""
+"Die Kettenspitze (Option wm_nda_register_tip) fehlt: ob die neuesten "
+"Zustimmungen entfernt wurden, lässt sich nicht prüfen."
+msgstr ""
+"De ketenkop (optie wm_nda_register_tip) ontbreekt: of de nieuwste "
+"bevestigingen zijn verwijderd valt niet te controleren."
+
+#: includes/class-nda-database.php:754
+msgid ""
+"Die Kettenspitze trägt kein Siegel: ob die neuesten Zustimmungen entfernt "
+"wurden, lässt sich nicht prüfen."
+msgstr ""
+"De ketenkop draagt geen zegel: of de nieuwste bevestigingen zijn verwijderd "
+"valt niet te controleren."
+
+#: includes/class-nda-database.php:762
+msgid ""
+"Das Siegel der Kettenspitze passt nicht zu ihrem Inhalt: die Option wurde "
+"ohne den Schlüssel verändert."
+msgstr ""
+"Het zegel van de ketenkop past niet bij de inhoud: de optie is zonder "
+"sleutel gewijzigd."
+
+#. translators: 1: rows present, 2: rows recorded in the sealed tip
+#: includes/class-nda-database.php:768
+#, php-format
+msgid ""
+"Das Ende des Registers passt nicht zur versiegelten Kettenspitze (%1$d "
+"Zustimmungen vorhanden, %2$d verzeichnet): Zustimmungen wurden entfernt oder "
+"ohne Signatur angehängt."
+msgstr ""
+"Het einde van het register past niet bij de verzegelde ketenkop (%1$d "
+"bevestigingen aanwezig, %2$d geregistreerd): er zijn bevestigingen "
+"verwijderd of ongetekend toegevoegd."
+
+#: includes/class-nda-database.php:788
+msgid ""
+"Der Signaturschlüssel dieser Installation ist ein anderer als der, mit dem "
+"das Register versiegelt wurde (AUTH_KEY geändert oder Datenbank aus einer "
+"anderen Installation übernommen). Die gespeicherten Signaturen lassen sich "
+"mit diesem Schlüssel nicht prüfen."
+msgstr ""
+"De tekensleutel van deze installatie verschilt van de sleutel waarmee het "
+"register is verzegeld (AUTH_KEY gewijzigd of database uit een andere "
+"installatie overgenomen)."
+
+#: includes/class-nda-evidence.php:177
+msgid "Maus"
+msgstr "Muis"
+
+#: includes/class-nda-evidence.php:178
+msgid "Stift"
+msgstr "Pen / Stylus"
+
+#: includes/class-nda-evidence.php:179
+msgid "Touch"
+msgstr "Aanraking"
+
+#: includes/class-nda-evidence.php:180 includes/class-nda-evidence.php:193
+msgid "Tastatur"
+msgstr "Toetsenbord"
+
+#: includes/class-nda-evidence.php:181
+msgid "nicht erkannt"
+msgstr "niet herkend"
+
+#: includes/class-nda-evidence.php:185
+msgid "Eingabegerät"
+msgstr "Invoerapparaat"
+
+#: includes/class-nda-evidence.php:191
+msgid "Bestätigt per"
+msgstr "Bevestigd via"
+
+#: includes/class-nda-evidence.php:194
+msgid "Zeigegerät"
+msgstr "Aanwijsapparaat"
+
+#: includes/class-nda-evidence.php:200
+msgid "Zeit im Dialog"
+msgstr "Tijd in dialoogvenster"
+
+#: includes/class-nda-evidence.php:207
+msgid "Zwischen Häkchen und Bestätigung"
+msgstr "Tussen aanvinken en bevestigen"
+
+#: includes/class-nda-evidence.php:214
+msgid "Gelesener Anteil des Textfensters"
+msgstr "Gelezen deel van het tekstvak"
+
+#. translators: %d: percentage of the scrollable agreement text that was scrolled through
+#: includes/class-nda-evidence.php:216
+#, php-format
+msgid "%d %% durchgeblättert"
+msgstr "%d %% doorgebladerd"
+
+#: includes/class-nda-evidence.php:222
+msgid "Zeigerbewegung"
+msgstr "Aanwijzerbeweging"
+
+#. translators: 1: number of pointer samples, 2: travelled distance in CSS pixels
+#: includes/class-nda-evidence.php:225
+#, php-format
+msgid "%1$d Messpunkte, %2$d px Weg"
+msgstr "%1$d meetpunten, %2$d px pad"
+
+#: includes/class-nda-evidence.php:234
+msgid "Höchster Druckwert"
+msgstr "Hoogste drukwaarde"
+
+#: includes/class-nda-evidence.php:241
+msgid "Sichtfenster"
+msgstr "Zichtvenster"
+
+#: includes/class-nda-evidence.php:248
+msgid "Zeitzonenversatz des Geräts"
+msgstr "Tijdzoneverschil van het apparaat"
+
+#. translators: %s: signed offset from UTC in minutes, as reported by the browser
+#: includes/class-nda-evidence.php:250
+#, php-format
+msgid "%s Minuten gegenüber UTC"
+msgstr "%s minuten t.o.v. UTC"
+
+#: includes/class-nda-evidence.php:262
+msgid "Kein Interaktionsnachweis"
+msgstr "Geen interactiebewijs"
+
+#. translators: %s: duration in seconds with one decimal
+#: includes/class-nda-evidence.php:280
+#, php-format
+msgid "%s s"
+msgstr "%s s"
+
+#: includes/class-nda-evidence.php:292
+msgid "kein Drucksensor (Zeigegerät meldet den Festwert 0,5)"
+msgstr "geen druksensor (aanwijsapparaat meldt vaste waarde 0,5)"
+
+#. translators: %s: pressure between 0 and 1 with two decimals
+#: includes/class-nda-evidence.php:297
+#, php-format
+msgid "%s von 1,0"
+msgstr "%s van 1,0"
+
+#: includes/class-nda-exporter.php:216 includes/class-nda-exporter.php:227
+msgid "WM Prototype NDA Gate Signaturen"
+msgstr "WM Prototype NDA Gate-handtekeningen"
+
+#: includes/class-nda-exporter.php:273
+msgid "NDA Vereinbarung"
+msgstr "NDA-overeenkomst"
+
+#: includes/class-nda-exporter.php:281
+msgid "Unterzeichner Name"
+msgstr "Naam ondertekenaar"
+
+#: includes/class-nda-exporter.php:285
+msgid "Unterzeichner E-Mail"
+msgstr "E-mail ondertekenaar"
+
+#: includes/class-nda-exporter.php:293
+msgid "Signatur-Hash (SHA-256)"
+msgstr "Handtekeninghash (SHA-256)"
+
+#: includes/class-nda-exporter.php:309
+msgid "Prototyp NDA Signaturen"
+msgstr "Prototype NDA-handtekeningen"
+
+#. translators: %d: Number of signature records
+#: includes/class-nda-exporter.php:372
+#, php-format
+msgid ""
+"%d NDA-Signaturdatensätze wurden pseudonymisiert: Name, E-Mail-Adresse und "
+"User-Agent sind ersetzt."
+msgstr ""
+"%d NDA-handtekeningrecords gepseudonimiseerd: naam, e-mailadres en user-"
+"agent vervangen."
+
+#: includes/class-nda-exporter.php:375
+msgid ""
+"Beibehalten, weil sie Teil der verketteten Signatur sind: Konto-ID, Signatur-"
+"Hash, Zeitstempel, Vertragsversion, das tagesgesalzene IP-Pseudonym und der "
+"Interaktionsnachweis (Eingabegerät, Dauer, Zeigerweg, Sichtfenster, "
+"Zeitzonenversatz). Die Konto-ID verweist weiter auf das WordPress-Konto, wer "
+"den Salt kennt, kann das IP-Pseudonym gegen Kandidaten-Adressen prüfen, und "
+"Sichtfenster und Zeitzonenversatz beschreiben das benutzte Gerät."
+msgstr ""
+"Bewaard omdat ze deel uitmaken van de gekoppelde handtekening: account-ID, "
+"handtekeninghash, tijdstip, contractversie, het dagelijks gezouten IP-"
+"pseudoniem en het interactiebewijs (invoerapparaat, duur, aanwijzerpad, "
+"viewport, tijdzoneverschil). De account-ID verwijst nog steeds naar het "
+"WordPress-account, wie het zout kent, kan het IP-pseudoniem toetsen aan "
+"kandidaat-adressen, en viewport en tijdzoneverschil beschrijven het "
+"gebruikte apparaat."
+
+#: includes/class-nda-i18n.php:49
+msgid ""
+"Ich habe die Vertraulichkeitsvereinbarung (NDA) für dieses Prototyp-System "
+"gelesen und stimme ihr zu."
+msgstr ""
+"Ik heb de geheimhoudingsovereenkomst (NDA) voor dit prototypesysteem gelezen "
+"en ga ermee akkoord."
+
+#: includes/class-nda-i18n.php:56
+msgid "Zwingende Vertraulichkeitsverpflichtung (NDA)"
+msgstr "Verplichte geheimhoudingsverklaring (NDA)"
+
+#: includes/class-nda-i18n.php:63
+msgid "NDA akzeptieren & fortfahren"
+msgstr "NDA accepteren & doorgaan"
+
+#: includes/class-nda-i18n.php:70
+msgid "Ablehnen & Abmelden"
+msgstr "Weigeren & uitloggen"
+
+#: includes/class-nda-i18n.php:81
+msgid ""
+"Bitte bestätigen Sie die Vertraulichkeitsvereinbarung (NDA) mit dem Kästchen "
+"unter dem Passwort, um sich anzumelden. Für die aktuelle Fassung liegt von "
+"Ihnen noch keine Bestätigung vor."
+msgstr ""
+"Bevestig de geheimhoudingsovereenkomst (NDA) met het vakje onder het "
+"wachtwoord om in te loggen. Voor de huidige versie is nog geen bevestiging "
+"van u geregistreerd."
+
+#: includes/class-nda-i18n.php:85
+msgid "Der Anmeldeversuch wurde forensisch erfasst."
+msgstr "De inlogpoging is forensisch vastgelegd."
+
+#: includes/class-nda-i18n.php:86
+msgid "Der Anmeldeversuch wurde protokolliert."
+msgstr "De inlogpoging is gelogd."
+
+#: includes/class-nda-i18n.php:94
+msgid ""
+"Bitte bestätigen Sie zuerst die aktuelle Vertraulichkeitsvereinbarung (NDA)."
+msgstr "Bevestig eerst de actuele geheimhoudingsovereenkomst (NDA)."
+
+#: includes/class-nda-interceptor.php:75
+msgid "[Vollständigen NDA-Text lesen]"
+msgstr "[Volledige NDA-tekst lezen]"
+
+#: includes/class-nda-interceptor.php:79
+msgid "Nur nötig, wenn Sie die aktuelle Fassung noch nicht bestätigt haben."
+msgstr "Alleen nodig als u de huidige versie nog niet hebt bevestigd."
+
+#: includes/class-nda-interceptor.php:206
+#: includes/class-nda-interceptor.php:234
+msgid "Fehler:"
+msgstr "Fout:"
+
+#: includes/class-nda-interceptor.php:234
+msgid ""
+"Ihre Bestätigung konnte nicht gespeichert werden; die Anmeldung wurde "
+"deshalb nicht fortgesetzt. Bitte versuchen Sie es erneut."
+msgstr ""
+"Uw bevestiging kon niet worden opgeslagen; het inloggen is daarom "
+"afgebroken. Probeer het opnieuw."
+
+#: includes/class-nda-interceptor.php:338
+msgid "NDA"
+msgstr "NDA"
+
+#: includes/class-nda-modal.php:38
+msgid "Zustimmung gespeichert. Weiterleitung …"
+msgstr "Toestemming opgeslagen. Doorsturen …"
+
+#: includes/class-nda-modal.php:38
+msgid "Fehler bei der Signaturübermittlung."
+msgstr "Fout bij het verzenden van de handtekening."
+
+#: includes/class-nda-modal.php:38
+msgid "Netzwerkfehler:"
+msgstr "Netwerkfout:"
+
+#: includes/class-nda-modal.php:58
+msgid "Vertragstext der Geheimhaltungsvereinbarung"
+msgstr "Tekst van de geheimhoudingsovereenkomst"
+
+#: includes/class-nda-modal.php:63
+msgid ""
+"Hinweis: Der Zugang zu diesem Prototyp setzt Ihre Zustimmung zur folgenden "
+"Vereinbarung voraus. Gespeichert werden Benutzer-ID, E-Mail-Adresse, "
+"Anzeigename, User-Agent, Zeitpunkt, die Prüfsumme des Textes, ein Pseudonym "
+"Ihrer IP-Adresse und der Interaktionsnachweis."
+msgstr ""
+"Let op: voor toegang tot dit prototype is uw toestemming met de volgende "
+"overeenkomst vereist. Opgeslagen worden gebruikers-ID, e-mailadres, "
+"weergavenaam, user agent, tijdstip, de controlesom van de tekst, een "
+"pseudoniem van uw IP-adres en het interactiebewijs."
+
+#: includes/class-nda-modal.php:72
+msgid "Dokumenten-Prüfsumme (SHA-256):"
+msgstr "Documentcontrolesom (SHA-256):"
+
+#: includes/class-nda-rest-api.php:38
+msgid "Vom Browser gemeldete Interaktionsdaten der Click-Wrap-Bestätigung."
+msgstr ""
+"Door de browser gemelde interactiegegevens van de click-wrap-bevestiging."
+
+#: includes/class-nda-rest-api.php:105 includes/class-nda-rest-api.php:154
+msgid "Zu viele Anfragen. Bitte warten Sie eine Minute."
+msgstr "Te veel verzoeken. Wacht een minuut."
+
+#: includes/class-nda-rest-api.php:120
+msgid "Authentifizierung erforderlich."
+msgstr "Authenticatie vereist."
+
+#: includes/class-nda-rest-api.php:167
+msgid "Die angeforderte NDA-Version ist nicht die aktive Fassung."
+msgstr "De opgevraagde NDA-versie is niet de actieve versie."
+
+#: includes/class-nda-rest-api.php:188
+msgid "Fehler beim Speichern der Signatur in der Datenbank."
+msgstr "Fout bij het opslaan van de handtekening in de database."
+
+#: includes/class-nda-rest-api.php:196
+msgid "NDA-Zustimmung gespeichert."
+msgstr "NDA-bevestiging opgeslagen."
+
+#: includes/class-nda-rest-api.php:238
+msgid "Für andere Benutzer ist diese Auskunft Administratoren vorbehalten."
+msgstr "Deze informatie voor andere gebruikers is voorbehouden aan beheerders."
+
+#: includes/class-nda-rest-api.php:266
+msgid "Keine aktive Vertraulichkeitsvereinbarung konfiguriert."
+msgstr "Geen actieve geheimhoudingsovereenkomst ingesteld."
+
+#: includes/class-nda-watermark.php:340
+msgid ""
+"Die PHP-Erweiterung GD fehlt; ohne sie lässt sich kein Screenshot lesen."
+msgstr ""
+"De PHP-extensie GD ontbreekt; zonder GD kan geen screenshot worden gelezen."
+
+#: includes/class-nda-watermark.php:344
+msgid "Datei nicht lesbar."
+msgstr "Bestand niet leesbaar."
+
+#: includes/class-nda-watermark.php:349
+msgid "Die Datei ist kein lesbares Bild (PNG, JPEG oder WebP)."
+msgstr "Het bestand is geen leesbare afbeelding (PNG, JPEG of WebP)."
+
+#: includes/class-nda-watermark.php:442
+msgid "Das Bild ist kleiner als ein Block des Musters."
+msgstr "De afbeelding is kleiner dan één patroonblok."
+
+#: includes/class-nda-watermark.php:468
+msgid ""
+"Kein Wasserzeichen gefunden: die Prüfsumme keines gefundenen Rasters passt. "
+"Entweder trägt das Bild keines, es stammt aus einer anderen Installation, "
+"oder es wurde skaliert, gedreht oder zu stark komprimiert."
+msgstr ""
+"Geen watermerk gevonden: de controlesom van geen enkel gevonden raster klopt."
+
+#: wm-prototype-nda-gate.php:244
+msgid "Signatur-Protokoll"
+msgstr "Handtekeningenlogboek"
+
+#: wm-prototype-nda-gate.php:262
+msgid "NDA-Vertragstext bearbeiten"
+msgstr "NDA-overeenkomsttekst bewerken"

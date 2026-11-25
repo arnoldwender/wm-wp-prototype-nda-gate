@@ -1,0 +1,1431 @@
+# Translation of wm-prototype-nda-gate in ar
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-prototype-nda-gate 1.3.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-prototype-nda-"
+"gate\n"
+"POT-Creation-Date: 2026-11-22T00:26:19+00:00\n"
+"PO-Revision-Date: 2026-11-22 01:31+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-prototype-"
+"nda-gate/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-prototype-nda-"
+"gate/issues>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-prototype-nda-gate\n"
+
+#. Plugin Name of the plugin
+#: wm-prototype-nda-gate.php includes/class-nda-admin.php:1130
+msgid "WM Prototype NDA Gate"
+msgstr "WM Prototype NDA Gate"
+
+#. Plugin URI of the plugin
+#: wm-prototype-nda-gate.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-prototype-nda-gate/"
+
+#. Description of the plugin
+#: wm-prototype-nda-gate.php
+msgid ""
+"Verlangt von angemeldeten Benutzern die Bestätigung einer "
+"Vertraulichkeitsvereinbarung vor Login, wp-admin, Frontend und REST und "
+"speichert jede Bestätigung in einem verketteten HMAC-Register mit CSV- und "
+"JSON-Export. Keine rechtliche Bewertung."
+msgstr ""
+"يطلب من المستخدمين المسجلين تأكيد اتفاقية عدم إفصاح قبل wp-login وwp-admin "
+"والواجهة الأمامية وREST، ويحفظ كل موافقة في سجل متسلسل بـ HMAC مع تصدير CSV "
+"وJSON. دون تقييم قانوني."
+
+#. Author of the plugin
+#: wm-prototype-nda-gate.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-prototype-nda-gate.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/class-nda-admin.php:51
+msgid "WM Prototype NDA Gate — Signaturen"
+msgstr "WM Prototype NDA Gate — التوقيعات"
+
+#: includes/class-nda-admin.php:69
+msgid "NDA-Gate aktiv (Admin- und/oder Frontend-Gate an)"
+msgstr "بوابة NDA نشطة (بوابة الإدارة و/أو الواجهة مفعلة)"
+
+#: includes/class-nda-admin.php:69
+msgid "NDA-Schranke deaktiviert (Admin- und Frontend-Gate aus)"
+msgstr "بوابة NDA معطلة (بوابات الإدارة والواجهة متوقفة)"
+
+#: includes/class-nda-admin.php:71
+msgid "Verkettetes Signatur-Register (HMAC-SHA256)"
+msgstr "سجل توقيعات متسلسل (HMAC-SHA256)"
+
+#: includes/class-nda-admin.php:78
+msgid "Signiert (aktive Version)"
+msgstr "موقّع (الإصدار النشط)"
+
+#: includes/class-nda-admin.php:82 includes/class-nda-admin.php:476
+msgid "Ausstehend"
+msgstr "قيد الانتظار"
+
+#: includes/class-nda-admin.php:86 includes/class-nda-admin.php:484
+msgid "NDA-Version"
+msgstr "إصدار NDA"
+
+#: includes/class-nda-admin.php:92
+msgid "NDA Gate Cockpit"
+msgstr "لوحة تحكم NDA Gate"
+
+#: includes/class-nda-admin.php:153
+msgid ""
+"Neue Fassung veröffentlichen? Die bisherige wird deaktiviert, und wer die "
+"neue noch nicht bestätigt hat, wird beim nächsten Zugriff darum gebeten."
+msgstr ""
+"نشر إصدار جديد؟ سيتم تعطيل الإصدار السابق ومطالبة كل من لم يؤكد الإصدار "
+"الجديد عند الدخول التالي."
+
+#: includes/class-nda-admin.php:204
+msgid "Part of the WM Suite plugin family"
+msgstr "جزء من عائلة إضافات WM Suite"
+
+#: includes/class-nda-admin.php:206
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/class-nda-admin.php:207
+msgid "Hub"
+msgstr "وضع المركز"
+
+#: includes/class-nda-admin.php:207
+msgid "Standalone"
+msgstr "مستقل"
+
+#: includes/class-nda-admin.php:224 includes/class-nda-admin.php:225
+msgid "WM NDA Gate"
+msgstr "WM NDA Gate"
+
+#: includes/class-nda-admin.php:235 includes/class-nda-admin.php:376
+msgid "Dashboard & KPIs"
+msgstr "لوحة المؤشرات والإحصاءات"
+
+#: includes/class-nda-admin.php:236
+msgid "Dashboard"
+msgstr "لوحة المؤشرات"
+
+#: includes/class-nda-admin.php:244
+msgid "Aktivitäten & Signaturen"
+msgstr "الأنشطة والتوقيعات"
+
+#: includes/class-nda-admin.php:245 includes/class-nda-admin.php:377
+msgid "Signaturen & Log"
+msgstr "التوقيعات والسجل"
+
+#: includes/class-nda-admin.php:253 includes/class-nda-admin.php:761
+msgid "NDA-Versionen"
+msgstr "إصدارات NDA"
+
+#: includes/class-nda-admin.php:254 includes/class-nda-admin.php:378
+#: includes/class-nda-admin.php:760
+msgid "Versionen"
+msgstr "الإصدارات"
+
+#: includes/class-nda-admin.php:262 includes/class-nda-admin.php:263
+#: includes/class-nda-admin.php:379 includes/class-nda-admin.php:874
+msgid "Export"
+msgstr "تصدير"
+
+#: includes/class-nda-admin.php:271 includes/class-nda-admin.php:272
+#: includes/class-nda-admin.php:380 includes/class-nda-admin.php:921
+#: wm-prototype-nda-gate.php:233
+msgid "Einstellungen"
+msgstr "الإعدادات"
+
+#: includes/class-nda-admin.php:280
+msgid "Handbuch & Dokumentation"
+msgstr "الدليل والتوثيق"
+
+#: includes/class-nda-admin.php:281 includes/class-nda-admin.php:1166
+#: wm-prototype-nda-gate.php:239 wm-prototype-nda-gate.php:257
+msgid "Handbuch"
+msgstr "الدليل"
+
+#: includes/class-nda-admin.php:381
+msgid "Handbuch & Glossar"
+msgstr "الدليل والمسرد"
+
+#: includes/class-nda-admin.php:384
+msgid "Plugin-Navigation"
+msgstr "تنقل الإضافة"
+
+#: includes/class-nda-admin.php:409 includes/class-nda-modal.php:47
+msgid "Vertraulichkeitsvereinbarung"
+msgstr "اتفاقية السرية"
+
+#: includes/class-nda-admin.php:410
+msgid "WM Prototype NDA Gate — Cockpit"
+msgstr "WM Prototype NDA Gate — لوحة التحكم"
+
+#: includes/class-nda-admin.php:411
+msgid "NDA für angemeldete Benutzer, Signatur-Register und Export."
+msgstr "اتفاقية سرية للمستخدمين المسجلين، وسجل توقيعات وتصدير."
+
+#: includes/class-nda-admin.php:419
+msgid "Springen zu:"
+msgstr "انتقال إلى:"
+
+#: includes/class-nda-admin.php:420
+msgid "Kurzanleitung"
+msgstr "دليل سريع"
+
+#: includes/class-nda-admin.php:421
+msgid "Kennzahlen"
+msgstr "المؤشرات"
+
+#: includes/class-nda-admin.php:422
+msgid "Vorschau des Modals"
+msgstr "معاينة النافذة المنبثقة"
+
+#: includes/class-nda-admin.php:423 includes/class-nda-admin.php:540
+msgid "Letzte Signaturen"
+msgstr "أحدث التوقيعات"
+
+#: includes/class-nda-admin.php:430
+msgid "Was dieses Plugin tut"
+msgstr "ما الذي تفعله هذه الإضافة"
+
+#: includes/class-nda-admin.php:433
+msgid ""
+"Für Websites, Prototypen oder Staging-Umgebungen, die angemeldeten Kunden "
+"oder Partnern gezeigt werden: Das Plugin verlangt vor Login, wp-admin, "
+"Frontend und REST die Bestätigung einer Vertraulichkeitsvereinbarung und "
+"speichert jede Bestätigung mit Zeitpunkt, Hash des Vertragstextes und "
+"verketteter Signatur. Nicht angemeldete Besucher sind nicht betroffen. Ob "
+"Vereinbarung und Maßnahmen rechtlich tragen, beurteilt das Plugin nicht."
+msgstr ""
+"للمواقع أو النماذج الأولية أو بيئات الاختبار المعروضة للعملاء أو الشركاء "
+"المسجلين: تطلب الإضافة تأكيد اتفاقية السرية قبل تسجيل الدخول وwp-admin "
+"والواجهة الأمامية وREST وتحفظ كل موافقة بالوقت وبصمة النص وتوقيع متسلسل. "
+"الزوار غير المسجلين لا يتأثرون. لا تقيّم الإضافة ما إذا كانت الاتفاقية "
+"والتدابير صامدة قانونياً."
+
+#: includes/class-nda-admin.php:436
+msgid "Schnellzugriff:"
+msgstr "وصول سريع:"
+
+#: includes/class-nda-admin.php:439
+msgid "NDA-Text bearbeiten (neue Version)"
+msgstr "تحرير نص NDA (إصدار جديد)"
+
+#: includes/class-nda-admin.php:443
+msgid "Signaturen exportieren"
+msgstr "تصدير التوقيعات"
+
+#: includes/class-nda-admin.php:447
+msgid "Handbuch öffnen"
+msgstr "فتح الدليل"
+
+#: includes/class-nda-admin.php:457
+msgid "Bestätigungsquote"
+msgstr "نسبة القبول"
+
+#: includes/class-nda-admin.php:468
+msgid "Signiert (aktive Version) / Benutzer"
+msgstr "الموقّعون (الإصدار النشط) / المستخدمون"
+
+#: includes/class-nda-admin.php:492
+msgid "Vorschau: das Signatur-Modal"
+msgstr "معاينة: نافذة التوقيع"
+
+#: includes/class-nda-admin.php:494
+msgid ""
+"Vereinfachte Darstellung des Modals, das angemeldete Benutzer ohne Signatur "
+"sehen (Titel und Textanfang der aktiven Version):"
+msgstr ""
+"عرض مبسط للنافذة التي تظهر للمستخدمين المسجلين غير الموقّعين (عنوان وبداية "
+"الإصدار النشط):"
+
+#: includes/class-nda-admin.php:501 includes/class-nda-interceptor.php:62
+#: includes/class-nda-interceptor.php:337
+#: includes/class-nda-interceptor.php:352
+msgid "Vertraulichkeitsvereinbarung (NDA)"
+msgstr "اتفاقية السرية (NDA)"
+
+#: includes/class-nda-admin.php:504
+msgid "Keine aktive Version hinterlegt."
+msgstr "لا يوجد إصدار نشط مضبوط."
+
+#: includes/class-nda-admin.php:518
+msgid "Aktive Vertraulichkeitsvereinbarung"
+msgstr "اتفاقية السرية النشطة"
+
+#: includes/class-nda-admin.php:521
+msgid "Titel:"
+msgstr "العنوان:"
+
+#: includes/class-nda-admin.php:522
+msgid "Version:"
+msgstr "الإصدار:"
+
+#: includes/class-nda-admin.php:522
+msgid "Erstellt am:"
+msgstr "تاريخ الإنشاء:"
+
+#: includes/class-nda-admin.php:523
+msgid "Integritäts-Hash (SHA-256):"
+msgstr "بصمة السلامة (SHA-256):"
+
+#: includes/class-nda-admin.php:527
+msgid "Neue Version veröffentlichen (Version Bump)"
+msgstr "نشر إصدار جديد (Version Bump)"
+
+#: includes/class-nda-admin.php:530
+msgid "Register als JSON herunterladen"
+msgstr "تنزيل السجل بصيغة JSON"
+
+#: includes/class-nda-admin.php:534
+msgid "Keine aktive NDA-Version hinterlegt."
+msgstr "لا يوجد إصدار NDA نشط مسجل."
+
+#: includes/class-nda-admin.php:544 includes/class-nda-admin.php:669
+msgid "Benutzer"
+msgstr "المستخدم"
+
+#: includes/class-nda-admin.php:545 includes/class-nda-admin.php:670
+msgid "E-Mail"
+msgstr "البريد الإلكتروني"
+
+#: includes/class-nda-admin.php:546 includes/class-nda-admin.php:671
+#: includes/class-nda-admin.php:796 includes/class-nda-exporter.php:277
+msgid "Version"
+msgstr "الإصدار"
+
+#: includes/class-nda-admin.php:547
+msgid "Signiert am (UTC)"
+msgstr "تاريخ التوقيع (UTC)"
+
+#: includes/class-nda-admin.php:548 includes/class-nda-admin.php:673
+msgid "IP-HMAC"
+msgstr "IP-HMAC"
+
+#: includes/class-nda-admin.php:549
+msgid "Signatur-Hash"
+msgstr "بصمة التوقيع"
+
+#: includes/class-nda-admin.php:566
+msgid "Bisher keine Signaturen erfasst."
+msgstr "لم يتم تسجيل أي توقيعات بعد."
+
+#: includes/class-nda-admin.php:602 includes/class-nda-admin.php:1143
+msgid "Signatur-Register"
+msgstr "سجل التوقيعات"
+
+#: includes/class-nda-admin.php:603
+msgid "Aktivitäten & Signaturprotokoll"
+msgstr "الأنشطة وسجل التوقيعات"
+
+#: includes/class-nda-admin.php:604
+msgid ""
+"Alle gespeicherten Bestätigungen mit Signatur und Prüfergebnis des Registers."
+msgstr "جميع الموافقات المحفوظة مع التوقيع ونتيجة التحقق من السجل."
+
+#. translators: %d: number of chained acceptances recomputed and verified
+#: includes/class-nda-admin.php:621
+#, php-format
+msgid "Register integer — %d Zustimmungen neu berechnet und verkettet geprüft."
+msgstr "السجل سليم — أعيد حساب %d موافقة والتحقق من تسلسلها."
+
+#: includes/class-nda-admin.php:622
+msgid "Register NICHT integer"
+msgstr "السجل غير سليم"
+
+#. translators: %d: number of acceptances recorded before the chain existed
+#: includes/class-nda-admin.php:633
+#, php-format
+msgid ""
+"%d Zustimmung(en) stammen aus der Zeit vor der Verkettung und tragen keine "
+"prüfbare Signatur. Sie gelten als ungeprüft, nicht als integer."
+msgstr ""
+"%d موافقات تعود لما قبل التسلسل ولا تحمل توقيعاً قابلاً للتحقق، وتُعد غير "
+"مفحوصة."
+
+#: includes/class-nda-admin.php:639
+msgid ""
+"AUTH_KEY ist nicht definiert: der Signaturschlüssel stammt aus der Datenbank "
+"— also von dort, wo ein Angreifer ohnehin schreiben würde. Der Nachweis hält "
+"hier nur gegen Unfälle. Setzen Sie AUTH_KEY in der wp-config.php."
+msgstr ""
+"الثابت AUTH_KEY غير معرّف: مفتاح التوقيع مأخوذ من قاعدة البيانات — وهو المكان "
+"نفسه الذي سيكتب فيه المهاجم. عرّف AUTH_KEY في wp-config.php."
+
+#: includes/class-nda-admin.php:648
+msgid "Alle Versionen anzeigen"
+msgstr "عرض جميع الإصدارات"
+
+#: includes/class-nda-admin.php:656
+msgid "Benutzer oder E-Mail suchen..."
+msgstr "البحث عن مستخدم أو بريد إلكتروني..."
+
+#: includes/class-nda-admin.php:657
+msgid "Filtern"
+msgstr "تصفية"
+
+#: includes/class-nda-admin.php:660
+msgid "Zurücksetzen"
+msgstr "إعادة تعيين"
+
+#: includes/class-nda-admin.php:668
+msgid "ID"
+msgstr "المعرف"
+
+#: includes/class-nda-admin.php:672 includes/class-nda-exporter.php:289
+msgid "Signatur-Zeitpunkt (UTC)"
+msgstr "وقت التوقيع (UTC)"
+
+#: includes/class-nda-admin.php:674
+msgid "Interaktionsnachweis"
+msgstr "إثبات التفاعل"
+
+#: includes/class-nda-admin.php:675
+msgid "Signatur-Hash (HMAC-SHA256)"
+msgstr "بصمة التوقيع (HMAC-SHA256)"
+
+#: includes/class-nda-admin.php:701
+msgid ""
+"Vom Browser gemeldet und mit der Signatur dieser Zeile versiegelt: "
+"nachträglich geändert bricht die Kette. Ob der Browser richtig gemeldet hat, "
+"kann das Plugin nicht prüfen."
+msgstr ""
+"أبلغ عنه المتصفح وخُتم ضمن توقيع هذا الصف: أي تعديل لاحق يكسر السلسلة. لا "
+"تستطيع الإضافة التحقق من صدق بيانات المتصفح."
+
+#: includes/class-nda-admin.php:710
+msgid "Keine Einträge gefunden."
+msgstr "لم يتم العثور على سجلات."
+
+#. translators: %d: total number of acceptance records
+#: includes/class-nda-admin.php:723
+#, php-format
+msgid "%d Einträge"
+msgstr "%d سجل"
+
+#: includes/class-nda-admin.php:762
+msgid ""
+"Erstellen Sie neue Versionen des Vertragstextes. Das Veröffentlichen einer "
+"neuen Version erzwingt für alle Benutzer eine erneute Zustimmung (Version "
+"Bump Re-acceptance)."
+msgstr ""
+"أنشئ إصدارات جديدة لنص الاتفاقية. نشر إصدار جديد يفرض موافقة جديدة على جميع "
+"المستخدمين."
+
+#: includes/class-nda-admin.php:771
+msgid ""
+"Die Fassung ist gespeichert und aktiv. Wer sie noch nicht bestätigt hat, "
+"wird beim nächsten Zugriff darum gebeten."
+msgstr ""
+"تم حفظ الإصدار وتفعيله. سيُطلب ممن لم يؤكده بعد الموافقة عند الدخول التالي."
+
+#. translators: 1: maximum characters of the version number, 2: maximum characters of the title
+#: includes/class-nda-admin.php:781
+#, php-format
+msgid ""
+"Die Fassung wurde nicht gespeichert; die bisherige bleibt aktiv. "
+"Versionsnummer höchstens %1$d Zeichen, Titel höchstens %2$d Zeichen, Text "
+"nicht leer."
+msgstr ""
+"لم يتم حفظ الإصدار؛ يبقى السابق نشطاً. رقم الإصدار بحد أقصى %1$d حرفاً، "
+"والعنوان بحد أقصى %2$d حرفاً، والنص غير فارغ."
+
+#: includes/class-nda-admin.php:792
+msgid "Bestehende NDA-Versionen"
+msgstr "إصدارات NDA الحالية"
+
+#: includes/class-nda-admin.php:797
+msgid "Titel"
+msgstr "العنوان"
+
+#: includes/class-nda-admin.php:798
+msgid "Status"
+msgstr "الحالة"
+
+#: includes/class-nda-admin.php:799
+msgid "SHA-256 Hash"
+msgstr "بصمة SHA-256"
+
+#: includes/class-nda-admin.php:800
+msgid "Erstellt am (UTC)"
+msgstr "تاريخ الإنشاء (UTC)"
+
+#: includes/class-nda-admin.php:810
+msgid "Aktiv"
+msgstr "نشط"
+
+#: includes/class-nda-admin.php:812
+msgid "Archiviert"
+msgstr "مؤرشف"
+
+#: includes/class-nda-admin.php:827
+msgid "Neue Version herausgeben"
+msgstr "إصدار نسخة جديدة"
+
+#: includes/class-nda-admin.php:832
+msgid "Versionsnummer:"
+msgstr "رقم الإصدار:"
+
+#: includes/class-nda-admin.php:837
+msgid "Vertragstitel:"
+msgstr "عنوان الاتفاقية:"
+
+#: includes/class-nda-admin.php:842
+msgid "Vertragstext (HTML erlaubt):"
+msgstr "نص الاتفاقية (يُسمح بـ HTML):"
+
+#: includes/class-nda-admin.php:847
+msgid ""
+"Achtung: Durch Veröffentlichung wird die bisherige Version sofort "
+"deaktiviert und alle Benutzer werden beim nächsten Zugriff zur erneuten "
+"Bestätigung aufgefordert."
+msgstr ""
+"تنبيه: يؤدي النشر إلى تعطيل الإصدار السابق فوراً ومطالبة جميع المستخدمين "
+"بالموافقة مجدداً."
+
+#: includes/class-nda-admin.php:852
+msgid "Version aktivieren"
+msgstr "تفعيل الإصدار"
+
+#: includes/class-nda-admin.php:875
+msgid "Export des Signatur-Registers"
+msgstr "تصدير سجل التوقيعات"
+
+#: includes/class-nda-admin.php:876
+msgid ""
+"Das Zustimmungsregister als CSV oder als JSON mit Signaturkette und "
+"aktuellem Prüfergebnis. Welche Beweiskraft das hat, beurteilt das Plugin "
+"nicht."
+msgstr ""
+"سجل الموافقات بصيغة CSV أو JSON مع سلسلة التوقيعات ونتيجة التحقق الحالية. "
+"الإضافة لا تقيّم الحجية القانونية."
+
+#: includes/class-nda-admin.php:884
+msgid "CSV-Signaturprotokoll (CWE-1236 gehärtet)"
+msgstr "بروتوكول التوقيعات CSV (محصّن ضد CWE-1236)"
+
+#: includes/class-nda-admin.php:885
+msgid ""
+"Strukturierter tabellarischer Export aller Signaturvorgänge mit "
+"automatischer Bereinigung von potenziellen Formel-Injektionen (Formulas/"
+"Macros)."
+msgstr ""
+"تصدير جدولي منظم لجميع التوقيعات مع تنقية تلقائية ضد حقن المعادلات أو "
+"الماكرو."
+
+#: includes/class-nda-admin.php:887
+msgid "CSV-Datei herunterladen"
+msgstr "تنزيل ملف CSV"
+
+#: includes/class-nda-admin.php:892
+msgid "JSON-Export mit Prüfergebnis"
+msgstr "تصدير JSON مع نتيجة التحقق"
+
+#: includes/class-nda-admin.php:893
+msgid ""
+"Vollständiger JSON-Export mit Signaturkette, Prüfergebnis des Registers und "
+"einer SHA-256-Prüfsumme; wie sie sich nachrechnen lässt, steht in der Datei. "
+"Die Prüfsumme belegt, dass das Dokument nach dem Export unverändert ist; "
+"über die Datenbank sagt sie nichts — dafür steht das mitexportierte "
+"Prüfergebnis."
+msgstr ""
+"تصدير JSON كامل مع سلسلة التوقيعات والتحقق من السجل ومجموع تحقق SHA-256 "
+"مشروح طريقة حسابه داخل الملف."
+
+#: includes/class-nda-admin.php:895
+msgid "JSON herunterladen"
+msgstr "تنزيل JSON"
+
+#: includes/class-nda-admin.php:922
+msgid "Einstellungen — WM Prototype NDA Gate"
+msgstr "الإعدادات — WM Prototype NDA Gate"
+
+#: includes/class-nda-admin.php:923
+msgid ""
+"Login-Checkbox, Admin-, Frontend- und REST-Sperre, Projektname, Demodaten."
+msgstr ""
+"خانة تسجيل الدخول، حجب wp-admin والواجهة وREST، اسم المشروع والبيانات "
+"التجريبية."
+
+#: includes/class-nda-admin.php:931
+msgid "Einstellungen erfolgreich gespeichert."
+msgstr "تم حفظ الإعدادات بنجاح."
+
+#. translators: %d: number of demo signatures created
+#: includes/class-nda-admin.php:940
+#, php-format
+msgid "%d Demodaten-Signaturen (ohne WordPress-Konto) wurden erzeugt."
+msgstr "تم إنشاء %d توقيعات تجريبية (دون حساب ووردبريس)."
+
+#. translators: %d: number of demo signatures deleted
+#: includes/class-nda-admin.php:953
+#, php-format
+msgid "%d Demodaten-Signaturen wurden gelöscht."
+msgstr "تم حذف %d توقيعات تجريبية."
+
+#: includes/class-nda-admin.php:964
+msgid ""
+"Nicht ausgeführt: das Register enthält echte Signaturen. Demodaten werden "
+"nicht mit ihnen verkettet und nicht aus einer Kette mit ihnen gelöscht, "
+"sonst verifiziert das Register nicht mehr."
+msgstr ""
+"لم يُنفّذ: يحتوي السجل على توقيعات حقيقية. لا تُربط البيانات التجريبية "
+"بالتوقيعات الحقيقية ولا تُحذف من سلسلتها."
+
+#: includes/class-nda-admin.php:970
+msgid "Werkseinstellungen wiederhergestellt:"
+msgstr "تمت استعادة الإعدادات الافتراضية:"
+
+#: includes/class-nda-admin.php:970
+msgid ""
+"Alle Signaturen wurden gelöscht, die Standard-NDA v1.0.0 wurde neu "
+"initialisiert und alle Optionen zurückgesetzt."
+msgstr ""
+"حُذفت جميع التوقيعات وأعيدت تهيئة اتفاقية NDA الافتراضية v1.0.0 وأعيدت جميع "
+"الخيارات."
+
+#: includes/class-nda-admin.php:979
+msgid "Projektbezeichnung (Prototyp)"
+msgstr "اسم المشروع (النموذج الأولي)"
+
+#: includes/class-nda-admin.php:982
+msgid ""
+"Erscheint im Modal. In den Vertragstext gelangt er nur, wenn die "
+"Standardfassung neu angelegt wird (Aktivierung ohne Fassung, "
+"Werkseinstellungen); die aktive Fassung ändert sich nicht."
+msgstr ""
+"يظهر في النافذة المنبثقة. لا يدخل في نص الاتفاقية إلا عند إعادة إنشاء النسخة "
+"الافتراضية؛ لا يتغير الإصدار النشط."
+
+#: includes/class-nda-admin.php:987
+msgid "Login-Checkbox erzwingen"
+msgstr "فرض خانة الاختيار عند تسجيل الدخول"
+
+#: includes/class-nda-admin.php:991
+msgid ""
+"Checkbox auf wp-login.php einblenden; Benutzer ohne Signatur der aktiven "
+"Version werden nach der Passwortprüfung ohne Häkchen abgewiesen."
+msgstr ""
+"إظهار خانة الاختيار في wp-login.php؛ يُرفض المستخدمون غير الموقّعين للإصدار "
+"النشط بعد فحص كلمة المرور دون تحديد الخانة."
+
+#: includes/class-nda-admin.php:997
+msgid "Admin-Gate (wp-admin)"
+msgstr "بوابة الإدارة (wp-admin)"
+
+#: includes/class-nda-admin.php:1001
+msgid ""
+"Benutzer ohne Signatur der aktuellen NDA-Version werden vor dem Aufbau jeder "
+"wp-admin-Seite auf die Signaturseite umgeleitet; admin-ajax antwortet mit "
+"HTTP 403."
+msgstr ""
+"تحويل المستخدمين غير الموقّعين للإصدار النشط إلى صفحة التوقيع قبل بناء أي "
+"صفحة في wp-admin؛ ويرد admin-ajax بـ HTTP 403."
+
+#: includes/class-nda-admin.php:1007
+msgid "Frontend-Gate (Prototyp / Staging)"
+msgstr "بوابة الواجهة الأمامية (النموذج / الاختبار)"
+
+#: includes/class-nda-admin.php:1011
+msgid ""
+"Angemeldete Benutzer ohne Signatur werden von jeder Frontend-Seite auf die "
+"Signaturseite umgeleitet (template_redirect). Nicht angemeldete Besucher "
+"sind davon nicht betroffen."
+msgstr ""
+"تحويل المستخدمين المسجلين غير الموقّعين من أي صفحة عامة إلى صفحة التوقيع "
+"(template_redirect). لا يتأثر الزوار غير المسجلين."
+
+#: includes/class-nda-admin.php:1017
+msgid "REST API Schutz"
+msgstr "حماية واجهة REST API"
+
+#: includes/class-nda-admin.php:1021
+msgid ""
+"REST-API-Endpunkte für Benutzer ohne aktive NDA-Signatur mit HTTP 403 "
+"Forbidden sperren."
+msgstr ""
+"حجب نقاط نهاية REST API برمز HTTP 403 Forbidden للمستخدمين غير الموقّعين على "
+"NDA النشطة."
+
+#: includes/class-nda-admin.php:1027
+msgid "Forensisches Bildschirm-Wasserzeichen"
+msgstr "علامة مائية جنائية للشاشة"
+
+#: includes/class-nda-admin.php:1031
+msgid ""
+"Legt über jede Seite ein schwaches Raster, das Konto-ID und Minute des "
+"Aufrufs trägt. Aus einem unskalierten Screenshot lässt es sich mit \"wp nda "
+"wasserzeichen-lesen\" zurücklesen."
+msgstr ""
+"تضع شبكة خافتة فوق كل صفحة تحمل معرف الحساب ودقيقة العرض، ويمكن قراءتها من "
+"لقطة شاشة غير مُحجّمة بالأمر \"wp nda wasserzeichen-lesen\"."
+
+#: includes/class-nda-admin.php:1033
+msgid ""
+"Schwach heißt nicht unsichtbar: auf großen einfarbigen Flächen ist das "
+"Raster erkennbar. Es überlebt Zuschneiden und JPEG, nicht aber Skalieren, "
+"Drehen oder Abfotografieren. Es benennt das Konto, dem die Seite "
+"ausgeliefert wurde — nicht, wer den Screenshot gemacht hat. Standardmäßig "
+"aus."
+msgstr ""
+"خافتة لا تعني غير مرئية: على المساحات الكبيرة الموحدة يمكن ملاحظة الشبكة. "
+"تصمد أمام القص وJPEG ولا تصمد أمام تغيير الحجم أو التدوير أو تصوير الشاشة. "
+"متوقفة افتراضياً."
+
+#: includes/class-nda-admin.php:1038
+msgid "Aufbewahrungsfrist"
+msgstr "مدة الاحتفاظ"
+
+#: includes/class-nda-admin.php:1040
+msgid "Tage"
+msgstr "يوماً"
+
+#: includes/class-nda-admin.php:1041
+msgid ""
+"Täglich angewendet: Bei Signaturen, die älter als diese Frist sind, werden "
+"Name, E-Mail-Adresse und Browserkennung ersetzt. Gelöscht wird nichts — eine "
+"gelöschte Zeile würde das Register unterbrechen. Konto-ID, Zeitstempel, "
+"Vertragsversion, IP-Pseudonym und Interaktionsnachweis bleiben, weil sie "
+"Teil der verketteten Signatur sind. Unter 30 Tagen bedeutet: alles behalten."
+msgstr ""
+"تُطبّق يومياً: في التوقيعات الأقدم من هذه المدة يُستبدل الاسم وعنوان البريد "
+"الإلكتروني ومعرف المتصفح. لا يُحذف شيء — فالصف المحذوف سيقطع السجل. يبقى معرف "
+"الحساب والطابع الزمني وإصدار الاتفاقية والاسم المستعار لعنوان IP وإثبات "
+"التفاعل لأنها جزء من التوقيع المتسلسل. أقل من 30 يوماً يعني: الاحتفاظ بكل شيء."
+
+#: includes/class-nda-admin.php:1046
+msgid "Daten bei Deinstallation löschen"
+msgstr "حذف البيانات عند إلغاء التثبيت"
+
+#: includes/class-nda-admin.php:1050
+msgid ""
+"Alle Plugin-Optionen, Benutzer-Metadaten sowie beide NDA-Register-Tabellen "
+"beim Löschen des Plugins endgültig entfernen."
+msgstr ""
+"حذف جميع إعدادات الإضافة والبيانات الوصفية للمستخدمين وجدولي سجل NDA نهائياً "
+"عند حذف الإضافة."
+
+#: includes/class-nda-admin.php:1052
+msgid ""
+"Standardmäßig deaktiviert, damit ein versehentliches Löschen oder "
+"Neuinstallieren des Plugins keine gespeicherten Zustimmungsnachweise "
+"vernichtet."
+msgstr ""
+"معطّل افتراضياً حتى لا يؤدي الحذف أو إعادة التثبيت بالخطأ إلى إتلاف إثباتات "
+"الموافقة المحفوظة."
+
+#: includes/class-nda-admin.php:1059
+msgid "Einstellungen speichern"
+msgstr "حفظ الإعدادات"
+
+#: includes/class-nda-admin.php:1068
+msgid "Demodaten-Management & Werkseinstellungen (Reset)"
+msgstr "إدارة البيانات التجريبية وإعادة الضبط للمصنع"
+
+#: includes/class-nda-admin.php:1071
+msgid ""
+"Fünf Beispiel-Signaturen ohne WordPress-Konto für Präsentationen – nur in "
+"einem Register ohne echte Signaturen; gelöscht werden können sie nur, "
+"solange keine echten Signaturen mit ihnen verkettet sind. Oder das NDA Gate "
+"auf Werkseinstellungen zurücksetzen."
+msgstr ""
+"خمسة توقيعات نموذجية دون حساب ووردبريس للعروض التقديمية — فقط في سجل خالٍ من "
+"التوقيعات الحقيقية."
+
+#: includes/class-nda-admin.php:1080
+msgid "Demodaten importieren (5 Beispiel-Signaturen)"
+msgstr "استيراد بيانات تجريبية (5 توقيعات نموذجية)"
+
+#: includes/class-nda-admin.php:1085
+msgid ""
+"Demodaten löschen? Das geht nur, wenn das Register keine echten Signaturen "
+"enthält."
+msgstr "حذف البيانات التجريبية؟ ممكن فقط إذا خلا السجل من التوقيعات الحقيقية."
+
+#: includes/class-nda-admin.php:1089
+msgid "Demodaten bereinigen (Nur Test-Signaturen)"
+msgstr "تنظيف البيانات التجريبية (توقيعات الاختبار فقط)"
+
+#: includes/class-nda-admin.php:1100
+msgid "Gefahrenbereich: Auf Werkseinstellungen zurücksetzen"
+msgstr "منطقة الخطر: استعادة إعدادات المصنع"
+
+#: includes/class-nda-admin.php:1103
+msgid ""
+"Dieser Vorgang löscht unwiderruflich ALLE Signaturen und NDA-Versionen, "
+"stellt die Standard-NDA v1.0.0 wieder her und setzt alle Einstellungen auf "
+"die Werksstandards zurück."
+msgstr ""
+"تؤدي هذه العملية إلى حذف جميع التوقيعات وإصدارات NDA نهائياً واستعادة NDA "
+"الافتراضية v1.0.0 وإعادة ضبط الإعدادات."
+
+#: includes/class-nda-admin.php:1105
+msgid ""
+"WARNUNG: Sind Sie sicher? Dies löscht ALLE Signaturen und setzt das NDA Gate "
+"vollständig auf Werkseinstellungen zurück!"
+msgstr ""
+"تحذير: هل أنت متأكد؟ سيؤدي هذا إلى حذف جميع التوقيعات وإعادة ضبط NDA Gate "
+"بالكامل!"
+
+#: includes/class-nda-admin.php:1109
+msgid "Werkseinstellungen wiederherstellen (Factory Reset)"
+msgstr "استعادة إعدادات المصنع (Factory Reset)"
+
+#: includes/class-nda-admin.php:1129
+msgid "4-Stufen Perimeter-Schutz"
+msgstr "حماية محيطية من 4 مستويات"
+
+#: includes/class-nda-admin.php:1130
+msgid ""
+"verlangt von angemeldeten Benutzern die Bestätigung der aktiven "
+"Vertraulichkeitsvereinbarung an vier Stellen: Login-Checkbox, Admin-"
+"Weiterleitung, Frontend-Weiterleitung und REST-Sperre."
+msgstr ""
+"تطلب من المستخدمين المسجلين تأكيد اتفاقية السرية النشطة في أربع نقاط: خانة "
+"الدخول، وتحويل الإدارة، وتحويل الواجهة، وحجب REST."
+
+#: includes/class-nda-admin.php:1135
+msgid "Version-Bump & Re-Signing"
+msgstr "تغيير الإصدار وإعادة التوقيع"
+
+#: includes/class-nda-admin.php:1138
+msgid ""
+"Wird der NDA-Vertragstext aktualisiert und eine neue Versionsnummer "
+"vergeben, müssen alle Benutzer den neuen Text vor dem nächsten Zugriff "
+"bestätigen. Die bisherigen Bestätigungen bleiben mit ihrer Fassung im "
+"Register und lassen sich weiter prüfen."
+msgstr ""
+"عند تحديث نص NDA ومنحه رقم إصدار جديد، يتعين على جميع المستخدمين تأكيد النص "
+"الجديد قبل الوصول التالي. وتبقى التأكيدات السابقة في السجل مع إصدارها ويظل "
+"التحقق منها ممكناً."
+
+#: includes/class-nda-admin.php:1144
+msgid ""
+"Jede Signatur ist ein HMAC-SHA256 über die Signatur der vorhergehenden "
+"Zustimmung, User-ID, Versions-ID, Vertrags-Hash, Zeitstempel und die "
+"pseudonymisierte IP; die Spitze der Kette ist mit demselben Schlüssel "
+"versiegelt. Eine geänderte, gelöschte oder eingeschleuste Zustimmung fällt "
+"auf, solange der Schlüssel (AUTH_KEY aus der wp-config.php, ohne ihn ein "
+"Salt aus der Datenbank) nicht bekannt ist; eine vorher kopierte ältere "
+"Kettenspitze, die zurückgespielt wird, fällt nicht auf. Ein neuer Schlüssel "
+"macht alle gespeicherten Signaturen unprüfbar. IP-Adressen werden als HMAC "
+"mit einem täglich wechselnden Salt gespeichert."
+msgstr ""
+"كل توقيع هو HMAC-SHA256 يشمل التوقيع السابق ومعرف المستخدم ومعرف الإصدار "
+"وبصمة العقد والطابع الزمني والـ IP المستعار؛ ويُختم رأس السلسلة بالمفتاح ذاته."
+
+#: includes/class-nda-admin.php:1148
+msgid "Handbuch:"
+msgstr "الدليل:"
+
+#: includes/class-nda-admin.php:1149
+msgid "Vollständiges Handbuch öffnen"
+msgstr "فتح الدليل الكامل"
+
+#: includes/class-nda-admin.php:1150
+msgid "Entwickelt von WM Suite."
+msgstr "تطوير WM Suite."
+
+#: includes/class-nda-admin.php:1159 includes/class-nda-exporter.php:38
+#: includes/class-nda-exporter.php:124
+msgid "Unzureichende Berechtigungen."
+msgstr "صلاحيات غير كافية."
+
+#: includes/class-nda-admin.php:1167
+msgid "WM Prototype NDA Gate — Handbuch"
+msgstr "WM Prototype NDA Gate — الدليل"
+
+#: includes/class-nda-admin.php:1168
+msgid "Die vier Prüfstellen, das Signatur-Register, Hooks und Grenzen."
+msgstr "نقاط التحقق الأربع، وسجل التوقيعات، والخطافات والقيود."
+
+#: includes/class-nda-admin.php:1179
+msgid "1. 4-Stufen Perimeter-Interzeption"
+msgstr "1. الاعتراض المحيطي من 4 مستويات"
+
+#: includes/class-nda-admin.php:1181
+msgid ""
+"Angemeldete Benutzer ohne Signatur der aktiven Version werden an vier "
+"Stellen angehalten:"
+msgstr ""
+"يتم إيقاف المستخدمين المسجلين غير الموقّعين للإصدار النشط في أربعة مواضع:"
+
+#: includes/class-nda-admin.php:1183
+msgid "Ebene 1 (wp-login.php):"
+msgstr "المستوى 1 (wp-login.php):"
+
+#: includes/class-nda-admin.php:1183
+msgid ""
+"Checkbox (24 × 24 px) auf wp-login.php; nach der Passwortprüfung wird die "
+"Anmeldung ohne Häkchen abgewiesen, wenn keine Signatur der aktiven Version "
+"vorliegt."
+msgstr ""
+"خانة اختيار (24 × 24 بكسل) في wp-login.php؛ بعد التحقق من كلمة المرور يُرفض "
+"الدخول دون تحديدها عند عدم وجود توقيع نشط."
+
+#: includes/class-nda-admin.php:1184
+msgid "Ebene 2 (Frontend / Staging):"
+msgstr "المستوى 2 (الواجهة / الاختبار):"
+
+#: includes/class-nda-admin.php:1184
+msgid ""
+"Leitet angemeldete Benutzer ohne Signatur bei template_redirect auf die "
+"Signaturseite um, bevor das Theme etwas ausgibt."
+msgstr ""
+"يحوّل المستخدمين المسجلين غير الموقّعين عند template_redirect إلى صفحة التوقيع "
+"قبل طباعة القالب لأي محتوى."
+
+#: includes/class-nda-admin.php:1185
+msgid "Ebene 3 (REST-API):"
+msgstr "المستوى 3 (REST API):"
+
+#: includes/class-nda-admin.php:1185
+msgid ""
+"Antwortet angemeldeten Benutzern ohne Signatur mit HTTP 403 "
+"(rest_forbidden); ausgenommen sind /wm-nda/v1/, /wp/v2/users/me und /wm-hub/"
+"v1/ (Filter wm_nda_whitelisted_routes). Anonyme Anfragen sind nicht "
+"betroffen."
+msgstr ""
+"يرد على المستخدمين المسجلين غير الموقّعين بـ HTTP 403 (rest_forbidden)، "
+"باستثناء /wm-nda/v1/ و/wp/v2/users/me و/wm-hub/v1/ (المرشح "
+"wm_nda_whitelisted_routes)."
+
+#: includes/class-nda-admin.php:1186
+msgid "Ebene 4 (wp-admin):"
+msgstr "المستوى 4 (wp-admin):"
+
+#: includes/class-nda-admin.php:1186
+msgid ""
+"Leitet bei admin_init auf die Signaturseite um, bevor eine wp-admin-Seite "
+"aufgebaut wird; dort das Vollbild-Modal mit WAI-ARIA Focus-Trap. admin-ajax "
+"antwortet mit HTTP 403."
+msgstr ""
+"يحوّل عند admin_init إلى صفحة التوقيع قبل بناء أي شاشة wp-admin، مع نافذة ملء "
+"الشاشة وحصر التركيز WAI-ARIA. يرد admin-ajax بـ HTTP 403."
+
+#: includes/class-nda-admin.php:1194
+msgid "2. Der mitgelieferte Vertragstext"
+msgstr "2. نص الاتفاقية المرفق"
+
+#: includes/class-nda-admin.php:1196
+msgid ""
+"Der mitgelieferte Text ist ein Muster ohne juristische Prüfung und nennt "
+"keine Vorschriften. Er beschreibt den Gegenstand, die Pflichten, was bei "
+"einer Zustimmung gespeichert wird, und dass der Zugang bei einem Verstoß "
+"gesperrt werden kann."
+msgstr ""
+"النص المرفق نموذج لم يخضع لمراجعة قانونية ولا يذكر أي نصوص قانونية. يصف "
+"موضوع الاتفاقية والالتزامات وما يُخزَّن عند الموافقة، وأنه يمكن حظر الوصول عند "
+"حدوث مخالفة."
+
+#: includes/class-nda-admin.php:1197
+msgid ""
+"Ob Vereinbarung und Maßnahmen im Einzelfall tragen, beurteilt das Plugin "
+"nicht. Lassen Sie den Text prüfen und veröffentlichen Sie Ihre Fassung im "
+"Reiter \"Versionen\"; bereits veröffentlichte Versionen behalten ihren Text "
+"und ihre Signaturen."
+msgstr ""
+"لا تقيّم الإضافة ما إذا كانت الاتفاقية والتدابير صامدة في حالة بعينها. اطلب "
+"مراجعة النص وانشر نسختك في علامة التبويب \"الإصدارات\"؛ تحتفظ الإصدارات "
+"المنشورة سابقاً بنصها وتوقيعاتها."
+
+#: includes/class-nda-admin.php:1205
+msgid "3. Signatur-Kryptogramm & Entwickler-Hooks"
+msgstr "3. شفرة التوقيع وخطافات المطورين"
+
+#: includes/class-nda-admin.php:1207
+msgid ""
+"Bei jeder Bestätigung wird eine HMAC-SHA256-Signatur berechnet, die die "
+"vorherige Signatur einschließt:"
+msgstr "عند كل تأكيد يُحسب توقيع HMAC-SHA256 يتضمن التوقيع السابق:"
+
+#: includes/class-nda-admin.php:1213
+msgid "Entwickler-Action Hook:"
+msgstr "خطاف الإجراء للمطورين:"
+
+#: includes/class-nda-admin.php:1232
+msgid "4. Wichtige Hinweise, Gotchas & Best Practices"
+msgstr "4. ملاحظات مهمة وتنبيهات وأفضل الممارسات"
+
+#: includes/class-nda-admin.php:1235
+msgid "Version Bump & Re-Signing:"
+msgstr "تغيير الإصدار وإعادة التوقيع:"
+
+#: includes/class-nda-admin.php:1235
+msgid ""
+"Sobald Sie im Reiter \"Versionen\" eine neue Version anlegen, muss jeder "
+"Benutzer die neue Fassung bestätigen; die bisherigen Bestätigungen bleiben "
+"mit ihrer Fassung im Register."
+msgstr ""
+"بمجرد إنشاء إصدار جديد في تبويب \"الإصدارات\" يتعين على كل مستخدم تأكيد "
+"الإصدار الجديد؛ وتبقى التأكيدات السابقة في السجل مع إصدارها."
+
+#: includes/class-nda-admin.php:1236
+msgid "WP-CLI & Cron-Automatisierung:"
+msgstr "أتمتة WP-CLI وCron:"
+
+#: includes/class-nda-admin.php:1236
+msgid ""
+"Hintergrund-Crons und CLI-Befehle werden automatisch vom Gate ausgenommen, "
+"um Serverprozesse nicht zu blockieren."
+msgstr ""
+"تُستثنى مهام cron الخلفية وأوامر WP-CLI تلقائياً حتى لا تتعطل عمليات الخادم."
+
+#: includes/class-nda-admin.php:1237
+msgid "Export:"
+msgstr "التصدير:"
+
+#: includes/class-nda-admin.php:1237
+msgid ""
+"Unter \"Export\" gibt es CSV und JSON; das JSON enthält das Prüfergebnis des "
+"Registers und eine Prüfsumme über die Datei. Einen PDF-Export gibt es nicht."
+msgstr ""
+"يتوفر في \"تصدير\" كل من CSV وJSON؛ ويتضمن JSON نتيجة فحص السجل ومجموع تحقق "
+"الملف. لا يوجد تصدير PDF."
+
+#: includes/class-nda-admin.php:1238
+msgid "Interaktionsnachweis:"
+msgstr "إثبات التفاعل:"
+
+#: includes/class-nda-admin.php:1238
+msgid ""
+"Der Browser meldet bei der Bestätigung Eingabegerät, Verweildauer, "
+"Zeigerweg, gelesenen Anteil und Sichtfenster. Diese Angaben gehen in die "
+"Signatur ein, sind danach also nicht mehr änderbar, ohne die Kette zu "
+"brechen — aber sie stammen vom Client: sie zeigen, dass der Dialog bedient "
+"wurde, nicht von wem. Bestätigungen ohne JavaScript und alle vor dem "
+"16.09.2026 tragen keinen."
+msgstr ""
+"عند التأكيد يرسل المتصفح جهاز الإدخال ومدة البقاء ومسار المؤشر ونسبة التمرير "
+"وحجم النافذة. تُختم هذه البيانات في التوقيع لكنها واردة من العميل."
+
+#: includes/class-nda-core.php:97 includes/class-nda-core.php:119
+msgid "WM NDA Gate — Status"
+msgstr "WM NDA Gate — الحالة"
+
+#: includes/class-nda-core.php:123
+msgid ""
+"Zeigt den aktuellen NDA-Bestätigungsstatus oder die aktive Vertragsversion "
+"an."
+msgstr "يعرض حالة تأكيد NDA الحالية أو إصدار الاتفاقية النشط."
+
+#: includes/class-nda-core.php:197
+msgid "Nicht angemeldet"
+msgstr "غير مسجل الدخول"
+
+#: includes/class-nda-core.php:199
+msgid "Keine aktive Vereinbarung"
+msgstr "لا توجد اتفاقية نشطة"
+
+#. translators: %s: active NDA version string
+#: includes/class-nda-core.php:203
+#, php-format
+msgid "NDA v%s bestätigt"
+msgstr "تم تأكيد NDA v%s"
+
+#. translators: %s: active NDA version string
+#: includes/class-nda-core.php:209
+#, php-format
+msgid "NDA v%s ausstehend"
+msgstr "NDA v%s قيد الانتظار"
+
+#. translators: %d: previously recorded number of acceptances
+#: includes/class-nda-database.php:617
+#, php-format
+msgid ""
+"Das Register ist leer, obwohl zuletzt %d Zustimmungen verzeichnet waren."
+msgstr "السجل فارغ رغم أنه كان مسجلاً فيه آخر مرة %d موافقات."
+
+#: includes/class-nda-database.php:720
+msgid "Ein unsignierter Datensatz wurde nachträglich in die Kette eingefügt."
+msgstr "أُدرج سجل غير موقّع لاحقاً في السلسلة."
+
+#. translators: %d: acceptance id
+#: includes/class-nda-database.php:725
+#, php-format
+msgid ""
+"Kettenbruch bei Zustimmung #%d: eine Zustimmung wurde gelöscht, "
+"eingeschleust oder umsortiert."
+msgstr "انقطاع السلسلة عند الموافقة #%d: حُذفت موافقة أو أُدرجت أو أُعيد ترتيبها."
+
+#: includes/class-nda-database.php:734
+msgid ""
+"Keine gespeicherte Signatur passt zum Schlüssel dieser Installation: der "
+"Signaturschlüssel (AUTH_KEY) wurde geändert, das Register stammt aus einer "
+"anderen Installation, oder jede Zeile wurde verändert. Mit diesem Schlüssel "
+"lässt sich das nicht unterscheiden."
+msgstr ""
+"لا يتطابق أي توقيع محفوظ مع مفتاح هذا التثبيت: تغير AUTH_KEY أو نُقل السجل من "
+"تثبيت آخر أو عُدلت كل الصفوف."
+
+#. translators: %d: acceptance id
+#: includes/class-nda-database.php:739
+#, php-format
+msgid ""
+"Die Signatur der Zustimmung #%d passt nicht zu ihrem Inhalt: der Datensatz "
+"wurde nachträglich verändert oder mit einem anderen Schlüssel signiert."
+msgstr ""
+"توقيع الموافقة #%d لا يطابق محتواها: عُدل السجل لاحقاً أو وُقّع بمفتاح آخر."
+
+#: includes/class-nda-database.php:750
+msgid ""
+"Die Kettenspitze (Option wm_nda_register_tip) fehlt: ob die neuesten "
+"Zustimmungen entfernt wurden, lässt sich nicht prüfen."
+msgstr ""
+"رأس السلسلة (الخيار wm_nda_register_tip) مفقود: يتعذر التحقق مما إذا حُذفت "
+"أحدث الموافقات."
+
+#: includes/class-nda-database.php:754
+msgid ""
+"Die Kettenspitze trägt kein Siegel: ob die neuesten Zustimmungen entfernt "
+"wurden, lässt sich nicht prüfen."
+msgstr "رأس السلسلة بلا ختم: يتعذر التحقق مما إذا حُذفت أحدث الموافقات."
+
+#: includes/class-nda-database.php:762
+msgid ""
+"Das Siegel der Kettenspitze passt nicht zu ihrem Inhalt: die Option wurde "
+"ohne den Schlüssel verändert."
+msgstr "ختم رأس السلسلة لا يطابق محتواه: عُدل الخيار دون المفتاح."
+
+#. translators: 1: rows present, 2: rows recorded in the sealed tip
+#: includes/class-nda-database.php:768
+#, php-format
+msgid ""
+"Das Ende des Registers passt nicht zur versiegelten Kettenspitze (%1$d "
+"Zustimmungen vorhanden, %2$d verzeichnet): Zustimmungen wurden entfernt oder "
+"ohne Signatur angehängt."
+msgstr ""
+"نهاية السجل لا تطابق الرأس المختوم (%1$d موافقات موجودة، %2$d مسجلة): أُزيلت "
+"موافقات أو أُضيفت دون توقيع."
+
+#: includes/class-nda-database.php:788
+msgid ""
+"Der Signaturschlüssel dieser Installation ist ein anderer als der, mit dem "
+"das Register versiegelt wurde (AUTH_KEY geändert oder Datenbank aus einer "
+"anderen Installation übernommen). Die gespeicherten Signaturen lassen sich "
+"mit diesem Schlüssel nicht prüfen."
+msgstr ""
+"مفتاح التوقيع في هذا التثبيت يختلف عن المفتاح الذي خُتم به السجل (تغير "
+"AUTH_KEY أو نُسخت قاعدة البيانات من تثبيت آخر)."
+
+#: includes/class-nda-evidence.php:177
+msgid "Maus"
+msgstr "فأرة"
+
+#: includes/class-nda-evidence.php:178
+msgid "Stift"
+msgstr "قلم رقمي"
+
+#: includes/class-nda-evidence.php:179
+msgid "Touch"
+msgstr "لمس"
+
+#: includes/class-nda-evidence.php:180 includes/class-nda-evidence.php:193
+msgid "Tastatur"
+msgstr "لوحة مفاتيح"
+
+#: includes/class-nda-evidence.php:181
+msgid "nicht erkannt"
+msgstr "غير معروف"
+
+#: includes/class-nda-evidence.php:185
+msgid "Eingabegerät"
+msgstr "جهاز الإدخال"
+
+#: includes/class-nda-evidence.php:191
+msgid "Bestätigt per"
+msgstr "تم التأكيد عبر"
+
+#: includes/class-nda-evidence.php:194
+msgid "Zeigegerät"
+msgstr "جهاز تأشير"
+
+#: includes/class-nda-evidence.php:200
+msgid "Zeit im Dialog"
+msgstr "الوقت في النافذة"
+
+#: includes/class-nda-evidence.php:207
+msgid "Zwischen Häkchen und Bestätigung"
+msgstr "بين التحديد والتأكيد"
+
+#: includes/class-nda-evidence.php:214
+msgid "Gelesener Anteil des Textfensters"
+msgstr "النسبة المقروءة من نافذة النص"
+
+#. translators: %d: percentage of the scrollable agreement text that was scrolled through
+#: includes/class-nda-evidence.php:216
+#, php-format
+msgid "%d %% durchgeblättert"
+msgstr "%d %% تم تمريره"
+
+#: includes/class-nda-evidence.php:222
+msgid "Zeigerbewegung"
+msgstr "حركة المؤشر"
+
+#. translators: 1: number of pointer samples, 2: travelled distance in CSS pixels
+#: includes/class-nda-evidence.php:225
+#, php-format
+msgid "%1$d Messpunkte, %2$d px Weg"
+msgstr "%1$d نقطة قياس، مسار %2$d px"
+
+#: includes/class-nda-evidence.php:234
+msgid "Höchster Druckwert"
+msgstr "أعلى قيمة ضغط"
+
+#: includes/class-nda-evidence.php:241
+msgid "Sichtfenster"
+msgstr "نافذة العرض"
+
+#: includes/class-nda-evidence.php:248
+msgid "Zeitzonenversatz des Geräts"
+msgstr "فرق المنطقة الزمنية للجهاز"
+
+#. translators: %s: signed offset from UTC in minutes, as reported by the browser
+#: includes/class-nda-evidence.php:250
+#, php-format
+msgid "%s Minuten gegenüber UTC"
+msgstr "%s دقيقة مقابل UTC"
+
+#: includes/class-nda-evidence.php:262
+msgid "Kein Interaktionsnachweis"
+msgstr "لا يوجد إثبات تفاعل"
+
+#. translators: %s: duration in seconds with one decimal
+#: includes/class-nda-evidence.php:280
+#, php-format
+msgid "%s s"
+msgstr "%s ث"
+
+#: includes/class-nda-evidence.php:292
+msgid "kein Drucksensor (Zeigegerät meldet den Festwert 0,5)"
+msgstr "لا يوجد مستشعر ضغط (جهاز التأشير يرسل القيمة الثابتة 0,5)"
+
+#. translators: %s: pressure between 0 and 1 with two decimals
+#: includes/class-nda-evidence.php:297
+#, php-format
+msgid "%s von 1,0"
+msgstr "%s من 1,0"
+
+#: includes/class-nda-exporter.php:216 includes/class-nda-exporter.php:227
+msgid "WM Prototype NDA Gate Signaturen"
+msgstr "توقيعات WM Prototype NDA Gate"
+
+#: includes/class-nda-exporter.php:273
+msgid "NDA Vereinbarung"
+msgstr "اتفاقية NDA"
+
+#: includes/class-nda-exporter.php:281
+msgid "Unterzeichner Name"
+msgstr "اسم الموقّع"
+
+#: includes/class-nda-exporter.php:285
+msgid "Unterzeichner E-Mail"
+msgstr "بريد الموقّع الإلكتروني"
+
+#: includes/class-nda-exporter.php:293
+msgid "Signatur-Hash (SHA-256)"
+msgstr "بصمة التوقيع (SHA-256)"
+
+#: includes/class-nda-exporter.php:309
+msgid "Prototyp NDA Signaturen"
+msgstr "توقيعات NDA للنموذج الأولي"
+
+#. translators: %d: Number of signature records
+#: includes/class-nda-exporter.php:372
+#, php-format
+msgid ""
+"%d NDA-Signaturdatensätze wurden pseudonymisiert: Name, E-Mail-Adresse und "
+"User-Agent sind ersetzt."
+msgstr ""
+"تمت استعارة هوية %d سجلات توقيع NDA: استُبدل الاسم والبريد الإلكتروني ومعرف "
+"المتصفح."
+
+#: includes/class-nda-exporter.php:375
+msgid ""
+"Beibehalten, weil sie Teil der verketteten Signatur sind: Konto-ID, Signatur-"
+"Hash, Zeitstempel, Vertragsversion, das tagesgesalzene IP-Pseudonym und der "
+"Interaktionsnachweis (Eingabegerät, Dauer, Zeigerweg, Sichtfenster, "
+"Zeitzonenversatz). Die Konto-ID verweist weiter auf das WordPress-Konto, wer "
+"den Salt kennt, kann das IP-Pseudonym gegen Kandidaten-Adressen prüfen, und "
+"Sichtfenster und Zeitzonenversatz beschreiben das benutzte Gerät."
+msgstr ""
+"مُحتفظ بها لأنها جزء من التوقيع المتسلسل: معرف الحساب، وبصمة التوقيع، والطابع "
+"الزمني، وإصدار الاتفاقية، والاسم المستعار لعنوان IP المملّح يومياً، وإثبات "
+"التفاعل (جهاز الإدخال، والمدة، ومسار المؤشر، ونافذة العرض، وفارق المنطقة "
+"الزمنية). يظل معرف الحساب يشير إلى حساب WordPress، ويمكن لمن يعرف الملح "
+"اختبار الاسم المستعار لعنوان IP مقابل عناوين مرشحة، كما تصف نافذة العرض "
+"وفارق المنطقة الزمنية الجهاز المستخدم."
+
+#: includes/class-nda-i18n.php:49
+msgid ""
+"Ich habe die Vertraulichkeitsvereinbarung (NDA) für dieses Prototyp-System "
+"gelesen und stimme ihr zu."
+msgstr ""
+"لقد قرأت اتفاقية السرية (NDA) الخاصة بنظام النموذج الأولي هذا وأوافق عليها."
+
+#: includes/class-nda-i18n.php:56
+msgid "Zwingende Vertraulichkeitsverpflichtung (NDA)"
+msgstr "التزام السرية الإلزامي (NDA)"
+
+#: includes/class-nda-i18n.php:63
+msgid "NDA akzeptieren & fortfahren"
+msgstr "قبول NDA والمتابعة"
+
+#: includes/class-nda-i18n.php:70
+msgid "Ablehnen & Abmelden"
+msgstr "رفض وتسجيل الخروج"
+
+#: includes/class-nda-i18n.php:81
+msgid ""
+"Bitte bestätigen Sie die Vertraulichkeitsvereinbarung (NDA) mit dem Kästchen "
+"unter dem Passwort, um sich anzumelden. Für die aktuelle Fassung liegt von "
+"Ihnen noch keine Bestätigung vor."
+msgstr ""
+"يرجى تأكيد اتفاقية السرية (NDA) عبر الخانة أسفل كلمة المرور لتسجيل الدخول. "
+"لا توجد موافقة مسجلة لك بعد على الإصدار الحالي."
+
+#: includes/class-nda-i18n.php:85
+msgid "Der Anmeldeversuch wurde forensisch erfasst."
+msgstr "تم توثيق محاولة تسجيل الدخول جنائياً."
+
+#: includes/class-nda-i18n.php:86
+msgid "Der Anmeldeversuch wurde protokolliert."
+msgstr "تم تسجيل محاولة تسجيل الدخول."
+
+#: includes/class-nda-i18n.php:94
+msgid ""
+"Bitte bestätigen Sie zuerst die aktuelle Vertraulichkeitsvereinbarung (NDA)."
+msgstr "يرجى أولاً تأكيد اتفاقية السرية (NDA) الحالية."
+
+#: includes/class-nda-interceptor.php:75
+msgid "[Vollständigen NDA-Text lesen]"
+msgstr "[قراءة نص NDA كاملاً]"
+
+#: includes/class-nda-interceptor.php:79
+msgid "Nur nötig, wenn Sie die aktuelle Fassung noch nicht bestätigt haben."
+msgstr "مطلوب فقط إذا لم تكن قد أكدت الإصدار الحالي بعد."
+
+#: includes/class-nda-interceptor.php:206
+#: includes/class-nda-interceptor.php:234
+msgid "Fehler:"
+msgstr "خطأ:"
+
+#: includes/class-nda-interceptor.php:234
+msgid ""
+"Ihre Bestätigung konnte nicht gespeichert werden; die Anmeldung wurde "
+"deshalb nicht fortgesetzt. Bitte versuchen Sie es erneut."
+msgstr ""
+"تعذر حفظ تأكيدك؛ لذلك لم تُستكمل عملية تسجيل الدخول. يرجى المحاولة مرة أخرى."
+
+#: includes/class-nda-interceptor.php:338
+msgid "NDA"
+msgstr "NDA"
+
+#: includes/class-nda-modal.php:38
+msgid "Zustimmung gespeichert. Weiterleitung …"
+msgstr "تم حفظ الموافقة. جاري التحويل …"
+
+#: includes/class-nda-modal.php:38
+msgid "Fehler bei der Signaturübermittlung."
+msgstr "حدث خطأ أثناء إرسال التوقيع."
+
+#: includes/class-nda-modal.php:38
+msgid "Netzwerkfehler:"
+msgstr "خطأ في الشبكة:"
+
+#: includes/class-nda-modal.php:58
+msgid "Vertragstext der Geheimhaltungsvereinbarung"
+msgstr "نص اتفاقية السرية"
+
+#: includes/class-nda-modal.php:63
+msgid ""
+"Hinweis: Der Zugang zu diesem Prototyp setzt Ihre Zustimmung zur folgenden "
+"Vereinbarung voraus. Gespeichert werden Benutzer-ID, E-Mail-Adresse, "
+"Anzeigename, User-Agent, Zeitpunkt, die Prüfsumme des Textes, ein Pseudonym "
+"Ihrer IP-Adresse und der Interaktionsnachweis."
+msgstr ""
+"ملاحظة: يتطلب الوصول إلى هذا النموذج الأولي موافقتك على الاتفاقية التالية. "
+"يُخزَّن معرف المستخدم وعنوان البريد الإلكتروني والاسم المعروض ووكيل المستخدم "
+"والوقت ومجموع التحقق للنص واسم مستعار لعنوان IP الخاص بك وإثبات التفاعل."
+
+#: includes/class-nda-modal.php:72
+msgid "Dokumenten-Prüfsumme (SHA-256):"
+msgstr "مجموع التحقق للمستند (SHA-256):"
+
+#: includes/class-nda-rest-api.php:38
+msgid "Vom Browser gemeldete Interaktionsdaten der Click-Wrap-Bestätigung."
+msgstr "بيانات تفاعل النقر للموافقة المبلّغ عنها من المتصفح."
+
+#: includes/class-nda-rest-api.php:105 includes/class-nda-rest-api.php:154
+msgid "Zu viele Anfragen. Bitte warten Sie eine Minute."
+msgstr "طلبات كثيرة جداً. يرجى الانتظار دقيقة واحدة."
+
+#: includes/class-nda-rest-api.php:120
+msgid "Authentifizierung erforderlich."
+msgstr "المصادقة مطلوبة."
+
+#: includes/class-nda-rest-api.php:167
+msgid "Die angeforderte NDA-Version ist nicht die aktive Fassung."
+msgstr "إصدار NDA المطلوب ليس الإصدار النشط."
+
+#: includes/class-nda-rest-api.php:188
+msgid "Fehler beim Speichern der Signatur in der Datenbank."
+msgstr "خطأ أثناء حفظ التوقيع في قاعدة البيانات."
+
+#: includes/class-nda-rest-api.php:196
+msgid "NDA-Zustimmung gespeichert."
+msgstr "تم حفظ موافقة NDA."
+
+#: includes/class-nda-rest-api.php:238
+msgid "Für andere Benutzer ist diese Auskunft Administratoren vorbehalten."
+msgstr "الاستعلام عن المستخدمين الآخرين مقصور على المديرين."
+
+#: includes/class-nda-rest-api.php:266
+msgid "Keine aktive Vertraulichkeitsvereinbarung konfiguriert."
+msgstr "لم يتم إعداد اتفاقية سرية نشطة."
+
+#: includes/class-nda-watermark.php:340
+msgid ""
+"Die PHP-Erweiterung GD fehlt; ohne sie lässt sich kein Screenshot lesen."
+msgstr "إضافة PHP GD مفقودة؛ لا يمكن قراءة لقطة الشاشة بدونها."
+
+#: includes/class-nda-watermark.php:344
+msgid "Datei nicht lesbar."
+msgstr "الملف غير قابل للقراءة."
+
+#: includes/class-nda-watermark.php:349
+msgid "Die Datei ist kein lesbares Bild (PNG, JPEG oder WebP)."
+msgstr "الملف ليس صورة قابلة للقراءة (PNG أو JPEG أو WebP)."
+
+#: includes/class-nda-watermark.php:442
+msgid "Das Bild ist kleiner als ein Block des Musters."
+msgstr "الصورة أصغر من كتلة واحدة من النمط."
+
+#: includes/class-nda-watermark.php:468
+msgid ""
+"Kein Wasserzeichen gefunden: die Prüfsumme keines gefundenen Rasters passt. "
+"Entweder trägt das Bild keines, es stammt aus einer anderen Installation, "
+"oder es wurde skaliert, gedreht oder zu stark komprimiert."
+msgstr "لم يُعثر على علامة مائية: لا يتطابق مجموع التحقق لأي شبكة مكتشفة."
+
+#: wm-prototype-nda-gate.php:244
+msgid "Signatur-Protokoll"
+msgstr "سجل التوقيعات"
+
+#: wm-prototype-nda-gate.php:262
+msgid "NDA-Vertragstext bearbeiten"
+msgstr "تحرير نص اتفاقية NDA"

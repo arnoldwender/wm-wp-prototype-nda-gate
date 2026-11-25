@@ -1,0 +1,397 @@
+/**
+ * WM Suite Prototype NDA Gate — signature modal and full-screen gate.
+ *
+ * Loads on wp-login.php and on the gate page, where the admin family sheets are not present, so the tokens are
+ * defined on the overlay itself. tests/test-suite.php measures the text pairs (at least 4.5:1) and the focus
+ * colour (at least 3:1) from the values below.
+ */
+
+:root,
+.wm-nda-gate-overlay {
+	/* Colours */
+	--wm-nda-backdrop: rgba(15, 23, 42, 0.85);
+	--wm-nda-surface: #ffffff;
+	--wm-nda-surface-muted: #f8fafc;
+	--wm-nda-surface-code: #f1f5f9;
+	--wm-nda-code-bg: #e2e8f0;
+	--wm-nda-border: #e2e8f0;
+	--wm-nda-border-strong: #cbd5e1;
+	--wm-nda-heading: #0f172a;
+	--wm-nda-text: #1e293b;
+	--wm-nda-text-muted: #475569;
+	--wm-nda-focus: #2271b1;
+	--wm-nda-badge-bg: #0f172a;
+	--wm-nda-badge-text: #38bdf8;
+	--wm-nda-notice-bg: #fffbeb;
+	--wm-nda-notice-border: #fef3c7;
+	--wm-nda-notice-accent: #f59e0b;
+	--wm-nda-notice-text: #92400e;
+	--wm-nda-notice-icon: #d97706;
+	--wm-nda-accept-bg: #0f172a;
+	--wm-nda-accept-bg-hover: #1e293b;
+	--wm-nda-accept-text: #ffffff;
+	--wm-nda-danger: #b91c1c;
+	--wm-nda-danger-bg: #fef2f2;
+	--wm-nda-danger-border: #ef4444;
+	--wm-nda-danger-border-soft: #fca5a5;
+	--wm-nda-success: #15803d;
+	--wm-nda-success-bg: #f0fdf4;
+	--wm-nda-success-border: #22c55e;
+	--wm-nda-spinner-track: rgba(255, 255, 255, 0.3);
+
+	/* Spacing, radii, type, depth, motion */
+	--wm-nda-space-1: 4px;
+	--wm-nda-space-2: 8px;
+	--wm-nda-space-3: 12px;
+	--wm-nda-space-4: 16px;
+	--wm-nda-space-5: 20px;
+	--wm-nda-space-6: 24px;
+	--wm-nda-space-7: 28px;
+	--wm-nda-radius-xs: 3px;
+	--wm-nda-radius-sm: 4px;
+	--wm-nda-radius-md: 8px;
+	--wm-nda-radius-pill: 20px;
+	--wm-nda-text-xs: 11px;
+	--wm-nda-text-sm: 13px;
+	--wm-nda-text-base: 14px;
+	--wm-nda-text-md: 15px;
+	--wm-nda-text-lg: 20px;
+	--wm-nda-icon-sm: 14px;
+	--wm-nda-icon-md: 18px;
+	--wm-nda-control-size: 24px;
+	--wm-nda-button-height: 40px;
+	--wm-nda-shadow-card: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+	--wm-nda-shadow-hover: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	--wm-nda-transition: all 0.15s ease;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	background: var(--wm-nda-backdrop);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	z-index: 999999;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: var(--wm-nda-space-5);
+	box-sizing: border-box;
+}
+
+.wm-nda-gate-overlay.wm-nda-active {
+	display: flex;
+}
+
+.wm-nda-gate-overlay.wm-nda-gate-fullscreen {
+	display: flex !important;
+}
+
+.wm-nda-gate-card {
+	background: var(--wm-nda-surface);
+	border-radius: var(--wm-nda-radius-md);
+	box-shadow: var(--wm-nda-shadow-card);
+	width: 100%;
+	max-width: 780px;
+	max-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: 1px solid var(--wm-nda-border-strong);
+	animation: wmNdaFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* The card receives focus when the dialog opens (tabindex="-1"); keyboard users see where it went. */
+.wm-nda-gate-card:focus-visible {
+	outline: 2px solid var(--wm-nda-focus);
+	outline-offset: -2px;
+}
+
+@keyframes wmNdaFadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.96) translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
+
+/* Header */
+.wm-nda-gate-header {
+	padding: var(--wm-nda-space-6) var(--wm-nda-space-7) var(--wm-nda-space-4) var(--wm-nda-space-7);
+	border-bottom: 1px solid var(--wm-nda-border);
+	background: var(--wm-nda-surface-muted);
+}
+
+.wm-nda-header-badge,
+.wm-nda-gate-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--wm-nda-space-2);
+	background: var(--wm-nda-badge-bg);
+	color: var(--wm-nda-badge-text);
+	padding: var(--wm-nda-space-1) var(--wm-nda-space-3);
+	border-radius: var(--wm-nda-radius-pill);
+	font-size: var(--wm-nda-text-xs);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: var(--wm-nda-space-3);
+}
+
+.wm-nda-gate-badge .dashicons {
+	font-size: var(--wm-nda-icon-sm);
+	width: var(--wm-nda-icon-sm);
+	height: var(--wm-nda-icon-sm);
+	line-height: var(--wm-nda-icon-sm);
+}
+
+.wm-nda-gate-title {
+	margin: 0 0 var(--wm-nda-space-2) 0;
+	font-size: var(--wm-nda-text-lg);
+	font-weight: 700;
+	color: var(--wm-nda-heading);
+	line-height: 1.3;
+}
+
+.wm-nda-gate-subtitle {
+	margin: 0;
+	font-size: var(--wm-nda-text-sm);
+	color: var(--wm-nda-text-muted);
+}
+
+/* Body / Legal Content */
+.wm-nda-gate-body {
+	padding: var(--wm-nda-space-5) var(--wm-nda-space-7);
+	overflow-y: auto;
+	flex: 1;
+	font-size: var(--wm-nda-text-base);
+	line-height: 1.6;
+	color: var(--wm-nda-text);
+	background: var(--wm-nda-surface);
+}
+
+.wm-nda-gate-body:focus {
+	outline: 2px solid var(--wm-nda-focus);
+	outline-offset: -2px;
+}
+
+.wm-nda-legal-notice {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--wm-nda-space-3);
+	background: var(--wm-nda-notice-bg);
+	border: 1px solid var(--wm-nda-notice-border);
+	border-left: 4px solid var(--wm-nda-notice-accent);
+	padding: var(--wm-nda-space-3) var(--wm-nda-space-4);
+	border-radius: var(--wm-nda-radius-sm);
+	margin-bottom: var(--wm-nda-space-5);
+	color: var(--wm-nda-notice-text);
+	font-size: var(--wm-nda-text-sm);
+}
+
+.wm-nda-legal-notice .dashicons {
+	color: var(--wm-nda-notice-icon);
+	font-size: var(--wm-nda-icon-md);
+	margin-top: 1px;
+}
+
+.wm-nda-legal-notice p {
+	margin: 0;
+}
+
+.wm-nda-legal-text h3 {
+	font-size: var(--wm-nda-text-md);
+	font-weight: 700;
+	color: var(--wm-nda-heading);
+	margin: var(--wm-nda-space-5) 0 var(--wm-nda-space-2) 0;
+}
+
+.wm-nda-legal-text h3:first-child {
+	margin-top: 0;
+}
+
+.wm-nda-legal-text p {
+	margin: 0 0 var(--wm-nda-space-3) 0;
+}
+
+.wm-nda-legal-text ul {
+	margin: 0 0 var(--wm-nda-space-4) var(--wm-nda-space-5);
+	list-style-type: disc;
+}
+
+.wm-nda-legal-text li {
+	margin-bottom: var(--wm-nda-space-2);
+}
+
+.wm-nda-hash-signature-preview {
+	margin-top: var(--wm-nda-space-6);
+	padding: var(--wm-nda-space-3);
+	background: var(--wm-nda-surface-code);
+	border-radius: var(--wm-nda-radius-sm);
+	border: 1px solid var(--wm-nda-border);
+	font-size: var(--wm-nda-text-xs);
+}
+
+/* Previous muted grey fell at 4.34:1 against the code surface (reader audit 2026-09-15, D21). */
+.wm-nda-hash-label {
+	display: block;
+	font-weight: 600;
+	color: var(--wm-nda-text-muted);
+	margin-bottom: var(--wm-nda-space-1);
+}
+
+.wm-nda-hash-value {
+	display: block;
+	word-break: break-all;
+	font-family: monospace;
+	color: var(--wm-nda-heading);
+	background: var(--wm-nda-code-bg);
+	padding: var(--wm-nda-space-1) var(--wm-nda-space-2);
+	border-radius: var(--wm-nda-radius-xs);
+}
+
+/* Footer */
+.wm-nda-gate-footer {
+	padding: var(--wm-nda-space-4) var(--wm-nda-space-7);
+	background: var(--wm-nda-surface-muted);
+	border-top: 1px solid var(--wm-nda-border);
+}
+
+.wm-nda-checkbox-wrapper {
+	margin-bottom: var(--wm-nda-space-4);
+}
+
+.wm-nda-checkbox-label {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--wm-nda-space-3);
+	font-size: var(--wm-nda-text-sm);
+	line-height: 1.45;
+	color: var(--wm-nda-heading);
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.wm-nda-checkbox-label input[type="checkbox"] {
+	min-width: var(--wm-nda-control-size);
+	min-height: var(--wm-nda-control-size);
+	width: var(--wm-nda-control-size);
+	height: var(--wm-nda-control-size);
+	margin: 0;
+	margin-top: 2px;
+	cursor: pointer;
+	accent-color: var(--wm-nda-focus);
+	flex-shrink: 0;
+}
+
+.wm-nda-checkbox-label input[type="checkbox"]:focus {
+	outline: 2px solid var(--wm-nda-focus);
+	outline-offset: 2px;
+}
+
+.wm-nda-buttons-row {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: var(--wm-nda-space-3);
+}
+
+.wm-nda-btn-decline {
+	background: var(--wm-nda-surface) !important;
+	border: 1px solid var(--wm-nda-border-strong) !important;
+	color: var(--wm-nda-text-muted) !important;
+	padding: var(--wm-nda-space-2) var(--wm-nda-space-4) !important;
+	font-weight: 600 !important;
+	border-radius: var(--wm-nda-radius-sm) !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: var(--wm-nda-space-2) !important;
+	text-decoration: none !important;
+	min-height: var(--wm-nda-button-height);
+}
+
+/* Previous hover red fell at 4.41:1 against the code surface (D21). */
+.wm-nda-btn-decline:hover,
+.wm-nda-btn-decline:focus {
+	background: var(--wm-nda-surface-code) !important;
+	color: var(--wm-nda-danger) !important;
+	border-color: var(--wm-nda-danger-border-soft) !important;
+}
+
+.wm-nda-btn-accept {
+	background: var(--wm-nda-accept-bg) !important;
+	border-color: var(--wm-nda-accept-bg) !important;
+	color: var(--wm-nda-accept-text) !important;
+	padding: var(--wm-nda-space-2) var(--wm-nda-space-5) !important;
+	font-weight: 600 !important;
+	border-radius: var(--wm-nda-radius-sm) !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: var(--wm-nda-space-2) !important;
+	min-height: var(--wm-nda-button-height);
+	cursor: pointer;
+	transition: var(--wm-nda-transition);
+}
+
+.wm-nda-btn-accept:hover:not(:disabled),
+.wm-nda-btn-accept:focus:not(:disabled) {
+	background: var(--wm-nda-accept-bg-hover) !important;
+	border-color: var(--wm-nda-accept-bg-hover) !important;
+	box-shadow: var(--wm-nda-shadow-hover);
+}
+
+.wm-nda-btn-accept:disabled {
+	opacity: 0.5 !important;
+	cursor: not-allowed !important;
+}
+
+.wm-nda-status-message {
+	font-size: var(--wm-nda-text-sm);
+	margin-bottom: var(--wm-nda-space-3);
+	display: none;
+}
+
+.wm-nda-status-message.wm-status-error {
+	display: block;
+	color: var(--wm-nda-danger);
+	background: var(--wm-nda-danger-bg);
+	padding: var(--wm-nda-space-2) var(--wm-nda-space-3);
+	border-radius: var(--wm-nda-radius-sm);
+	border-left: 4px solid var(--wm-nda-danger-border);
+}
+
+/* Previous success green fell at 3.15:1 against the success surface (D21). */
+.wm-nda-status-message.wm-status-success {
+	display: block;
+	color: var(--wm-nda-success);
+	background: var(--wm-nda-success-bg);
+	padding: var(--wm-nda-space-2) var(--wm-nda-space-3);
+	border-radius: var(--wm-nda-radius-sm);
+	border-left: 4px solid var(--wm-nda-success-border);
+}
+
+.wm-nda-spinner {
+	display: none;
+	width: var(--wm-nda-icon-sm);
+	height: var(--wm-nda-icon-sm);
+	border: 2px solid var(--wm-nda-spinner-track);
+	border-top-color: var(--wm-nda-accept-text);
+	border-radius: 50%;
+	animation: wmNdaSpin 0.6s linear infinite;
+}
+
+.wm-nda-loading .wm-nda-spinner {
+	display: inline-block;
+}
+
+@keyframes wmNdaSpin {
+	to {
+		transform: rotate(360deg);
+	}
+}

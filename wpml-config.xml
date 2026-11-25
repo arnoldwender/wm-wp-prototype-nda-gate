@@ -1,0 +1,7 @@
+<wpml-config>
+    <admin-texts>
+        <key name="wm_nda_require_login_checkbox" />
+        <key name="wm_nda_enforce_admin_gate" />
+        <key name="wm_nda_enforce_rest_api" />
+    </admin-texts>
+</wpml-config>
